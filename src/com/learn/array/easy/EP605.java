@@ -10,7 +10,7 @@ package com.learn.array.easy;
  */
 
 public class EP605 {
-    public static boolean canPlaceFlowers(int[] flowerbed, int n) {
+    public boolean canPlaceFlowers(int[] flowerbed, int n) {
         int i = 0, count = 0;
         while (i < flowerbed.length) {
             if (flowerbed[i] == 0 && (i == 0 || flowerbed[i - 1] == 0)
