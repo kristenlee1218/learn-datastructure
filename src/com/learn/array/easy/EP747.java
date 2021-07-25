@@ -11,6 +11,7 @@ import java.util.Map;
  * 请你找出数组中的最大元素并检查它是否 至少是数组中每个其他数字的两倍
  * 如果是，则返回最大元素的下标，否则返回 -1
  */
+
 public class EP747 {
     public int dominantIndex(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();

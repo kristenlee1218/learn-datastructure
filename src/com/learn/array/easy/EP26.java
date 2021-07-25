@@ -7,8 +7,8 @@ package com.learn.array.easy;
  * 返回移除后数组的新长度、不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1)
  * 额外空间的条件下完成
  */
-public class EP26 {
 
+public class EP26 {
     public int removeDuplicate(int[] nums) {
         int i = 0;
         for (int j = 1; j < nums.length; j++) {

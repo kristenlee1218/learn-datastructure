@@ -7,8 +7,8 @@ package com.learn.array.easy;
  * 并返回移除后数组的新长度、不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并原地修改输入数组、
  * 元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素
  */
-public class EP27 {
 
+public class EP27 {
     public int deleteValue(int[] nums, int value) {
         int index = 0;
         for (int i = 0; i < nums.length; i++) {

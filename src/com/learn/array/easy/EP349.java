@@ -8,8 +8,8 @@ import java.util.Set;
  * @date : 2021/7/17
  * @description :给定两个数组，编写一个函数来计算它们的交集
  */
-public class EP349 {
 
+public class EP349 {
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> set1 = new HashSet<>();
         Set<Integer> set2 = new HashSet<>();

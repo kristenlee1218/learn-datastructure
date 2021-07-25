@@ -8,8 +8,8 @@ package com.learn.array.easy;
  * 如果对于每个 l <= i < r，都有 nums[i] < nums[i + 1] ，
  * 那么子序列 [nums[l], nums[l + 1], ..., nums[r - 1], nums[r]] 就是连续递增子序列
  */
-public class EP674 {
 
+public class EP674 {
     public int findLengthOfLCIS(int[] nums) {
         if (nums.length <= 1) {
             return nums.length;

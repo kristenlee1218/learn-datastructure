@@ -8,8 +8,8 @@ import java.util.Map;
  * @date : 2021/7/17
  * @description :
  */
-public class EP167_1 {
 
+public class EP167_1 {
     public int[] twoSum(int[] numbers, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < numbers.length; i++) {
