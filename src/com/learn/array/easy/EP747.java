@@ -1,9 +1,5 @@
 package com.learn.array.easy;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author : Kristen
  * @date : 2021/7/18
@@ -14,15 +10,18 @@ import java.util.Map;
 
 public class EP747 {
     public int dominantIndex(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<>();
+        int flag = 0, index = 0;
         for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
+            if (nums[i] > flag) {
+                flag = nums[i];
+                index = i;
+            }
         }
-        Arrays.sort(nums);
-        System.out.println(nums[nums.length - 1]);
-        if (nums[nums.length - 1] >= 2 * nums[nums.length - 2]) {
-            return map.get(nums[nums.length - 1]);
+        for (int i = 0; i < nums.length; i++) {
+            if (i != index && flag < nums[i] * 2) {
+                index = -1;
+            }
         }
-        return -1;
+        return index;
     }
 }
