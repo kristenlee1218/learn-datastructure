@@ -14,15 +14,15 @@ import java.util.Arrays;
 public class EP1833 {
     public int maxIceCream(int[] costs, int coins) {
         Arrays.sort(costs);
-        int summary = 0, account = 0;
+        int sum = 0, count = 0;
         // 贪心算法
         for (int i = 0; i < costs.length; i++) {
-            summary += costs[i];
-            if (summary > coins) {
+            sum += costs[i];
+            if (sum > coins) {
                 break;
             }
-            account++;
+            count++;
         }
-        return account;
+        return count;
     }
 }
