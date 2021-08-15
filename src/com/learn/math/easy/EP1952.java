@@ -12,10 +12,8 @@ public class EP1952 {
         for (int i = 1; i * i <= n; ++i) {
             if (n % i == 0) {
                 if (i != n / i) {
-                    // 此时 i 与 n / i 为不同整数
                     count += 2;
                 } else {
-                    // 此时 i 与 n / i 相等
                     count += 1;
                 }
             }

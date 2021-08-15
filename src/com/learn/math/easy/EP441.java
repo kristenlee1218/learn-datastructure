@@ -9,11 +9,11 @@ package com.learn.math.easy;
  */
 public class EP441 {
     public int arrangeCoins(int n) {
-        int i = 1;
-        while (n >= i) {
-            n -= i;
-            i++;
+        int count = 1;
+        while (n >= count) {
+            n -= count;
+            count++;
         }
-        return i - 1;
+        return count - 1;
     }
 }

@@ -8,15 +8,15 @@ package com.learn.math.easy;
  */
 public class EP1342 {
     public int numberOfSteps(int num) {
-        int i = 0;
+        int count = 0;
         while (num != 0) {
             if (num % 2 == 0) {
-                num = num / 2;
+                num /= 2;
             } else {
-                num = num - 1;
+                num -= 1;
             }
-            i++;
+            count++;
         }
-        return i;
+        return count;
     }
 }

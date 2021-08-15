@@ -11,16 +11,16 @@ import java.util.Map;
  */
 public class EP1925 {
     public int countTriples(int n) {
-        int res = 0;
+        int count = 0;
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 1; i <= n; i++) {
             map.put(i * i, 1);
         }
         for (Integer a : map.keySet()) {
             for (Integer b : map.keySet()) {
-                res += map.getOrDefault(a + b, 0);
+                count += map.getOrDefault(a + b, 0);
             }
         }
-        return res;
+        return count;
     }
 }

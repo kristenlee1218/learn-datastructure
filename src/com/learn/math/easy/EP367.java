@@ -8,9 +8,7 @@ package com.learn.math.easy;
  */
 public class EP367 {
     public boolean isPerfectSquare(int num) {
-        int i = 0;
-        int j = num;
-        int mid;
+        int i = 0, j = num, mid;
         while (i <= j) {
             mid = (i + j) / 2;
             if ((long) mid * mid < num) {
