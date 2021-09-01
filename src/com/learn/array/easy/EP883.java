@@ -12,16 +12,16 @@ public class EP883 {
     public int projectionArea(int[][] grid) {
         int result = 0;
         for (int i = 0; i < grid.length; ++i) {
-            int bestRow = 0;
-            int bestCol = 0;
+            int row = 0;
+            int col = 0;
             for (int j = 0; j < grid.length; ++j) {
                 if (grid[i][j] > 0) {
                     result++;
                 }
-                bestRow = Math.max(bestRow, grid[i][j]);
-                bestCol = Math.max(bestCol, grid[j][i]);
+                row = Math.max(row, grid[i][j]);
+                col = Math.max(col, grid[j][i]);
             }
-            result += bestRow + bestCol;
+            result += row + col;
         }
         return result;
     }
