@@ -16,6 +16,6 @@ public class EP167 {
                 }
             }
         }
-        return new int[]{-1, -1};
+        return null;
     }
 }
