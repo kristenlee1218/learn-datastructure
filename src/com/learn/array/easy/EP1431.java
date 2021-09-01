@@ -12,7 +12,6 @@ import java.util.List;
  * 此孩子有最多的糖果。注意允许有多个孩子同时拥有最多的糖果数目
  */
 public class EP1431 {
-
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int max = 0;
         List<Boolean> list = new ArrayList<>();

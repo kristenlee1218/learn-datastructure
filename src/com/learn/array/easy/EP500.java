@@ -30,26 +30,25 @@ public class EP500 {
             boolean flag1 = false;
             boolean flag2 = false;
             boolean flag3 = false;
-            String word = s;
-            for (int j = 0; j < word.length(); j++) {
-                if (set1.contains(word.charAt(j))) {
+            for (int j = 0; j < s.length(); j++) {
+                if (set1.contains(s.charAt(j))) {
                     flag1 = true;
                 }
-                if (set2.contains(word.charAt(j))) {
+                if (set2.contains(s.charAt(j))) {
                     flag2 = true;
                 }
-                if (set3.contains(word.charAt(j))) {
+                if (set3.contains(s.charAt(j))) {
                     flag3 = true;
                 }
             }
             if (flag1 && !flag2 && !flag3) {
-                list.add(word);
+                list.add(s);
             }
             if (!flag1 && flag2 && !flag3) {
-                list.add(word);
+                list.add(s);
             }
             if (!flag1 && !flag2 && flag3) {
-                list.add(word);
+                list.add(s);
             }
         }
         String[] res = new String[list.size()];

@@ -25,7 +25,7 @@ public class EP728 {
                     flag = false;
                     break;
                 }
-                temp = temp / 10;
+                temp /= 10;
             }
             for (Integer x : set) {
                 if (num % x != 0) {

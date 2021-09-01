@@ -8,7 +8,6 @@ package com.learn.array.easy;
  * 以数组形式返回答案
  */
 public class EP1365 {
-
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] result = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {

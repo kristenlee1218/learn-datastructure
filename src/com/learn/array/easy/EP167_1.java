@@ -19,6 +19,6 @@ public class EP167_1 {
             }
             map.put(numbers[i], i);
         }
-        return new int[]{-1, -1};
+        return null;
     }
 }

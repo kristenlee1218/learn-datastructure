@@ -12,7 +12,7 @@ public class EP1491 {
     public double average(int[] salary) {
         Arrays.sort(salary);
         double sum = 0;
-        double average = 0;
+        double average;
         for (int i = 1; i < salary.length - 1; i++) {
             sum += salary[i];
         }

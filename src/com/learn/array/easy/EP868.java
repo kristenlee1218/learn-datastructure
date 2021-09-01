@@ -19,7 +19,7 @@ public class EP868 {
                 max = Math.max(max, count);
                 count = 1;
             }
-            nums = nums / 2;
+            nums /= 2;
         }
         return max;
     }

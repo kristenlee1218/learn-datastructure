@@ -12,15 +12,16 @@ public class EP724 {
         if (nums.length == 0) {
             return -1;
         }
-        int sum = 0, leftsum = 0;
+        int sum = 0;
+        int leftSum = 0;
         for (int num : nums) {
             sum += num;
         }
-        for (int j = 0; j < nums.length; j++) {
-            if (leftsum == sum - leftsum - nums[j]) {
-                return j;
+        for (int i = 0; i < nums.length; i++) {
+            if (leftSum == sum - leftSum - nums[i]) {
+                return i;
             }
-            leftsum += nums[j];
+            leftSum += nums[i];
         }
         return -1;
     }
