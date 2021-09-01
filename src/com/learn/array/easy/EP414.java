@@ -13,19 +13,19 @@ public class EP414 {
         int two = Integer.MIN_VALUE;
         int three = Integer.MIN_VALUE;
         boolean b = false;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] >= one) {
-                one = nums[i];
+        for (int num : nums) {
+            if (num >= one) {
+                one = num;
             }
         }
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] >= two && nums[i] != one) {
-                two = nums[i];
+        for (int num : nums) {
+            if (num >= two && num != one) {
+                two = num;
             }
         }
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] >= three && nums[i] != two && nums[i] != one) {
-                three = nums[i];
+        for (int num : nums) {
+            if (num >= three && num != two && num != one) {
+                three = num;
                 b = true;
             }
         }
