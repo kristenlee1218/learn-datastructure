@@ -8,9 +8,11 @@ package com.learn.math.easy;
 public class EP171 {
     public int titleToNumber(String s) {
         int result = 0;
-        for (int i = 0; i < s.length(); i++) {
+        int i = 0;
+        while (i < s.length()) {
             int num = s.charAt(i) - 'A' + 1;
             result = result * 26 + num;
+            i++;
         }
         return result;
     }

@@ -11,9 +11,9 @@ import java.util.List;
  */
 public class EP119 {
     public List<Integer> getRow(int rowIndex) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         for (int i = 0; i <= rowIndex; i++) {
-            List<Integer> subList = new ArrayList<Integer>();
+            List<Integer> subList = new ArrayList<>();
             for (int j = 0; j <= i; j++) {
                 if (j == 0 || j == i) {
                     subList.add(1);

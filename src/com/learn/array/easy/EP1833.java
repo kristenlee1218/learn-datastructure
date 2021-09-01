@@ -16,8 +16,8 @@ public class EP1833 {
         Arrays.sort(costs);
         int sum = 0, count = 0;
         // 贪心算法
-        for (int i = 0; i < costs.length; i++) {
-            sum += costs[i];
+        for (int cost : costs) {
+            sum += cost;
             if (sum > coins) {
                 break;
             }

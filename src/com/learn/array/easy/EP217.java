@@ -13,8 +13,8 @@ import java.util.Set;
 public class EP217 {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < nums.length; i++) {
-            set.add(nums[i]);
+        for (int num : nums) {
+            set.add(num);
         }
         return !(set.size() == nums.length);
     }

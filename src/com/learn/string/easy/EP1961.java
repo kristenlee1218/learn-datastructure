@@ -12,8 +12,8 @@ package com.learn.string.easy;
 public class EP1961 {
     public boolean isPrefixString(String s, String[] words) {
         String result = "";
-        for (int i = 0; i < words.length; i++) {
-            result += words[i];
+        for (String word : words) {
+            result += word;
             if (result.equals(s)) {
                 return true;
             }

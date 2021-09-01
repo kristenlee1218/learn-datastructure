@@ -7,13 +7,13 @@ package com.learn.math.easy;
  * 则返回 True，否则返回 False
  */
 public class EP367 {
-    public boolean isPerfectSquare(int num) {
-        int i = 0, j = num, mid;
+    public boolean isPerfectSquare(int n) {
+        int i = 0, j = n, mid;
         while (i <= j) {
             mid = (i + j) / 2;
-            if ((long) mid * mid < num) {
+            if ((long) mid * mid < n) {
                 i = mid + 1;
-            } else if ((long) mid * mid > num) {
+            } else if ((long) mid * mid > n) {
                 j = mid - 1;
             } else {
                 return true;

@@ -20,6 +20,7 @@ public class EP747 {
         for (int i = 0; i < nums.length; i++) {
             if (i != index && flag < nums[i] * 2) {
                 index = -1;
+                break;
             }
         }
         return index;

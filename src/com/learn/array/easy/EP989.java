@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class EP989 {
     public List<Integer> addToArrayForm(int[] nums, int k) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         for (int i = nums.length - 1; i >= 0; --i) {
             int sum = nums[i] + k % 10;
             k /= 10;

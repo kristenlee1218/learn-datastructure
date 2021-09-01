@@ -12,17 +12,17 @@ public class EP1351 {
         int m = grid.length;
         int n = grid[0].length;
         // 按行来遍历
-        for (int i = 0; i < m; i++) {
+        for (int[] ints : grid) {
             int left = 0;
             int right = n - 1;
             while (left <= right) {
                 int mid = right - (right - left) / 2;
-                if (grid[i][mid] < 0) {
+                if (ints[mid] < 0) {
                     if (mid == 0) {
                         count += n;
                         break;
                     }
-                    if (grid[i][mid - 1] >= 0) {
+                    if (ints[mid - 1] >= 0) {
                         count += n - mid;
                         break;
                     } else {

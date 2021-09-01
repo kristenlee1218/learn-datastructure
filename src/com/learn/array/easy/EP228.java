@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class EP228 {
     public List<String> summaryRanges(int[] nums) {
-        List<String> ans = new ArrayList<String>();
+        List<String> ans = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < nums.length; ++i) {
             if (!(i + 1 < nums.length && nums[i] == nums[i + 1] - 1)) {
@@ -23,7 +23,9 @@ public class EP228 {
                 ans.add(sb.toString());
                 sb = new StringBuilder();
             } else {
-                if (sb.length() == 0) sb.append(nums[i]);
+                if (sb.length() == 0) {
+                    sb.append(nums[i]);
+                }
             }
         }
         return ans;

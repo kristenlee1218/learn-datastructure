@@ -14,6 +14,7 @@ public class EP1346 {
             for (int j = 0; j < arr.length; j++) {
                 if (i != j && arr[i] == 2 * arr[j]) {
                     flag = true;
+                    break;
                 }
             }
         }

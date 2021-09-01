@@ -18,20 +18,16 @@ public class EP941 {
         }
         int peakCount = 0;
         for (int i = 1; i < A.length - 1; i++) {
-            // 平地
             if (A[i - 1] == A[i]) {
                 return false;
             }
-            // 山谷
             if (A[i - 1] > A[i] && A[i] < A[i + 1]) {
                 return false;
             }
-            // 山峰
             if (A[i - 1] < A[i] && A[i] > A[i + 1]) {
                 peakCount++;
             }
         }
-        // 有且只有 1 个山峰
         return peakCount == 1;
     }
 }

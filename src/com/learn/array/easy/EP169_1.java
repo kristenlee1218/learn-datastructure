@@ -9,13 +9,13 @@ package com.learn.array.easy;
 public class EP169_1 {
     public int majorityElement(int[] nums) {
         int count = 0;
-        Integer candidate = null;
+        int result = 0;
         for (int num : nums) {
             if (count == 0) {
-                candidate = num;
+                result = num;
             }
-            count += (num == candidate) ? 1 : -1;
+            count += (num == result) ? 1 : -1;
         }
-        return candidate;
+        return result;
     }
 }

@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class EP1399 {
     public int countLargestGroup(int n) {
-        Map<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> hashMap = new HashMap<>();
         int maxValue = 0;
         for (int i = 1; i <= n; i++) {
             int key = 0, j = i;

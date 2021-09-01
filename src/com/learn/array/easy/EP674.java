@@ -22,7 +22,7 @@ public class EP674 {
             } else {
                 count = 1;
             }
-            ans = count > ans ? count : ans;
+            ans = Math.max(count, ans);
         }
         return ans;
     }

@@ -16,9 +16,9 @@ import java.util.List;
 public class EP1773 {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int count = 0, index = 0;
-        if (ruleKey.equals("color")) {
+        if ("color".equals(ruleKey)) {
             index = 1;
-        } else if (ruleKey.equals("name")) {
+        } else if ("name".equals(ruleKey)) {
             index = 2;
         }
         for (List<String> list : items) {

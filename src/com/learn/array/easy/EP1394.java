@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class EP1394 {
     public int findLucky(int[] arr) {
-        Map<Integer, Integer> m = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> m = new HashMap<>();
         for (int x : arr) {
             m.put(x, m.getOrDefault(x, 0) + 1);
         }

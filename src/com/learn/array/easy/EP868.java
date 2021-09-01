@@ -16,7 +16,7 @@ public class EP868 {
             if (nums % 2 == 0 && count > 0) {
                 count++;
             } else if (nums % 2 == 1) {
-                max = max > count ? max : count;
+                max = Math.max(max, count);
                 count = 1;
             }
             nums = nums / 2;

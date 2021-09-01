@@ -12,7 +12,7 @@ import java.util.Set;
 
 public class EP268 {
     public int missingNumber(int[] nums) {
-        Set<Integer> set = new HashSet<Integer>();
+        Set<Integer> set = new HashSet<>();
         for (int num : nums) {
             set.add(num);
         }

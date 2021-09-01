@@ -18,7 +18,6 @@ public class EP1619 {
         for (int i = length1; i < length - length1; i++) {
             sum += arr[i];
         }
-        double result = sum / count;
-        return result;
+        return sum / count;
     }
 }

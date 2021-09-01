@@ -26,11 +26,11 @@ public class EP500 {
         for (int i = 0; i < row3.length(); i++) {
             set3.add(row3.charAt(i));
         }
-        for (int i = 0; i < words.length; i++) {
+        for (String s : words) {
             boolean flag1 = false;
             boolean flag2 = false;
             boolean flag3 = false;
-            String word = words[i];// 每一个单词
+            String word = s;
             for (int j = 0; j < word.length(); j++) {
                 if (set1.contains(word.charAt(j))) {
                     flag1 = true;

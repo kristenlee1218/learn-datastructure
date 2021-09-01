@@ -11,7 +11,6 @@ package com.learn.math.easy;
  */
 public class EP1688 {
     public int numberOfMatches(int n) {
-        // 配对次数
         int count = 0;
         while (n != 1) {
             if (n % 2 == 0) {
