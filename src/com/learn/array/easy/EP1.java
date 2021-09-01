@@ -16,6 +16,6 @@ public class EP1 {
                 }
             }
         }
-        throw new IllegalArgumentException("Error");
+        return null;
     }
 }
