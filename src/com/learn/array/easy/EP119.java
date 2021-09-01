@@ -11,17 +11,18 @@ import java.util.List;
  */
 public class EP119 {
     public List<Integer> getRow(int rowIndex) {
-        List<Integer> result = new ArrayList<>(rowIndex + 1);
-        long cur = 1;
-        for (int i = 0; i <= rowIndex / 2; i++) {
-            result.add((int) cur);
-            cur = cur * (rowIndex - i) / (i + 1);
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i <= rowIndex; i++) {
+            List<Integer> subList = new ArrayList<>();
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
+                    subList.add(1);
+                } else {
+                    subList.add(list.get(j - 1) + list.get(j));
+                }
+            }
+            list = subList;
         }
-        int j = (rowIndex & 1) == 0 ? 2 : 1;
-        for (int i = rowIndex / 2 + 1; i <= rowIndex; i++) {
-            result.add(result.get(i - j));
-            j += 2;
-        }
-        return result;
+        return list;
     }
 }
