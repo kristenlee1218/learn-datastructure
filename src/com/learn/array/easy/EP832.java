@@ -8,15 +8,14 @@ package com.learn.array.easy;
  * 反转图片的意思是图片中的 0 全部被 1 替换 1 全部被 0 替换。例如反转 [0, 1, 1] 的结果是 [1, 0, 0]
  */
 public class EP832 {
-    public int[][] flipAndInvertImage(int[][] A) {
-        int x = A.length, y = A[0].length;
-        int[][] B = new int[x][y];
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
-                // 从后往前赋值，同时取反
-                B[i][y - j - 1] = 1 - A[i][j];
+    public int[][] flipAndInvertImage(int[][] nums) {
+        int[][] result = new int[nums.length][nums[0].length];
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums[0].length; j++) {
+                result[i][nums[0].length - j - 1] = 1 - nums[i][j];
             }
         }
-        return B;
+        return result;
     }
 }
+
