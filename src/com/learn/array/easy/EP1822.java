@@ -14,10 +14,10 @@ package com.learn.array.easy;
 public class EP1822 {
     public int arraySign(int[] nums) {
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == 0) {
+        for (int num : nums) {
+            if (num == 0) {
                 return 0;
-            } else if (nums[i] < 0) {
+            } else if (num < 0) {
                 count++;
             }
         }
