@@ -9,18 +9,18 @@ package com.learn.array.easy;
 public class EP922 {
     public int[] sortArrayByParityII(int[] nums) {
         int[] result = new int[nums.length];
-        int i = 0;
-        int j = 1;
-        for (int num : nums) {
-            if (num % 2 == 0) {
-                result[i] = num;
-                i += 2;
+        int j = 0;
+        int k = 1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                result[j] = nums[i];
+                j += 2;
             }
         }
-        for (int num : nums) {
-            if (num % 2 == 1) {
-                result[j] = num;
-                j += 2;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 != 0) {
+                result[k] = nums[i];
+                k += 2;
             }
         }
         return result;

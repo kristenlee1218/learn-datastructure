@@ -13,7 +13,7 @@ public class EP1588 {
             int temp = 0;
             for (int j = i; j < arr.length; j++) {
                 temp += arr[j];
-                if ((j - i) % 2 == 0) {
+                if (((j - i) % 2) == 0) {
                     sum += temp;
                 }
             }
