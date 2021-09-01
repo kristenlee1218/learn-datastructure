@@ -10,11 +10,9 @@ public class EP1588 {
     public int sumOddLengthSubarrays(int[] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            // 定义以arr[i]开头的满足条件的奇数长度数组的和
             int temp = 0;
             for (int j = i; j < arr.length; j++) {
                 temp += arr[j];
-                // 奇数长度时做加法
                 if ((j - i) % 2 == 0) {
                     sum += temp;
                 }
