@@ -11,9 +11,8 @@ import java.util.List;
 public class EP485 {
     public int findMaxConsecutiveOnes(int[] nums) {
         int max = 0, count = 0;
-        int n = nums.length;
-        for (int i = 0; i < n; i++) {
-            if (nums[i] == 1) {
+        for (int num : nums) {
+            if (num == 1) {
                 count++;
             } else {
                 max = Math.max(max, count);
