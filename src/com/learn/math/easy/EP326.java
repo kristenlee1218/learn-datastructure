@@ -14,7 +14,7 @@ public class EP326 {
             return true;
         }
         for (int i = 0; n % 3 == 0; i++) {
-            n = n / 3;
+            n /= 3;
             if (n == 1) {
                 return true;
             }

@@ -15,7 +15,7 @@ public class EP9 {
         int num = x;
         while (num != 0) {
             n = n * 10 + num % 10;
-            num = num / 10;
+            num /= 10;
         }
         return n == x;
     }

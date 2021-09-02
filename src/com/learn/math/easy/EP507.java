@@ -7,14 +7,17 @@ package com.learn.math.easy;
  * 给定一个 整数 n，如果是完美数，返回 true，否则返回 false
  */
 public class EP507 {
-    public boolean checkPerfectNumber(int num) {
-        if (num % 2 != 0) {
+    public boolean checkPerfectNumber(int n) {
+        if (n == 1) {
             return false;
         }
-        int count = 0;
-        for (int i = 2; i * i < num; i++) {
-            count += num % i == 0 ? i + num / i : 0;
+        int sum = 1;
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                sum += i;
+                sum += n / i;
+            }
         }
-        return count + 1 == num;
+        return sum == n;
     }
 }

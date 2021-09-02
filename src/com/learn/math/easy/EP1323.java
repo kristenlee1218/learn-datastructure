@@ -8,7 +8,8 @@ package com.learn.math.easy;
  */
 public class EP1323 {
 
-    public int maximum69Number(int num) {
-        return Integer.valueOf(String.valueOf(num).replaceFirst("6", "9"));
+    public int maximum69Number(int n) {
+
+        return Integer.parseInt(String.valueOf(n).replaceFirst("6", "9"));
     }
 }

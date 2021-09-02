@@ -12,13 +12,13 @@ public class EP1154 {
         int year = 0, day = 0;
         int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         String[] dates = date.split("-");
-        year = Integer.valueOf(dates[0]);
-        if (year % 4 == 0 && year % 100 != 0 || year % 40 == 0) {
+        year = Integer.parseInt(dates[0]);
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             days[1] = 29;
         }
-        for (int i = 0; i < Integer.valueOf(dates[1]) - 1; i++) {
+        for (int i = 0; i < Integer.parseInt(dates[1]) - 1; i++) {
             day += days[i];
         }
-        return day + Integer.valueOf(dates[2]);
+        return day + Integer.parseInt(dates[2]);
     }
 }

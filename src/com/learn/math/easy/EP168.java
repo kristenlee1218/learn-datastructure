@@ -14,7 +14,7 @@ public class EP168 {
         while (n > 0) {
             n--;
             sb.append((char) (n % 26 + 'A'));
-            n = n / 26;
+            n /= 26;
         }
         return sb.reverse().toString();
     }

@@ -12,17 +12,17 @@ package com.learn.math.easy;
  * 不能使用任何由库提供的将数字直接转换或格式化为十六进制的方法。
  */
 public class EP405_1 {
-    public String toHex(int num) {
+    public String toHex(int n) {
         char[] ch = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a',
                 'b', 'c', 'd', 'e', 'f'};
-        if (num == 0) {
+        if (n == 0) {
             return "0";
         }
         String s = "";
-        while (num != 0) {
-            int i = num & 15;
+        while (n != 0) {
+            int i = n & 15;
             s = ch[i] + s;
-            num >>>= 4;
+            n >>>= 4;
         }
         return s;
     }

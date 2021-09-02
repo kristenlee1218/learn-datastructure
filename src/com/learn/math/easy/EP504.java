@@ -6,7 +6,7 @@ package com.learn.math.easy;
  * @description :给定一个整数，将其转化为7进制，并以字符串形式输出
  */
 public class EP504 {
-    public String convertToBase7(int num) {
-        return Integer.toString(num, 7);
+    public String convertToBase7(int n) {
+        return Integer.toString(n, 7);
     }
 }

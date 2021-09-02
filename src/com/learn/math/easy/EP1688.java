@@ -15,7 +15,7 @@ public class EP1688 {
         while (n != 1) {
             if (n % 2 == 0) {
                 count += n / 2;
-                n = n / 2;
+                n /= 2;
             } else if (n % 2 != 0) {
                 count += (n - 1) / 2;
                 n = (n + 1) / 2;

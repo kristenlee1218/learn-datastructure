@@ -12,7 +12,7 @@ package com.learn.math.easy;
  * 不能使用任何由库提供的将数字直接转换或格式化为十六进制的方法。
  */
 public class EP405 {
-    public String toHex(int num) {
-        return Integer.toHexString(num);
+    public String toHex(int n) {
+        return Integer.toHexString(n);
     }
 }

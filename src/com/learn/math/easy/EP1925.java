@@ -1,7 +1,7 @@
 package com.learn.math.easy;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author : Kristen

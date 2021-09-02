@@ -14,7 +14,7 @@ public class EP231 {
             return true;
         }
         for (int i = 0; n % 2 == 0; i++) {
-            n = n / 2;
+            n /= 2;
             if (n == 1) {
                 return true;
             }
