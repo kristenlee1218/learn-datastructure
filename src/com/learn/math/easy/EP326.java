@@ -6,7 +6,7 @@ package com.learn.math.easy;
  * @description :给定一个整数，编写一个函数来判断它是否是 3 的幂次方
  */
 public class EP326 {
-    public boolean isPowerOfTwo(int n) {
+    public boolean isPowerOfThree(int n) {
         if (n == 0) {
             return false;
         }
@@ -14,7 +14,7 @@ public class EP326 {
             return true;
         }
         for (int i = 0; n % 3 == 0; i++) {
-            n /= 3;
+            n = n / 3;
             if (n == 1) {
                 return true;
             }

@@ -9,14 +9,15 @@ package com.learn.math.easy;
  */
 public class EP1154 {
     public int dayOfYear(String date) {
-        int year = 0, day = 0;
-        int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         String[] dates = date.split("-");
-        year = Integer.parseInt(dates[0]);
+        int year = Integer.parseInt(dates[0]);
+        int month = Integer.parseInt(dates[1]);
+        int day = 0;
+        int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             days[1] = 29;
         }
-        for (int i = 0; i < Integer.parseInt(dates[1]) - 1; i++) {
+        for (int i = 0; i < month - 1; i++) {
             day += days[i];
         }
         return day + Integer.parseInt(dates[2]);

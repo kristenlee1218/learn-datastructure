@@ -7,9 +7,7 @@ package com.learn.math.easy;
  * 将 6 变成 9，或者把 9 变成 6、请返回你可以得到的最大数字
  */
 public class EP1323 {
-
     public int maximum69Number(int n) {
-
         return Integer.parseInt(String.valueOf(n).replaceFirst("6", "9"));
     }
 }

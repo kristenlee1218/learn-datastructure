@@ -17,7 +17,8 @@ public class EP13 {
     public int romanToInt(String s) {
         int sum = 0;
         int pre = getVal(s.charAt(0));
-        for (int i = 1; i < s.length(); i++) {
+        int i = 1;
+        while (i < s.length()) {
             int cur = getVal(s.charAt(i));
             if (cur > pre) {
                 sum -= pre;
@@ -25,6 +26,7 @@ public class EP13 {
                 sum += pre;
             }
             pre = cur;
+            i++;
         }
         sum += pre;
         return sum;

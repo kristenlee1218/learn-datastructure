@@ -7,13 +7,13 @@ package com.learn.math.easy;
  * 需要把它除以 2、否则减去 1
  */
 public class EP1342 {
-    public int numberOfSteps(int n) {
+    public int numberOfSteps(int num) {
         int count = 0;
-        while (n != 0) {
-            if (n % 2 == 0) {
-                n /= 2;
+        while (num != 0) {
+            if (num % 2 == 0) {
+                num /= 2;
             } else {
-                n -= 1;
+                num -= 1;
             }
             count++;
         }
