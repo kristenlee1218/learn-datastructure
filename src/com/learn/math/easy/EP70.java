@@ -8,7 +8,9 @@ package com.learn.math.easy;
  */
 public class EP70 {
     public int climbStairs(int n) {
-        int p, q = 0, r = 1;
+        int p = 0;
+        int q = 0;
+        int r = 1;
         for (int i = 1; i <= n; i++) {
             p = q;
             q = r;

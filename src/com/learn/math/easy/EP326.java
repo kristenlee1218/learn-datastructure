@@ -13,7 +13,7 @@ public class EP326 {
         if (n == 1) {
             return true;
         }
-        for (int i = 0; n % 3 == 0; i++) {
+        while (n % 3 == 0) {
             n = n / 3;
             if (n == 1) {
                 return true;

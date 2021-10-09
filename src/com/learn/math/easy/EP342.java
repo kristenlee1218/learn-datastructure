@@ -13,7 +13,7 @@ public class EP342 {
         if (n == 1) {
             return true;
         }
-        for (int i = 0; n % 4 == 0; i++) {
+        while (n % 4 == 0) {
             n /= 4;
             if (n == 1) {
                 return true;

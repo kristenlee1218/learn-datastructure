@@ -13,16 +13,16 @@ package com.learn.math.easy;
  */
 public class EP405_1 {
     public String toHex(int num) {
-        char[] ch = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
+        char[] ch = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
         if (num == 0) {
             return "0";
         }
-        String s = "";
+        StringBuilder s = new StringBuilder();
         while (num != 0) {
             int i = num & 15;
-            s = ch[i] + s;
+            s.insert(0, ch[i]);
             num >>>= 4;
         }
-        return s;
+        return s.toString();
     }
 }
