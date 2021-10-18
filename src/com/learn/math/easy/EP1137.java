@@ -9,15 +9,16 @@ package com.learn.math.easy;
  * 整数 n，请返回第 n 个泰波那契数 Tn 的值
  */
 public class EP1137 {
-    public int tri(int n) {
+    public int tribonacci(int n) {
         return fun(n, 0, 1, 1);
     }
+
     int fun(int n, int a, int b, int c) {
-        if (n == 0) {
-            return 0;
-        }
         if (n == 1) {
             return b;
+        }
+        if (n == 0) {
+            return 0;
         }
         return fun(n - 1, b, c, a + b + c);
     }

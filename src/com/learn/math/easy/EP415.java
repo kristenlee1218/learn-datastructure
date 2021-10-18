@@ -12,15 +12,15 @@ package com.learn.math.easy;
  * 不能使用任何內建 BigInteger 库， 也不能直接将输入的字符串转换为整数形式
  */
 public class EP415 {
-    public String addStrings(String num1, String num2) {
+    public String addStrings(String a, String b) {
         StringBuilder sb = new StringBuilder();
-        int count = 0, i = num1.length() - 1, j = num2.length() - 1;
+        int count = 0, i = a.length() - 1, j = b.length() - 1;
         while (i >= 0 || j >= 0 || count != 0) {
             if (i >= 0) {
-                count += num1.charAt(i--) - '0';
+                count += a.charAt(i--) - '0';
             }
             if (j >= 0) {
-                count += num2.charAt(j--) - '0';
+                count += b.charAt(j--) - '0';
             }
             sb.append(count % 10);
             count /= 10;
