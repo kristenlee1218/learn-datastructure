@@ -13,13 +13,11 @@ public class EP231 {
         if (n == 1) {
             return true;
         }
-        int i = 0;
         while (n % 2 == 0) {
             n /= 2;
             if (n == 1) {
                 return true;
             }
-            i++;
         }
         return false;
     }

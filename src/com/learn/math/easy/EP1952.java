@@ -11,10 +11,10 @@ public class EP1952 {
         int count = 0;
         for (int i = 1; i * i <= n; i++) {
             if (n % i == 0) {
-                if (i != n / i) {
-                    count += 2;
+                if (i == n / i) {
+                    count++;
                 } else {
-                    count += 1;
+                    count += 2;
                 }
             }
         }

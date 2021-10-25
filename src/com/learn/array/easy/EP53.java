@@ -7,7 +7,6 @@ package com.learn.array.easy;
  * 返回其最大和
  */
 public class EP53 {
-
     public int maxSubArray(int[] nums) {
         int res = nums[0];
         int sum = 0;

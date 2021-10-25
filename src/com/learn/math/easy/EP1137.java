@@ -14,11 +14,11 @@ public class EP1137 {
     }
 
     int fun(int n, int a, int b, int c) {
-        if (n == 1) {
-            return b;
-        }
         if (n == 0) {
             return 0;
+        }
+        if (n == 1) {
+            return b;
         }
         return fun(n - 1, b, c, a + b + c);
     }
