@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.dynamic.easy;
 
 import java.util.ArrayList;
 import java.util.List;

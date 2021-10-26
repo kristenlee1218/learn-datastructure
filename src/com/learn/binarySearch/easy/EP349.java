@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.binarySearch.easy;
 
 import java.util.HashSet;
 import java.util.Set;

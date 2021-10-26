@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.greedy.easy;
 
 import java.util.Arrays;
 /**

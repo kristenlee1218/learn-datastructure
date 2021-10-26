@@ -1,4 +1,4 @@
-package com.learn.math.easy;
+package com.learn.greedy.easy;
 
 /**
  * @author : Kristen
