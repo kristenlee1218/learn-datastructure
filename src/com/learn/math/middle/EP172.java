@@ -1,4 +1,4 @@
-package com.learn.math.easy;
+package com.learn.math.middle;
 
 /**
  * @author : Kristen

@@ -16,15 +16,15 @@ package com.learn.math.easy;
  */
 public class EP1103 {
     public int[] distributeCandies(int candies, int people) {
-        int[] nums = new int[people];
+        int[] result = new int[people];
         int j = 1;
         while (candies > 0) {
-            for (int i = 0; i < nums.length && candies > 0; i++) {
-                nums[i] += Math.min(candies, j);
+            for (int i = 0; i < result.length && candies > 0; i++) {
+                result[i] += Math.min(candies, j);
                 candies = candies - j;
                 j++;
             }
         }
-        return nums;
+        return result;
     }
 }

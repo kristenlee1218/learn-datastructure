@@ -10,7 +10,7 @@ package com.learn.math.easy;
  * 由于答案可能会很大，所以请你返回答案 模 mod 10^9 + 7 之后的结果即可
  */
 public class EP1175 {
-    public int isPrime(int n) { //n>=3,且为奇数(不考虑偶数)
+    public int isPrime(int n) {
         for (int i = 3; i <= (int) Math.sqrt(n); i += 2) {
             if (n % i == 0) {
                 return 0;
@@ -20,18 +20,17 @@ public class EP1175 {
     }
 
     public int numPrimeArrangements(int n) {
-        //对2特判
         int primeCount = n >= 2 ? 1 : 0;
         for (int i = 3; i <= n; i += 2) {
             primeCount += isPrime(i);
         }
-        long ans = 1;
+        long result = 1;
         for (int i = 2; i <= primeCount; i++) {
-            ans = ans * i % 1000000007;
+            result = result * i % 1000000007;
         }
         for (int i = n - primeCount; i > 1; i--) {
-            ans = ans * i % 1000000007;
+            result = result * i % 1000000007;
         }
-        return (int) ans;
+        return (int) result;
     }
 }
