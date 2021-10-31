@@ -9,27 +9,10 @@ package com.learn.binarySearch.easy;
 public class EP1351 {
     public int countNegatives(int[][] grid) {
         int count = 0;
-        int m = grid.length;
-        int n = grid[0].length;
-        // 按行来遍历
-        for (int[] ints : grid) {
-            int left = 0;
-            int right = n - 1;
-            while (left <= right) {
-                int mid = right - (right - left) / 2;
-                if (ints[mid] < 0) {
-                    if (mid == 0) {
-                        count += n;
-                        break;
-                    }
-                    if (ints[mid - 1] >= 0) {
-                        count += n - mid;
-                        break;
-                    } else {
-                        right = mid - 1;
-                    }
-                } else {
-                    left = mid + 1;
+        for (int[] nums : grid) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (nums[j] < 0) {
+                    count++;
                 }
             }
         }

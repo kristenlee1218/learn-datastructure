@@ -8,10 +8,10 @@ package com.learn.binarySearch.easy;
  */
 
 public class EP167 {
-    public int[] twoSum(int[] numbers, int target) {
-        for (int i = 0; i < numbers.length; i++) {
-            for (int j = i + 1; j < numbers.length; j++) {
-                if (numbers[j] == target - numbers[i]) {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (target - nums[i] == nums[j]) {
                     return new int[]{i + 1, j + 1};
                 }
             }
