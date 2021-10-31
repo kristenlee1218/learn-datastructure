@@ -6,12 +6,18 @@ package com.learn.test;
  * @description :
  */
 public class Test {
-    public int trailingZeroes(int n) {
-        int count = 0;
-        while (n >= 5) {
-            count += n / 5;
-            n /= 5;
+    public int binaryGap(int n) {
+        int max = 0, count = 0;
+        while (n >= 1) {
+            if (n % 2 == 0 && count > 0) {
+                count++;
+            } else if (n % 2 == 1) {
+                max = Math.max(max, count);
+                count = 1;
+            }
+            n /= 2;
         }
-        return count;
+        return max;
     }
+
 }

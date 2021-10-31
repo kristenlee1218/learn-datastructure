@@ -1,4 +1,4 @@
-package com.learn.math.easy;
+package com.learn.array.easy;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -9,7 +9,7 @@ public class EP1281 {
     public int subtractProductAndSum(int n) {
         int multi = 1;
         int sum = 0;
-        while (n != 0) {
+        while (n > 0) {
             multi *= n % 10;
             sum += n % 10;
             n /= 10;

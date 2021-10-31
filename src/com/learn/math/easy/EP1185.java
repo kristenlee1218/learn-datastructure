@@ -13,7 +13,6 @@ import java.util.Calendar;
 public class EP1185 {
     String[] week = new String[]{"Sunday", "Monday", "Tuesday",
             "Wednesday", "Thursday", "Friday", "Saturday"};
-
     public String dayOfTheWeek(int day, int month, int year) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, year);

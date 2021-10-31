@@ -19,9 +19,9 @@ public class EP1103 {
         int[] result = new int[people];
         int j = 1;
         while (candies > 0) {
-            for (int i = 0; i < result.length && candies > 0; i++) {
+            for (int i = 0; i < people && candies > 0; i++) {
                 result[i] += Math.min(candies, j);
-                candies = candies - j;
+                candies -= j;
                 j++;
             }
         }

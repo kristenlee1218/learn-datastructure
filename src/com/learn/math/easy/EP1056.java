@@ -10,10 +10,10 @@ package com.learn.math.easy;
  */
 public class EP1056 {
     public boolean confusingNumber(int n) {
-        String x = String.valueOf(n);
+        String s = String.valueOf(n);
         StringBuilder sb = new StringBuilder();
-        for (int i = x.length() - 1; i >= 0; i--) {
-            char c = x.charAt(i);
+        for (int i = s.length() - 1; i >= 0; i--) {
+            char c = s.charAt(i);
             if (c == '2' || c == '3' || c == '4' || c == '5' || c == '7') {
                 return false;
             }
@@ -24,6 +24,6 @@ public class EP1056 {
             }
             sb.append(c);
         }
-        return !sb.toString().equals(x);
+        return !sb.toString().equals(s);
     }
 }

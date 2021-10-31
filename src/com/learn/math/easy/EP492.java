@@ -12,10 +12,10 @@ package com.learn.math.easy;
  */
 public class EP492 {
     public int[] constructRectangle(int area) {
-        int w = (int) Math.sqrt(area);
-        while (area % w != 0) {
-            --w;
+        int width = (int) Math.sqrt(area);
+        while (area % width != 0) {
+            --width;
         }
-        return new int[]{area / w, w};
+        return new int[]{area / width, width};
     }
 }
