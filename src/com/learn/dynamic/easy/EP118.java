@@ -10,18 +10,18 @@ import java.util.List;
  * 在「杨辉三角」中，每个数是它左上方和右上方的数的和
  */
 public class EP118 {
-    public List<List<Integer>> generate(int numRows) {
+    public List<List<Integer>> generate(int row) {
         List<List<Integer>> list = new ArrayList<>();
-        int[][] arr = new int[numRows][numRows];
-        for (int i = 0; i < numRows; i++) {
+        int[][] result = new int[row][row];
+        for (int i = 0; i < row; i++) {
             List<Integer> subList = new ArrayList<>();
             for (int j = 0; j <= i; j++) {
                 if (j == 0 || j == i) {
-                    arr[i][j] = 1;
+                    result[i][j] = 1;
                 } else {
-                    arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+                    result[i][j] = result[i - 1][j - 1] + result[i - 1][j];
                 }
-                subList.add(arr[i][j]);
+                subList.add(result[i][j]);
             }
             list.add(subList);
         }

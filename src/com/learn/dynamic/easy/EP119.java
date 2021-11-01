@@ -10,9 +10,9 @@ import java.util.List;
  * 在「杨辉三角」中，每个数是它左上方和右上方的数的和
  */
 public class EP119 {
-    public List<Integer> getRow(int rowIndex) {
+    public List<Integer> getRow(int row) {
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i <= rowIndex; i++) {
+        for (int i = 0; i <= row; i++) {
             List<Integer> subList = new ArrayList<>();
             for (int j = 0; j <= i; j++) {
                 if (j == 0 || j == i) {
