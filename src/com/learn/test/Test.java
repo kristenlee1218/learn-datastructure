@@ -6,14 +6,21 @@ package com.learn.test;
  * @description :
  */
 public class Test {
-    public boolean isSubSequence(String s, String t) {
-        int i = 0, j = 0;
-        while (i < s.length() && j < t.length()) {
-            if (s.charAt(i) == t.charAt(j)) {
-                i++;
-            }
-            j++;
+    public int tribonacci(int n) {
+        if (n == 0) {
+            return 0;
         }
-        return i == s.length();
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        int p, q = 0;
+        int r = 1, s = 1;
+        for (int i = 3; i <= n; i++) {
+            p = q;
+            q = r;
+            r = s;
+            s = p + q + r;
+        }
+        return s;
     }
 }

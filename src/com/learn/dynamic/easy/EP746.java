@@ -8,14 +8,20 @@ package com.learn.dynamic.easy;
  * 一旦支付了相应的体力值，你就可以选择向上爬一个阶梯或者爬两个阶梯。
  * 请你找出达到楼层顶部的最低花费。在开始时，你可以选择从下标为 0 或 1
  * 的元素作为初始阶梯
+ * <p>
+ * 题目解析：
+ * 我觉得这个题的描述应该改改：每个阶梯都有一定数量坨屎，一次只能跨一个或者两个阶梯，
+ * 走到一个阶梯就要吃光上面的屎，问怎么走才能吃最少的屎？开局你选前两个阶梯的其中
+ * 一个作为开头点，并吃光该阶梯的屎。
  */
 public class EP746 {
-    public int minCostClimbingStairs(int[] cost) {
-        int[] dp = new int[cost.length + 1];
-        dp[0] = dp[1] = 0;
+    public  int minCostClimbingStairs(int[] cost) {
+        int[] result = new int[cost.length + 1];
+        result[0] = result[1] = 0;
         for (int i = 2; i <= cost.length; i++) {
-            dp[i] = Math.min(dp[i - 1] + cost[i - 1], dp[i - 2] + cost[i - 2]);
+            result[i] = Math.min(result[i - 1] + cost[i - 1],
+                    result[i - 2] + cost[i - 2]);
         }
-        return dp[cost.length];
+        return result[cost.length];
     }
 }

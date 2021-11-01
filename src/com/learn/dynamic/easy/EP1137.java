@@ -10,16 +10,19 @@ package com.learn.dynamic.easy;
  */
 public class EP1137 {
     public int tribonacci(int n) {
-        return fun(n, 0, 1, 1);
-    }
-
-    int fun(int n, int a, int b, int c) {
         if (n == 0) {
             return 0;
         }
-        if (n == 1) {
-            return b;
+        if (n == 1 || n == 2) {
+            return 1;
         }
-        return fun(n - 1, b, c, a + b + c);
+        int p = 0, q = 0, r = 1, s = 1;
+        for (int i = 3; i <= n; ++i) {
+            p = q;
+            q = r;
+            r = s;
+            s = p + q + r;
+        }
+        return s;
     }
 }

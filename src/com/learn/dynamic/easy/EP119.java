@@ -18,7 +18,7 @@ public class EP119 {
                 if (j == 0 || j == i) {
                     subList.add(1);
                 } else {
-                    subList.add(list.get(j - 1) + list.get(j));
+                    subList.add(list.get(j) + list.get(j - 1));
                 }
             }
             list = subList;
