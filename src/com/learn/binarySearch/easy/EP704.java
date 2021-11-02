@@ -11,10 +11,10 @@ public class EP704 {
         int low = 0, high = nums.length - 1;
         while (low <= high) {
             int mid = (high - low) / 2 + low;
-            int num = nums[mid];
-            if (num > target) {
+            int value = nums[mid];
+            if (value > target) {
                 high = mid - 1;
-            } else if (num < target) {
+            } else if (value < target) {
                 low = mid + 1;
             } else {
                 return mid;

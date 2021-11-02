@@ -11,20 +11,20 @@ import java.util.List;
 public class EP350 {
     public int[] intersect(int[] nums1, int[] nums2) {
         List<Integer> list1 = new ArrayList<>();
-        for (int num : nums1) {
-            list1.add(num);
+        for (int value : nums1) {
+            list1.add(value);
         }
         List<Integer> list2 = new ArrayList<>();
-        for (int num : nums2) {
-            if (list1.contains(num)) {
-                list2.add(num);
-                list1.remove(Integer.valueOf(num));
+        for (int value : nums2) {
+            if (list1.contains(value)) {
+                list2.add(value);
+                list1.remove(Integer.valueOf(value));
             }
         }
         int[] result = new int[list2.size()];
-        int i = 0;
-        for (int num : list2) {
-            result[i++] = num;
+        int index = 0;
+        for (int value : list2) {
+            result[index++] = value;
         }
         return result;
     }

@@ -1,9 +1,6 @@
 package com.learn.binarySearch.easy;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @author : Kristen
@@ -16,14 +13,26 @@ import java.util.Map;
  */
 public class EP1337 {
     public int[] kWeakestRows(int[][] mat, int k) {
-        Map<Integer, Integer> integerIntegerMap =
-                new HashMap<>(mat.length / 3 * 4 + 1);
+        TreeMap<Integer, Integer> map = new TreeMap<>();
         for (int i = 0; i < mat.length; i++) {
-            int sum = Arrays.stream(mat[i]).sum();
-            integerIntegerMap.put(i, sum);
+            int sum = i;
+            for (int j = 0; j < mat[i].length; j++) {
+                if (mat[i][j] == 0) {
+                    break;
+                }
+                // 增强军人战斗力的影响，防止加上行号导致错误结果
+                sum += mat[i][j] * 100;
+            }
+            map.put(sum, i);
         }
-        return integerIntegerMap.entrySet().stream().
-                sorted(Comparator.<Map.Entry<Integer, Integer>>comparingInt(Map.Entry::getValue)
-                        .thenComparing(Map.Entry::getKey)).limit(k).mapToInt(Map.Entry::getKey).toArray();
+        int[] result = new int[k];
+        int index = 0;
+        for (Integer key : map.keySet()) {
+            if (index == k) {
+                break;
+            }
+            result[index++] = map.get(key);
+        }
+        return result;
     }
 }

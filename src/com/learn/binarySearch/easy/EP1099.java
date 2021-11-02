@@ -11,20 +11,18 @@ import java.util.Arrays;
  */
 public class EP1099 {
     public int twoSumLessThanK(int[] nums, int k) {
-        if (nums == null || nums.length < 2) {
-            return -1;
-        }
         Arrays.sort(nums);
-        int low = 0, high = nums.length - 1;
-        int result = -1;
-        while (low < high) {
-            if (nums[low] + nums[high] >= k) {
-                high--;
+        int i = 0, j = nums.length - 1;
+        int result = 0;
+        while (i < j) {
+            int value = nums[i] + nums[j];
+            if (value >= k) {
+                j--;
             } else {
-                result = Math.max(nums[low] + nums[high], result);
-                low++;
+                i++;
+                result = Math.max(result, value);
             }
         }
-        return result;
+        return result == 0 ? -1 : result;
     }
 }

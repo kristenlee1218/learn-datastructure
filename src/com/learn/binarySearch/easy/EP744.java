@@ -8,18 +8,20 @@ package com.learn.binarySearch.easy;
  */
 public class EP744 {
     public char nextGreatestLetter(char[] letters, char target) {
-        boolean[] seen = new boolean[26];
-        for (char c : letters) {
-            seen[c - 'a'] = true;
+        if (target >= letters[letters.length - 1]) {
+            return letters[0];
         }
-        while (true) {
-            target++;
-            if (target > 'z') {
-                target = 'a';
-            }
-            if (seen[target - 'a']) {
-                return target;
+        int left = 0, right = letters.length - 1;
+        char result = ' ';
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (letters[mid] > target) {
+                result = letters[mid];
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
         }
+        return result;
     }
 }

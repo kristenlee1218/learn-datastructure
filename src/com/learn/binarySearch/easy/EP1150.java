@@ -1,7 +1,5 @@
 package com.learn.binarySearch.easy;
 
-import java.util.Arrays;
-
 /**
  * @author : Kristen
  * @date : 2021/10/31
@@ -11,8 +9,12 @@ import java.util.Arrays;
  */
 public class EP1150 {
     public boolean isMajorityElement(int[] nums, int target) {
-        String str = Arrays.toString(nums);
-        String[] strArray = str.split("" + target);
-        return strArray.length - 1 > nums.length / 2;
+        int count = 0;
+        for (int num : nums) {
+            if (num == target) {
+                count++;
+            }
+        }
+        return count > nums.length / 2;
     }
 }

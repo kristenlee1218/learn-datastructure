@@ -6,21 +6,22 @@ package com.learn.test;
  * @description :
  */
 public class Test {
-    public int tribonacci(int n) {
-        if (n == 0) {
-            return 0;
+    public static void main(String[] args) {
+        int[] nums = new int[]{2, 3, 4, 7, 11};
+        int k = 5;
+        Test.findKthPositive(nums, k);
+    }
+
+    public static int findKthPositive(int[] nums, int k) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println("i: " + i);
+            int value = nums[i] - i - 1;
+            System.out.println("nums[i] - i - 1: " + value);
+            System.out.println("-------------------------");
+            if (nums[i] - i - 1 >= k) {
+                return k + i;
+            }
         }
-        if (n == 1 || n == 2) {
-            return 1;
-        }
-        int p, q = 0;
-        int r = 1, s = 1;
-        for (int i = 3; i <= n; i++) {
-            p = q;
-            q = r;
-            r = s;
-            s = p + q + r;
-        }
-        return s;
+        return k + nums.length;
     }
 }

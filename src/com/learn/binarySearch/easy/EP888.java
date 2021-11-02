@@ -15,17 +15,17 @@ import java.util.Set;
  */
 public class EP888 {
     public int[] fairCandySwap(int[] alice, int[] bob) {
-        int sumA = Arrays.stream(alice).sum();
-        int sumB = Arrays.stream(bob).sum();
-        int middle = (sumA - sumB) / 2;
-        Set<Integer> rec = new HashSet<Integer>();
-        for (int num : alice) {
-            rec.add(num);
+        int a = Arrays.stream(alice).sum();
+        int b = Arrays.stream(bob).sum();
+        int middle = (a - b) / 2;
+        Set<Integer> set = new HashSet<>();
+        for (int x : alice) {
+            set.add(x);
         }
         int[] result = new int[2];
         for (int y : bob) {
             int x = y + middle;
-            if (rec.contains(x)) {
+            if (set.contains(x)) {
                 result[0] = x;
                 result[1] = y;
                 break;
