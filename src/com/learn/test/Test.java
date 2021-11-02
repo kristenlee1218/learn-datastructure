@@ -6,22 +6,15 @@ package com.learn.test;
  * @description :
  */
 public class Test {
-    public static void main(String[] args) {
-        int[] nums = new int[]{2, 3, 4, 7, 11};
-        int k = 5;
-        Test.findKthPositive(nums, k);
-    }
-
-    public static int findKthPositive(int[] nums, int k) {
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println("i: " + i);
-            int value = nums[i] - i - 1;
-            System.out.println("nums[i] - i - 1: " + value);
-            System.out.println("-------------------------");
-            if (nums[i] - i - 1 >= k) {
-                return k + i;
+    public int findTheDistanceValue(int[] nums1, int[] nums2, int d) {
+        int count = 0;
+        for (int x : nums1) {
+            boolean flag = true;
+            for (int y : nums2) {
+                flag &= Math.abs(x - y) > d;
             }
+            count += flag ? 1 : 0;
         }
-        return k + nums.length;
+        return count;
     }
 }
