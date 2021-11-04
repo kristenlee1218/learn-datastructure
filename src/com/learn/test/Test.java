@@ -6,15 +6,18 @@ package com.learn.test;
  * @description :
  */
 public class Test {
-    public int findTheDistanceValue(int[] nums1, int[] nums2, int d) {
-        int count = 0;
-        for (int x : nums1) {
-            boolean flag = true;
-            for (int y : nums2) {
-                flag &= Math.abs(x - y) > d;
+    public int search(int[] nums, int target) {
+        int low = 0, high = nums.length - 1;
+        while (low <= high) {
+            int mid = (high - low) / 2 + low;
+            if (nums[mid] < target) {
+                low = mid + 1;
+            } else if (nums[mid] > target) {
+                high = mid - 1;
+            } else {
+                return mid;
             }
-            count += flag ? 1 : 0;
         }
-        return count;
+        return -1;
     }
 }
