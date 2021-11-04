@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.btree.easy;
 
 /**
  * @author : Kristen

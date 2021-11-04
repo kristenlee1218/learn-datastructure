@@ -6,18 +6,12 @@ package com.learn.test;
  * @description :
  */
 public class Test {
-    public int search(int[] nums, int target) {
-        int low = 0, high = nums.length - 1;
-        while (low <= high) {
-            int mid = (high - low) / 2 + low;
-            if (nums[mid] < target) {
-                low = mid + 1;
-            } else if (nums[mid] > target) {
-                high = mid - 1;
-            } else {
-                return mid;
-            }
+    public int removeDuplicates(int[] nums) {
+        int count = 0;
+        for (int i = 1; i < nums.length; i++) {
+            nums[i - 1] = nums[i];
+            count++;
         }
-        return -1;
+        return nums.length - count;
     }
 }
