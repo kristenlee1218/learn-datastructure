@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2021/7/17
- * @description :给定两个数组，编写一个函数来计算它们的交集
+ * @description :给定两个数组，编写一个函数来计算它们的交集（没有重复元素）
  */
 
 public class EP349 {
@@ -23,8 +23,8 @@ public class EP349 {
         }
         int[] result = new int[set2.size()];
         int count = 0;
-        for (Integer i : set2) {
-            result[count++] = i;
+        for (Integer value : set2) {
+            result[count++] = value;
         }
         return result;
     }
