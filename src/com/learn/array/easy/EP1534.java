@@ -3,8 +3,9 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description :一个整数数组 arr，以及 a、b 、c 三个整数。请统计其中好三元组的数量。
- * 如果三元组 (arr[i], arr[j], arr[k]) 满足下列全部条件，则认为它是一个 好三元组
+ * @description :一个整数数组 arr，以及 a、b 、c 三个整数。
+ * 请统计其中好三元组的数量。如果三元组 (arr[i], arr[j], arr[k])
+ * 满足下列全部条件，则认为它是一个 好三元组
  * 0 <= i < j < k < arr.length
  * |arr[i] - arr[j]| <= a
  * |arr[j] - arr[k]| <= b
@@ -18,7 +19,8 @@ public class EP1534 {
             for (int j = i + 1; j < arr.length - 1; j++) {
                 if (Math.abs(arr[i] - arr[j]) <= a) {
                     for (int k = j + 1; k < arr.length; k++) {
-                        if (Math.abs(arr[j] - arr[k]) <= b && Math.abs(arr[i] - arr[k]) <= c) {
+                        if (Math.abs(arr[j] - arr[k])
+                                <= b && Math.abs(arr[i] - arr[k]) <= c) {
                             count++;
                         }
                     }

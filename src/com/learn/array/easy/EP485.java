@@ -1,8 +1,5 @@
 package com.learn.array.easy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author : Kristen
  * @date : 2021/8/18

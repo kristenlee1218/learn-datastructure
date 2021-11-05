@@ -6,7 +6,8 @@ import java.util.HashSet;
 /**
  * @author : Kristen
  * @date : 2021/8/18
- * @description :一个字符串数组 words ，只返回可以使用在美式键盘同一行的字母打印出来的单词
+ * @description :一个字符串数组 words ，只返回可以使用在美式键盘同
+ * 一行的字母打印出来的单词
  */
 public class EP500 {
     public String[] findWords(String[] words) {

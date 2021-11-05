@@ -1,8 +1,8 @@
 package com.learn.test;
 
-
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -11,23 +11,17 @@ import java.util.Set;
  * @description :
  */
 public class Test1 {
-    public int[] fairCandySwap(int[] alice, int[] bob) {
-        int a = Arrays.stream(alice).sum();
-        int b = Arrays.stream(bob).sum();
-        int middle = (a - b) / 2;
-        Set<Integer> set = new HashSet<>();
-        for (int x : alice) {
-            set.add(x);
-        }
-        int[] result = new int[2];
-        for (int y : bob) {
-            int x = y + middle;
-            if (set.contains(x)) {
-                result[0] = x;
-                result[1] = y;
-                break;
+    public int singleNumber(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            if (map.containsKey(num)) {
+                map.remove(num);
+            } else {
+                map.put(num, 1);
             }
         }
-        return result;
+        Set<Integer> set = map.keySet();
+        Iterator<Integer> iterator = set.iterator();
+        return iterator.next();
     }
 }

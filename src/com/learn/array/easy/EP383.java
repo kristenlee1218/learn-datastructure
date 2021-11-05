@@ -19,7 +19,6 @@ public class EP383 {
         for (int i = 0, len = magazine.length(); i < len && ransomLen > 0; i++) {
             int num = chars[magazine.charAt(i) - 97];
             if (num != 0) {
-                num--;
                 ransomLen--;
             }
         }
