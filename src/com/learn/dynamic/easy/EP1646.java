@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author : Kristen
  * @date : 2021/10/26
- * @description :给你一个整数 n。按下述规则生成一个长度为 n + 1 的数组 nums：
+ * @description :一个整数 n。按下述规则生成一个长度为 n + 1 的数组 nums：
  * nums[0] = 0
  * nums[1] = 1
  * 当 2 <= 2 * i <= n 时，nums[2 * i] = nums[i]

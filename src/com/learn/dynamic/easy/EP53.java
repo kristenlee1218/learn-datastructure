@@ -8,7 +8,7 @@ package com.learn.dynamic.easy;
  */
 public class EP53 {
     public int maxSubArray(int[] nums) {
-        int res = nums[0];
+        int result = nums[0];
         int sum = 0;
         for (int num : nums) {
             if (sum > 0) {
@@ -16,8 +16,8 @@ public class EP53 {
             } else {
                 sum = num;
             }
-            res = Math.max(res, sum);
+            result = Math.max(result, sum);
         }
-        return res;
+        return result;
     }
 }
