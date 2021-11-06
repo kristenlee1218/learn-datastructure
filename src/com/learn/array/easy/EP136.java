@@ -1,8 +1,6 @@
 package com.learn.array.easy;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -13,16 +11,14 @@ import java.util.Set;
  */
 public class EP136 {
     public int singleNumber(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<>();
+        Set<Integer> set = new HashSet<>();
         for (int num : nums) {
-            if (map.containsKey(num)) {
-                map.remove(num);
+            if (set.contains(num)) {
+                set.remove(num);
             } else {
-                map.put(num, 1);
+                set.add(num);
             }
         }
-        Set<Integer> set = map.keySet();
-        Iterator<Integer> iterator = set.iterator();
-        return iterator.next();
+        return set.iterator().next();
     }
 }
