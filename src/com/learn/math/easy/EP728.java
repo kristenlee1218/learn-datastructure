@@ -1,9 +1,7 @@
 package com.learn.math.easy;
 
-import java.util.HashSet;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  * @author : Kristen
@@ -14,29 +12,21 @@ import java.util.Set;
  */
 public class EP728 {
     public List<Integer> selfDividingNumbers(int left, int right) {
-        List<Integer> list = new LinkedList<>();
-        for (int num = left; num < right + 1; num++) {
-            Set<Integer> set = new HashSet<>();
-            int temp = num;
-            boolean flag = true;
-            while (temp != 0) {
-                if ((temp % 10) != 0) {
-                    set.add(temp % 10);
-                } else {
+        List<Integer> list = new ArrayList<>();
+        boolean flag = true;
+        for (int i = left; i <= right; i++) {
+            int index = i;
+            while (index > 0) {
+                if (index % 10 == 0 || i % (index % 10) != 0) {
                     flag = false;
                     break;
                 }
-                temp /= 10;
-            }
-            for (Integer x : set) {
-                if (num % x != 0) {
-                    flag = false;
-                    break;
-                }
+                index /= 10;
             }
             if (flag) {
-                list.add(num);
+                list.add(i);
             }
+            flag = true;
         }
         return list;
     }

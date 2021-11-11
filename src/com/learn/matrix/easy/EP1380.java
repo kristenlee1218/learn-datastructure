@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.matrix.easy;
 
 import java.util.ArrayList;
 import java.util.List;

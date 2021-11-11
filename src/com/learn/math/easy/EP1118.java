@@ -7,12 +7,12 @@ package com.learn.math.easy;
  */
 public class EP1118 {
     public int numberOfDays(int year, int month) {
-        int[] nums = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int[] months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         if ((year % 100 != 0 && year % 4 == 0) || year % 400 == 0) {
             if (month == 2) {
-                return nums[month - 1] + 1;
+                return months[month - 1] + 1;
             }
         }
-        return nums[month - 1];
+        return months[month - 1];
     }
 }

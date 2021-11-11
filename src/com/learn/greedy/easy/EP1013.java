@@ -3,7 +3,8 @@ package com.learn.greedy.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description :一个整数数组 A，只有可以将其划分为三个和相等的非空部分时才返回 true，否则返回 false
+ * @description :一个整数数组 A，只有可以将其划分为三个和相等的
+ * 非空部分时才返回 true，否则返回 false
  */
 public class EP1013 {
     public boolean canThreePartsEqualSum(int[] nums) {

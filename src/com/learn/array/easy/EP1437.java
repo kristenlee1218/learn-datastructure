@@ -1,5 +1,8 @@
 package com.learn.array.easy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author : Kristen
  * @date : 2021/8/17
@@ -12,13 +15,15 @@ package com.learn.array.easy;
 
 public class EP1437 {
     public boolean kLengthApart(int[] nums, int k) {
-        int index = -k - 1;
+        List<Integer> list = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == 1) {
-                if (i - index - 1 < k) {
-                    return false;
-                }
-                index = i;
+                list.add(i);
+            }
+        }
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i + 1) - list.get(i) <= k) {
+                return false;
             }
         }
         return true;
