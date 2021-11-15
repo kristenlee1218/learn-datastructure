@@ -4,13 +4,12 @@ package com.learn.math.easy;
  * @author : Kristen
  * @date : 2021/10/18
  * @description :你在一家生产小球的玩具厂工作，有 n 个小球，编号从 lowLimit
- *  开始，到 highLimit 结束（即 n == highLimit - lowLimit + 1）。另有
- * 无限数量的盒子，编号从 1 到 infinity。你的工作是将每个小球放入盒子中，
- * 其中盒子的编号应当等于小球编号上每位数字的和。如，编号 321 的小球
- * 应当放入编号 3 + 2 + 1 = 6 的盒子，而编号 10 的小球应当放入编号
- * 1 + 0 = 1 的盒子。给你两个整数 lowLimit和 highLimit ，
- * 返回放有最多小球的盒子中的小球数量。如果有多个盒子都满足放有最多小球，
- * 只需返回其中任一盒子的小球数量
+ * 开始，到 highLimit 结束（即 n == highLimit - lowLimit + 1）。另有无限
+ * 数量的盒子，编号从 1 到 infinity。你的工作是将每个小球放入盒子中，其中
+ * 盒子的编号应当等于小球编号上每位数字的和。如，编号 321 的小球应当放入编
+ * 号 3 + 2 + 1 = 6 的盒子，而编号 10 的小球应当放入编号1 + 0 = 1 的盒子。
+ * 给你两个整数 lowLimit和 highLimit ，返回放有最多小球的盒子中的小球
+ * 数量。如果有多个盒子都满足放有最多小球，只需返回其中任一盒子的小球数量
  */
 public class EP1742 {
     public int countBalls(int low, int high) {

@@ -1,18 +1,22 @@
 package com.learn.test;
 
+import java.util.Arrays;
+
 /**
  * @author : Kristen
  * @date : 2021/8/14
  * @description :
  */
 public class Test1 {
-    public boolean isAmstrong(int n) {
-        int count = n, sum = 0;
-        int k = String.valueOf(n).length();
-        for (int i = 0; i < k; i++) {
-            sum += Math.pow(count % 10, k);
-            count /= 10;
+    public int getMaximumGenerated(int n) {
+        if (n == 0) {
+            return 0;
         }
-        return sum == n;
+        int[] nums = new int[n + 1];
+        nums[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            nums[i] = nums[i / 2] + i % 2 * nums[i / 2 + 1];
+        }
+        return Arrays.stream(nums).max().getAsInt();
     }
 }
