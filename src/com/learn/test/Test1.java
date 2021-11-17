@@ -1,22 +1,23 @@
 package com.learn.test;
 
-import java.util.Arrays;
+import com.learn.binarySearch.easy.GuessGame;
 
 /**
  * @author : Kristen
  * @date : 2021/8/14
  * @description :
  */
-public class Test1 {
-    public int getMaximumGenerated(int n) {
-        if (n == 0) {
-            return 0;
+public class Test1 extends GuessGame {
+    public int guessNumber(int n) {
+        int left = 1, right = n;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (guess(mid) <= 0) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
         }
-        int[] nums = new int[n + 1];
-        nums[1] = 1;
-        for (int i = 2; i <= n; i++) {
-            nums[i] = nums[i / 2] + i % 2 * nums[i / 2 + 1];
-        }
-        return Arrays.stream(nums).max().getAsInt();
+        return left;
     }
 }
