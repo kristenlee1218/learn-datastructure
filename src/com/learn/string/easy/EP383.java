@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.string.easy;
 
 /**
  * @author : Kristen
