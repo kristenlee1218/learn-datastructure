@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.string.easy;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -9,18 +9,20 @@ package com.learn.array.easy;
 public class EP812 {
     public double largestTriangleArea(int[][] points) {
         double result = 0;
-        for (int i = 0; i < points.length; ++i) {
-            for (int j = i + 1; j < points.length; ++j) {
-                for (int k = j + 1; k < points.length; ++k) {
-                    result = Math.max(result, area(points[i],
-                            points[j], points[k]));
+        for (int i = 0; i < points.length; i++) {
+            for (int j = i + 1; j < points.length; j++) {
+                for (int k = j + 1; k < points.length; k++) {
+                    result = Math.max(result,
+                            area(points[i], points[j], points[k]));
                 }
             }
         }
         return result;
     }
 
-    public double area(int[] P, int[] Q, int[] R) {
-        return 0.5 * Math.abs(P[0] * Q[1] + Q[0] * R[1] + R[0] * P[1] - P[1] * Q[0] - Q[1] * R[0] - R[1] * P[0]);
+    public double area(int[] p, int[] q, int[] r) {
+        return 0.5 * Math.abs(p[0] * q[1] + q[0] * r[1]
+                + r[0] * p[1] - p[1] * q[0] - q[1] * r[0]
+                - r[1] * p[0]);
     }
 }
