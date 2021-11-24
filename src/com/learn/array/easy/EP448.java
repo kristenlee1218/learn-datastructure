@@ -11,17 +11,16 @@ import java.util.List;
  */
 public class EP448 {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        int n = nums.length;
         for (int num : nums) {
-            int x = (num - 1) % n;
-            nums[x] += n;
+            int x = (num - 1) % nums.length;
+            nums[x] += nums.length;
         }
-        List<Integer> ret = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            if (nums[i] <= n) {
-                ret.add(i + 1);
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] <= nums.length) {
+                list.add(i + 1);
             }
         }
-        return ret;
+        return list;
     }
 }
