@@ -3,23 +3,19 @@ package com.learn.test;
 /**
  * @author : Kristen
  * @date : 2021/11/5
- * @description :
+ * @description :EP66
  */
 public class Test3 {
-    public double largestTriangleArea(int[][] points) {
-        double result = 0;
-        for (int i = 0; i < points.length; i++) {
-            for (int j = i + 1; j < points.length; j++) {
-                for (int k = j + 1; k < points.length; k++) {
-                    result = Math.max(result, area(points[i], points[j], points[k]));
-                }
+    public int[] plusOne(int[] digits) {
+        for (int i = digits.length - 1; i > 0; i--) {
+            if (digits[i] != 9) {
+                digits[i]++;
+                return digits;
             }
+            digits[i] = 0;
         }
-        return result;
-    }
-
-    public double area(int[] p, int[] q, int[] r) {
-        return 0.5 * Math.abs(p[0] * q[1] + q[0] * r[1] + r[0] * p[1]
-                - p[1] * q[0] - q[1] * r[0] - r[1] * p[0]);
+        int[] newDigits = new int[digits.length + 1];
+        newDigits[0] = 1;
+        return newDigits;
     }
 }

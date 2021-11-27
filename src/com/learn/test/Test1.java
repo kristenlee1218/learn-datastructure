@@ -3,20 +3,17 @@ package com.learn.test;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description :
+ * @description : EP26
  */
 public class Test1 {
-    public boolean isMonotonic(int[] nums) {
-        boolean increase = true;
-        boolean decrease = true;
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] < nums[i + 1]) {
-                decrease = false;
-            }
-            if (nums[i] > nums[i + 1]) {
-                increase = false;
+    public int removeDuplicates(int[] nums) {
+        int i = 0;
+        for (int j = 1; j < nums.length; j++) {
+            if (nums[i] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
             }
         }
-        return increase || decrease;
+        return i + 1;
     }
 }
