@@ -12,25 +12,25 @@ package com.learn.array.easy;
  */
 public class EP1317 {
     public int[] getNoZeroIntegers(int n) {
-        int[] res = new int[2];
+        int[] result = new int[2];
         if (n <= 10) {
-            res[0] = 1;
-            res[1] = n - 1;
-            return res;
+            result[0] = 1;
+            result[1] = n - 1;
+            return result;
         }
         int length = (int) Math.log10(n);
-        res[0] = (int) Math.pow(10, length) - 1;
-        res[1] = n - res[0];
-        int temp = res[1];
+        result[0] = (int) Math.pow(10, length) - 1;
+        result[1] = n - result[0];
+        int temp = result[1];
         int index = 1;
         while (temp > 0) {
             if (temp % 10 == 0) {
-                res[0] -= index;
-                res[1] += index;
+                result[0] -= index;
+                result[1] += index;
             }
             index *= 10;
             temp = temp / 10;
         }
-        return res;
+        return result;
     }
 }

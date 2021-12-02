@@ -1,4 +1,3 @@
-
 package com.learn.test;
 
 /**
@@ -7,14 +6,18 @@ package com.learn.test;
  * @description :EP27
  */
 public class Test2 {
-    public int removeElement(int[] nums, int value) {
-        int index = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != value) {
-                nums[index++] = nums[i];
+    public int findLengthOfLCIS(int[] nums) {
+        int result = 1;
+        int count = 1;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i + 1] > nums[i]) {
+                count++;
+            } else {
+                count = 1;
             }
+            result = Math.max(result, count);
         }
-        return index;
+        return result;
     }
 }
 

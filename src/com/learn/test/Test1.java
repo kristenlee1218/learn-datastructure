@@ -3,17 +3,14 @@ package com.learn.test;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description : EP26
+ * @description :
  */
 public class Test1 {
-    public int removeDuplicates(int[] nums) {
-        int i = 0;
-        for (int j = 1; j < nums.length; j++) {
-            if (nums[i] != nums[j]) {
-                i++;
-                nums[i] = nums[j];
-            }
+    public int maxCount(int m, int n, int[][] ops) {
+        for (int[] op : ops) {
+            m = Math.min(m, op[0]);
+            n = Math.min(n, op[1]);
         }
-        return i + 1;
+        return m * n;
     }
 }
