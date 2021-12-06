@@ -6,13 +6,20 @@ package com.learn.test;
  * @description : EP26
  */
 public class Test1 {
-    public static void main(String[] args) {
-        int[] nums = new int[]{1, 1, 2, 2, 5, 5, 6, 6, 8};
-        int single = 1;
-        System.out.println(single ^= 1);
-        for (int num : nums) {
-            System.out.println(single ^= num);
-            System.out.println("-------------");
+    public int tribonacci(int n) {
+        if (n == 0) {
+            return 0;
         }
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        int p = 0, q = 0, r = 1, s = 1;
+        for (int i = 3; i < n; i++) {
+            p = q;
+            q = r;
+            r = s;
+            s = p + q + r;
+        }
+        return s;
     }
 }

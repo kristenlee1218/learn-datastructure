@@ -16,7 +16,7 @@ public class EP1137 {
             return 1;
         }
         int p = 0, q = 0, r = 1, s = 1;
-        for (int i = 3; i <= n; ++i) {
+        for (int i = 3; i <= n; i++) {
             p = q;
             q = r;
             r = s;
