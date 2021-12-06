@@ -1,4 +1,4 @@
-package com.learn.sort.easy;
+package com.learn.greedy.easy;
 
 import java.util.Arrays;
 
@@ -12,15 +12,15 @@ import java.util.Arrays;
 public class EP1005 {
     public int largestSumAfterKNegations(int[] nums, int k) {
         Arrays.sort(nums);
-        int sum = 0, min = 0x3f3f3f3f;
+        int sum = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] < 0 && k > 0) {
-                nums[i] = -nums[i];
+                nums[i] = -1 * nums[i];
                 k--;
             }
             sum += nums[i];
-            min = Math.min(min, nums[i]);
         }
-        return k <= 0 ? sum : (sum - (k % 2) * 2 * min);
+        Arrays.sort(nums);
+        return sum - (k % 2 == 0 ? 0 : 2 * nums[0]);
     }
 }
