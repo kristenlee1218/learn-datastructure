@@ -15,11 +15,11 @@ public class EP455 {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
-        int start = 0;
+        int j = 0;
         int count = 0;
-        for (int i = 0; i < s.length && start < g.length; i++) {
-            if (s[i] >= g[start]) {
-                start++;
+        for (int i = 0; i < s.length && j < g.length; i++) {
+            if (s[i] >= g[j]) {
+                j++;
                 count++;
             }
         }

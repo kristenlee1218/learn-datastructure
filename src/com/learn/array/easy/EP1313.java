@@ -21,7 +21,6 @@ public class EP1313 {
             while (nums[i] > 0) {
                 result[index] = nums[i + 1];
                 nums[i]--;
-                // index向后移动一位
                 index++;
             }
         }

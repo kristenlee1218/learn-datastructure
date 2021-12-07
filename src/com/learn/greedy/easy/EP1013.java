@@ -16,17 +16,14 @@ public class EP1013 {
             return false;
         }
         sum /= 3;
-        int curSum = 0, count = 0;
-        for (int i = 0; i < nums.length - 1; i++) {
-            curSum += nums[i];
-            if (curSum == sum) {
+        int count = 0, temp = 0;
+        for (int num : nums) {
+            temp += num;
+            if (temp == sum) {
                 count++;
-                if (count == 2) {
-                    return true;
-                }
-                curSum = 0;
+                temp = 0;
             }
         }
-        return false;
+        return count >= 3;
     }
 }
