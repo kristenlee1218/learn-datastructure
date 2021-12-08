@@ -13,20 +13,17 @@ import java.util.List;
 public class EP728 {
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> list = new ArrayList<>();
-        boolean flag = true;
         for (int i = left; i <= right; i++) {
-            int index = i;
-            while (index > 0) {
-                if (index % 10 == 0 || i % (index % 10) != 0) {
-                    flag = false;
+            int temp = i;
+            while (temp > 0) {
+                if (temp % 10 == 0 || i % (temp % 10) != 0) {
                     break;
                 }
-                index /= 10;
+                temp /= 10;
             }
-            if (flag) {
+            if (temp == 0) {
                 list.add(i);
             }
-            flag = true;
         }
         return list;
     }
