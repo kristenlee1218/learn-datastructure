@@ -6,5 +6,5 @@ package com.learn.test;
  * @description :
  */
 public class Test10 {
-    
+
 }
