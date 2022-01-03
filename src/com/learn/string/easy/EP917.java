@@ -4,9 +4,9 @@ import java.util.Stack;
 
 /**
  * @author : Kristen
- * @date : 2022/1/4
- * @description :给定一个字符串 S，返回 “反转后的” 字符串，其中不是字
- * 母的字符都保留在原地，而所有字母的位置发生反转
+ * @date : 2022/1/3
+ * @description :给定一个字符串 S，返回 “反转后的” 字符串，其中不是字母
+ * 的字符都保留在原地，而所有字母的位置发生反转
  */
 public class EP917 {
     public String reverseOnlyLetters(String s) {
@@ -16,6 +16,7 @@ public class EP917 {
                 letters.push(c);
             }
         }
+
         StringBuilder sb = new StringBuilder();
         for (char c : s.toCharArray()) {
             if (Character.isLetter(c)) {
