@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2021/12/2
- * @description :给你两个字符串数组 words1 和 words2 ，请你返回在两个
+ * @description :给你两个字符串数组 words1 和 words2，请你返回在两个
  * 字符串数组中都恰好出现一次的字符串的数目。
  */
 public class EP2085 {
