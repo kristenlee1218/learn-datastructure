@@ -13,10 +13,10 @@ import java.util.Map;
  */
 public class EP2053 {
     public String kthDistinct(String[] str, int k) {
-        Map<String, Integer> map = new HashMap<String, Integer>();
+        Map<String, Integer> map = new HashMap<>();
         for (String value : str) {
-            int cont = map.getOrDefault(value, 0) + 1;
-            map.put(value, cont);
+            int count = map.getOrDefault(value, 0) + 1;
+            map.put(value, count);
         }
         for (String a : str) {
             if (map.get(a) == 1) {
