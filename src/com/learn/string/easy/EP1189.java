@@ -5,9 +5,9 @@ import java.util.Arrays;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :一个字符串 text，需要使用 text 中的字母来拼凑尽可能多
- * 的单词 "balloon"、字符串 text 中的每个字母最多只能被使用一次。返回最
- * 多可以拼凑出多少个单词 "balloon"
+ * @description :一个字符串 text，需要使用 text 中的字母来拼凑尽可能多的单词
+ * "balloon"、字符串 text 中的每个字母最多只能被使用一次。返回最多可以拼凑出
+ * 多少个单词 "balloon"
  */
 public class EP1189 {
     public int maxNumberOfBalloons(String text) {

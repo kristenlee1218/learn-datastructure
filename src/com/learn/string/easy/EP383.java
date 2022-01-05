@@ -9,13 +9,11 @@ package com.learn.string.easy;
  */
 public class EP383 {
     public boolean canConstruct(String ransomNote, String magazine) {
-        // 统计 ransom 字符
         int[] chars = new int[26];
         int ransomLen = ransomNote.length();
         for (int i = 0; i < ransomLen; i++) {
             chars[ransomNote.charAt(i) - 97]++;
         }
-        // 遍历 magazine
         for (int i = 0, len = magazine.length(); i < len && ransomLen > 0; i++) {
             int num = chars[magazine.charAt(i) - 97];
             if (num != 0) {
