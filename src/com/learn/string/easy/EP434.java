@@ -8,10 +8,16 @@ package com.learn.string.easy;
  */
 public class EP434 {
     public int countSegments(String s) {
-        String trimmed = s.trim();
-        if (trimmed.equals("")) {
+        if (s == null || s.equals("")) {
             return 0;
         }
-        return trimmed.split("\\s+").length;
+        int count = 0;
+        String[] str = s.split(" ");
+        for (String s1 : str) {
+            if (!" ".equals(s1) && !"".equals(s1)) {
+                count++;
+            }
+        }
+        return count;
     }
 }
