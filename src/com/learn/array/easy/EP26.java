@@ -17,6 +17,7 @@ public class EP26 {
                 i++;
                 nums[i] = nums[j];
             }
+
         }
         return i + 1;
     }
