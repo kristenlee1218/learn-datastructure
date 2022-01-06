@@ -9,7 +9,6 @@ import java.util.Arrays;
  * 请返回能让所有学生以 非递减高度排列的最小必要移动人数
  */
 public class EP1051 {
-
     public int heightChecker(int[] heights) {
         int[] result = heights.clone();
         int count = 0;

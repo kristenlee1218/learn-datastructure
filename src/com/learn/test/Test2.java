@@ -5,7 +5,7 @@ package com.learn.test;
  * @date : 2021/11/5
  * @description :
  */
-public class Test2{
+public class Test2 {
 
 }
 

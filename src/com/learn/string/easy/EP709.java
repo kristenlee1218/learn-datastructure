@@ -8,17 +8,17 @@ package com.learn.string.easy;
  */
 public class EP709 {
     public String toLowerCase(String str) {
-        if (str == null || str.length() == 0) {
+        if ("".equals(str)) {
             return str;
         }
-        StringBuilder result = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         for (char ch : str.toCharArray()) {
             if (ch >= 'A' && ch <= 'Z') {
-                result.append((char) (ch + 32));
+                sb.append((char) (ch + 32));
             } else {
-                result.append(ch);
+                sb.append(ch);
             }
         }
-        return result.toString();
+        return sb.toString();
     }
 }
