@@ -25,8 +25,8 @@ public class EP1886 {
         return true;
     }
 
-    public int[][] matrixRotation(int a[][]) {
-        int r[][] = new int[a.length][a.length];
+    public int[][] matrixRotation(int[][] a) {
+        int[][] r = new int[a.length][a.length];
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a.length; j++) {
                 r[j][a.length - 1 - i] = a[i][j];
