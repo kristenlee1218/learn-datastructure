@@ -11,10 +11,10 @@ package com.learn.string.easy;
 
 public class EP1961 {
     public boolean isPrefixString(String s, String[] words) {
-        StringBuilder result = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         for (String word : words) {
-            result.append(word);
-            if (result.toString().equals(s)) {
+            sb.append(word);
+            if (sb.toString().equals(s)) {
                 return true;
             }
         }

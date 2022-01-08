@@ -6,14 +6,13 @@ package com.learn.test;
  * @description :
  */
 public class Test2 {
-    public boolean isArmstrong(int n) {
-        int count = n, sum = 0;
-        int k = String.valueOf(n).length();
-        for (int i = 0; i < k; i++) {
-            sum += Math.pow(count % 10, k);
-            count /= 10;
+    public String largestOddNumber(String s) {
+        for (int i = s.length(); i > 0; i--) {
+            if ((s.charAt(i) - '0') % 2 == 1) {
+                return s.substring(0, i + 1);
+            }
         }
-        return sum == n;
+        return "";
     }
 }
 

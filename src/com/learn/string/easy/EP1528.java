@@ -8,11 +8,11 @@ package com.learn.string.easy;
  * 排列后的字符串
  */
 public class EP1528 {
-    public String restoreString(String s, int[] indices) {
-        char[] result = new char[indices.length];
-        for (int index = indices.length - 1; index > -1; index--) {
-            result[indices[index]] = s.charAt(index);
+    public String restoreString(String s, int[] index) {
+        char[] ch = new char[index.length];
+        for (int i = index.length - 1; i > -1; i--) {
+            ch[index[i]] = s.charAt(i);
         }
-        return String.valueOf(result);
+        return String.valueOf(ch);
     }
 }

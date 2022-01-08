@@ -8,11 +8,11 @@ package com.learn.string.easy;
  */
 public class EP1816 {
     public String truncateSentence(String s, int k) {
-        StringBuilder result = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         String[] str = s.split(" ");
         for (int i = 0; i < k; i++) {
-            result.append(str[i]).append(" ");
+            sb.append(str[i]).append(" ");
         }
-        return result.toString().trim();
+        return sb.toString().trim();
     }
 }

@@ -9,10 +9,10 @@ package com.learn.array.easy;
  */
 public class EP1920 {
     public int[] buildArray(int[] nums) {
-        int[] arr = new int[nums.length];
+        int[] result = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            arr[i] = nums[nums[i]];
+            result[i] = nums[nums[i]];
         }
-        return arr;
+        return result;
     }
 }

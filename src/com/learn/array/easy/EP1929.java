@@ -11,8 +11,12 @@ package com.learn.array.easy;
 public class EP1929 {
     public int[] getConcatenation(int[] nums) {
         int[] result = new int[nums.length * 2];
-        System.arraycopy(nums, 0, result, 0, nums.length);
-        System.arraycopy(nums, 0, result, nums.length, nums.length);
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = nums[i];
+        }
+        for (int i = nums.length; i < result.length; i++) {
+            result[i] = nums[i-nums.length];
+        }
         return result;
     }
 }

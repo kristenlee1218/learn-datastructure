@@ -9,14 +9,13 @@ import java.util.Arrays;
  * 剩余数字的平均值。与标准答案误差在 10^-5 的结果都被视为正确结果
  */
 public class EP1619 {
-    public double trimMean(int[] arr) {
-        Arrays.sort(arr);
-        int length = arr.length;
-        int length1 = length / 20;
+    public double trimMean(int[] nums) {
+        Arrays.sort(nums);
+        int length = nums.length / 20;
         double sum = 0;
-        double count = length - 2 * length1;
-        for (int i = length1; i < length - length1; i++) {
-            sum += arr[i];
+        double count = nums.length - 2 * length;
+        for (int i = length; i < nums.length - length; i++) {
+            sum += nums[i];
         }
         return sum / count;
     }

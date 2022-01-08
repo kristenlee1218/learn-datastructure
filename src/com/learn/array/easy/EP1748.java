@@ -5,20 +5,20 @@ import java.util.HashMap;
 /**
  * @author : Kristen
  * @date : 2021/7/25
- * @description : 给你一个整数数组 nums。数组中唯一元素是那些
- * 只出现恰好一次的元素。请你返回 nums 中唯一元素的和
+ * @description : 一个整数数组 nums。数组中唯一元素是那些只出现恰好
+ * 一次的元素。请返回 nums 中唯一元素的和
  */
 
 public class EP1748 {
     public int sumOfUnique(int[] nums) {
-        int sum = 0;
-        HashMap<Integer, Integer> map = new HashMap<>();
+        int[] result = new int[101];
         for (int num : nums) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
+            result[num]++;
         }
-        for (int key : map.keySet()) {
-            if (map.get(key) == 1) {
-                sum += key;
+        int sum = 0;
+        for (int i = 1; i < result.length; i++) {
+            if (result[i] == 1) {
+                sum += i;
             }
         }
         return sum;

@@ -9,16 +9,16 @@ package com.learn.array.easy;
  */
 public class EP1909 {
     public boolean canBeIncreasing(int[] nums) {
-        boolean flag = false;
+        int count = 0;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] <= nums[i - 1]) {
-                if (flag) {
+                count++;
+                if (count > 1) {
                     return false;
                 }
                 if (i > 1 && nums[i] <= nums[i - 2]) {
                     nums[i] = nums[i - 1];
                 }
-                flag = true;
             }
         }
         return true;

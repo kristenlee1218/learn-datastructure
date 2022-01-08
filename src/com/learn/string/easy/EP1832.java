@@ -8,17 +8,17 @@ package com.learn.string.easy;
  * 是返回 true；否则返回 false
  */
 public class EP1832 {
-    public boolean checkIfPangram(String sentence) {
-        if (sentence == null || sentence.length() < 26) {
+    public boolean checkIfPangram(String s) {
+        if (s.length() < 26) {
             return false;
         }
-        int[] arr = new int[26];
-        char[] chars = sentence.toCharArray();
-        for (char ch : chars) {
-            arr[ch - 97]++;
+        int[] result = new int[26];
+        char[] ch = s.toCharArray();
+        for (char c : ch) {
+            result[c - 97]++;
         }
-        for (int i : arr) {
-            if (i == 0) {
+        for (int value : result) {
+            if (value == 0) {
                 return false;
             }
         }
