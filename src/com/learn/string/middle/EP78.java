@@ -14,10 +14,11 @@ public class EP78 {
         List<List<Integer>> list = new ArrayList<>();
         list.add(new ArrayList<>());
         for (int num : nums) {
-            for (int j = 0; j < list.size(); j++) {
-                List<Integer> tempList = new ArrayList<>(list.get(j));
-                tempList.add(num);
-                list.add(tempList);
+            int all = list.size();
+            for (int j = 0; j < all; j++) {
+                List<Integer> tmp = new ArrayList<>(list.get(j));
+                tmp.add(num);
+                list.add(tmp);
             }
         }
         return list;
