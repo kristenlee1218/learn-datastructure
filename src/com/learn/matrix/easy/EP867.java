@@ -14,6 +14,7 @@ public class EP867 {
                 result[j][i] = matrix[i][j];
             }
         }
-        return result;
+        return result
+                ;
     }
 }

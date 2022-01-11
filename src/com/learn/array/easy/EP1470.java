@@ -17,8 +17,7 @@ public class EP1470 {
             list.add(nums[i]);
             list.add(nums[i + n]);
         }
-        int step = 2;
-        for (int i = 0; i < step * n; i++) {
+        for (int i = 0; i < 2 * n; i++) {
             nums[i] = list.get(i);
         }
         return nums;
