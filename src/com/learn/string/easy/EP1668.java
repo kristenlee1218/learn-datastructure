@@ -9,7 +9,7 @@ package com.learn.string.easy;
  * 如果 word 不是 sequence 的子串，那么重复值 k 为 0、一个字符串
  * sequence 和 word，请返回最大重复值 k
  */
-public class EP1688 {
+public class EP1668 {
     public int maxRepeating(String sequence, String word) {
         int count = 0;
         StringBuilder sb = new StringBuilder(word);
