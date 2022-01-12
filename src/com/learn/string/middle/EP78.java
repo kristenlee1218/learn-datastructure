@@ -13,11 +13,11 @@ public class EP78 {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         list.add(new ArrayList<>());
-        for (int i = 0; i < nums.length; i++) {
+        for (int num : nums) {
             int all = list.size();
             for (int j = 0; j < all; j++) {
                 List<Integer> subList = new ArrayList<>(list.get(j));
-                subList.add(nums[i]);
+                subList.add(num);
                 list.add(subList);
             }
         }
