@@ -1,8 +1,9 @@
 package com.learn.test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * @author : Kristen
@@ -10,13 +11,17 @@ import java.util.Locale;
  * @description : EP26
  */
 public class Test1 {
-    public boolean check(int[] nums) {
-        int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] > nums[(i + 1) % nums.length]) {
-                count++;
+    public List<String> stringMatching(String[] words) {
+        List<String> list = new ArrayList<>();
+        Arrays.sort(words, Comparator.comparing(String::length));
+        for (int i = 0; i < words.length; i++) {
+            for (int j = i + 1; j < words.length; j++) {
+                if (words[j].contains(words[i])) {
+                    list.add(words[i]);
+                    break;
+                }
             }
         }
-        return count <= 1;
+        return list;
     }
 }
