@@ -15,9 +15,9 @@ public class EP78 {
         list.add(new ArrayList<>());
         for (int num : nums) {
             for (int j = 0; j < list.size(); j++) {
-                List<Integer> tempList = new ArrayList<>(list.get(j));
-                tempList.add(num);
-                list.add(tempList);
+                List<Integer> subList = new ArrayList<>(list.get(j));
+                subList.add(num);
+                list.add(subList);
             }
         }
         return list;
