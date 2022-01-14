@@ -1,28 +1,23 @@
 package com.learn.test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-
 /**
  * @author : Kristen
  * @date : 2021/11/5
  * @description :
  */
 public class Test2 {
-    public List<String> stringMatching(String[] words) {
-        List<String> list = new ArrayList<>();
-        Arrays.sort(words, Comparator.comparing(String::length));
-        for (int i = 0; i < words.length; i++) {
-            for (int j = i + 1; j < words.length; j++) {
-                if (words[j].contains(words[i])) {
-                    list.add(words[i]);
-                    break;
-                }
-            }
+    public String add(String a, String b) {
+        StringBuilder sb = new StringBuilder();
+        int count = 0;
+        for (int i = 0, j = 0; i < a.length() - 1 || j < b.length() - 1; i++, j++) {
+            int sum = count;
+            sum += i > 0 ? (a.charAt(i) - '0') : 0;
+            sum += j > 0 ? (b.charAt(j) - '0') : 0;
+            sb.append(sum % 2);
+            count = sum / 2;
         }
-        return list;
+        sb.append(count == 1 ? count : "");
+        return sb.reverse().toString();
     }
 }
 
