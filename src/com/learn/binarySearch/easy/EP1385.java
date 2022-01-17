@@ -12,11 +12,11 @@ public class EP1385 {
     public int findTheDistanceValue(int[] nums1, int[] nums2, int d) {
         int count = 0;
         for (int x : nums1) {
-            boolean flag = true;
+            boolean b = true;
             for (int y : nums2) {
-                flag &= Math.abs(x - y) > d;
+                b &= Math.abs(x - y) > d;
             }
-            count += flag ? 1 : 0;
+            count += b ? 1 : 0;
         }
         return count;
     }
