@@ -1,6 +1,9 @@
 package com.learn.test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * @author : Kristen
@@ -8,12 +11,5 @@ import java.util.Arrays;
  * @description : EP26
  */
 public class Test1 {
-    public String generateTheString(int n) {
-        char[] c = new char[n];
-        Arrays.fill(c, 'a');
-        if (n % 2 == 0) {
-            c[n - 1] = 'n';
-        }
-        return new String(c);
-    }
+
 }

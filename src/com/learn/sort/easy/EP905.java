@@ -9,15 +9,15 @@ package com.learn.sort.easy;
 public class EP905 {
     public int[] sortArrayByParity(int[] nums) {
         int[] result = new int[nums.length];
-        int t = 0;
+        int index = 0;
         for (int num : nums) {
             if (num % 2 == 0) {
-                result[t++] = num;
+                result[index++] = num;
             }
         }
         for (int num : nums) {
             if (num % 2 == 1) {
-                result[t++] = num;
+                result[index++] = num;
             }
         }
         return result;
