@@ -19,7 +19,7 @@ public class EP1991 {
     public int findMiddleIndex(int[] nums) {
         int count = Arrays.stream(nums).sum();
         int sum = 0;
-        for (int i = 0; i < nums.length; ++i) {
+        for (int i = 0; i < nums.length; i++) {
             if (2 * sum + nums[i] == count) {
                 return i;
             }
