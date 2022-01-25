@@ -9,17 +9,19 @@ package com.learn.hashtable.easy;
  */
 public class EP383 {
     public boolean canConstruct(String ransomNote, String magazine) {
-        int[] chars = new int[26];
-        int ransomLen = ransomNote.length();
-        for (int i = 0; i < ransomLen; i++) {
-            chars[ransomNote.charAt(i) - 97]++;
+        if (ransomNote.length() > magazine.length()) {
+            return false;
         }
-        for (int i = 0, len = magazine.length(); i < len && ransomLen > 0; i++) {
-            int num = chars[magazine.charAt(i) - 97];
-            if (num != 0) {
-                ransomLen--;
+        int[] cnt = new int[26];
+        for (char c : magazine.toCharArray()) {
+            cnt[c - 'a']++;
+        }
+        for (char c : ransomNote.toCharArray()) {
+            cnt[c - 'a']--;
+            if (cnt[c - 'a'] < 0) {
+                return false;
             }
         }
-        return ransomLen == 0;
+        return true;
     }
 }
