@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class EP1380 {
     public List<Integer> luckyNumbers(int[][] matrix) {
-        List<Integer> res = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         int[] row = new int[matrix.length];
         int[] col = new int[matrix[0].length];
         for (int i = 0; i < matrix.length; i++) {
@@ -27,10 +27,10 @@ public class EP1380 {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (row[i] == col[j]) {
-                    res.add(row[i]);
+                    list.add(row[i]);
                 }
             }
         }
-        return res;
+        return list;
     }
 }
