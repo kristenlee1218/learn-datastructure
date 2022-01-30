@@ -8,18 +8,18 @@ package com.learn.array.easy;
  */
 public class EP1304 {
     public int[] sumZero(int n) {
-        int[] a = new int[n];
+        int[] result = new int[n];
         if (n == 1) {
-            return a;
+            return result;
         }
         if (n % 2 != 0) {
-            n = n - 1;
+            n--;
         }
         int mid = (n - 1) / 2;
         for (int i = 0; i <= mid; i++) {
-            a[i] = i + 1;
-            a[mid + 1 + i] = -(i + 1);
+            result[i] = i + 1;
+            result[mid + 1 + i] = -(i + 1);
         }
-        return a;
+        return result;
     }
 }
