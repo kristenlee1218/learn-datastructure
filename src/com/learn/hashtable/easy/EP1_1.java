@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.hashtable.easy;
 
 import java.util.HashMap;
 import java.util.Map;
