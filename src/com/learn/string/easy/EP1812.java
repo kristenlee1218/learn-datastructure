@@ -10,7 +10,6 @@ package com.learn.string.easy;
  */
 public class EP1812 {
     public boolean squareIsWhite(String s) {
-        return (s.charAt(0) - 'a') % 2
-                != (s.charAt(1) - '1') % 2;
+        return (s.charAt(0) - 'a') % 2 != (s.charAt(1) - '1') % 2;
     }
 }

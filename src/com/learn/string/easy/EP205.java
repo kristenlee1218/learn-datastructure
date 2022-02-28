@@ -14,8 +14,8 @@ import java.util.Map;
  */
 public class EP205 {
     public boolean isIsomorphic(String s, String t) {
-        Map<Character, Character> map1 = new HashMap<Character, Character>();
-        Map<Character, Character> map2 = new HashMap<Character, Character>();
+        Map<Character, Character> map1 = new HashMap<>();
+        Map<Character, Character> map2 = new HashMap<>();
         int len = s.length();
         for (int i = 0; i < len; ++i) {
             char x = s.charAt(i), y = t.charAt(i);
