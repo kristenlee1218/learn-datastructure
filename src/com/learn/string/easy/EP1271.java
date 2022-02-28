@@ -13,7 +13,7 @@ package com.learn.string.easy;
 public class EP1271 {
     public String toHexspeak(String s) {
         double temp = Double.parseDouble(s);
-        StringBuffer sb = new StringBuffer("");
+        StringBuilder sb = new StringBuilder();
         while (temp > 0) {
             int c = (int) (temp % 16);
             if (c == 0 || c == 1 || c >= 10) {

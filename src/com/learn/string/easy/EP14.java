@@ -7,7 +7,6 @@ package com.learn.string.easy;
  * 如果不存在公共前缀，返回空字符串 ""
  */
 public class EP14 {
-
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {
             return "";

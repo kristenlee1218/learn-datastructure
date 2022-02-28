@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class EP830 {
     public List<List<Integer>> largeGroupPositions(String s) {
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        List<List<Integer>> list = new ArrayList<>();
         int num = 1;
         for (int i = 0; i < s.length(); i++) {
             if (i == s.length() - 1 || s.charAt(i) != s.charAt(i + 1)) {

@@ -15,7 +15,7 @@ public class EP1455 {
         String[] words = sentence.split(" ");
         for (int i = 0; i < words.length; i++) {
             String w = words[i];
-            if (w.length() >= searchWord.length() && w.substring(0, searchWord.length()).equals(searchWord)) {
+            if (w.length() >= searchWord.length() && w.startsWith(searchWord)) {
                 return i + 1;
             }
         }

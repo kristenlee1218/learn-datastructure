@@ -1,6 +1,7 @@
 package com.learn.test;
 
-import java.util.concurrent.ThreadLocalRandom;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @author : Kristen
@@ -9,16 +10,15 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class Test1 {
     public static void main(String[] args) {
-        ThreadLocalRandom random = ThreadLocalRandom.current();
-        int count = 0;
-        for (int i = 0; i < 5; i++) {
-            if (isInterested(random.nextInt(10))) {
-                count++;
-            }
-        }
-        System.out.printf("Found %d interested values%n", count);
-    }
-    private static boolean isInterested(int i) {
-        return i % 2 == 0;
+        String s = String.valueOf(System.currentTimeMillis());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        long lt = new Long(s);
+        Date date = new Date(lt);
+        String res = simpleDateFormat.format(date);
+        String[] strs = res.split(" ");
+        String day = strs[0];
+        String time = strs[1];
+        System.out.println(day);
+        System.out.println(time);
     }
 }
