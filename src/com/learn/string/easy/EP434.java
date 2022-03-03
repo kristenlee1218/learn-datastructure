@@ -8,7 +8,7 @@ package com.learn.string.easy;
  */
 public class EP434 {
     public int countSegments(String s) {
-        if ("".equals(s)) {
+        if (s.length() == 0) {
             return 0;
         }
         int count = 0;

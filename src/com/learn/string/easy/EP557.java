@@ -9,8 +9,8 @@ package com.learn.string.easy;
 public class EP557 {
     public String reverseWords(String s) {
         StringBuilder result = new StringBuilder();
-        String[] s1 = s.split(" ");
-        for (String value : s1) {
+        String[] str = s.split(" ");
+        for (String value : str) {
             StringBuilder sb = new StringBuilder(value);
             String afterReverse = sb.reverse().toString();
             result.append(afterReverse).append(" ");

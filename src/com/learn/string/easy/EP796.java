@@ -7,13 +7,11 @@ package com.learn.string.easy;
  * 字符移动到最右边。如果在若干次旋转操作之后，A 能变成 B，那么返回 True
  */
 public class EP796 {
-    public boolean hasAlternatingBits(int n) {
-        while (n > 0) {
-            if (n % 2 == (n / 2) % 2) {
-                return false;
-            }
-            n /= 2;
+    public boolean rotateString(String s, String goal) {
+        if (s.length() != goal.length()) {
+            return false;
         }
-        return true;
+        String str = s + s;
+        return str.contains(goal);
     }
 }

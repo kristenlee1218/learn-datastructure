@@ -8,7 +8,7 @@ package com.learn.string.easy;
  * num1 和 num2 的长度都小于 5100
  * num1 和 num2 都只包含数字 0-9
  * num1 和 num2 都不包含任何前导零
- * 不能使用任何內建 BigInteger 库， 也不能直接将输入的字符串转换为整数形式
+ * 不能使用任何內建 BigInteger 库，也不能直接将输入的字符串转换为整数形式
  */
 public class EP415 {
     public String addStrings(String a, String b) {

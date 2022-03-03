@@ -17,9 +17,9 @@ public class EP800 {
                 fun(color.substring(3, 5)) + fun(color.substring(5));
     }
 
-    public String fun(String comp) {
-        int q = Integer.parseInt(comp, 16);
-        q = q / 17 + (q % 17 > 8 ? 1 : 0);
-        return String.format("%02x", 17 * q);
+    public String fun(String s) {
+        int i = Integer.parseInt(s, 16);
+        i = i / 17 + (i % 17 > 8 ? 1 : 0);
+        return String.format("%02x", i * 17);
     }
 }
