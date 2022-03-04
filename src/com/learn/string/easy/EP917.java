@@ -10,7 +10,7 @@ import java.util.Stack;
  */
 public class EP917 {
     public String reverseOnlyLetters(String s) {
-        Stack<Character> letters = new Stack();
+        Stack<Character> letters = new Stack<>();
         for (char c : s.toCharArray()) {
             if (Character.isLetter(c)) {
                 letters.push(c);

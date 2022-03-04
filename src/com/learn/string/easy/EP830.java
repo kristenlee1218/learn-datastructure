@@ -17,15 +17,15 @@ import java.util.List;
 public class EP830 {
     public List<List<Integer>> largeGroupPositions(String s) {
         List<List<Integer>> list = new ArrayList<>();
-        int num = 1;
+        int count = 1;
         for (int i = 0; i < s.length(); i++) {
             if (i == s.length() - 1 || s.charAt(i) != s.charAt(i + 1)) {
-                if (num >= 3) {
-                    list.add(Arrays.asList(i - num + 1, i));
+                if (count >= 3) {
+                    list.add(Arrays.asList(i - count + 1, i));
                 }
-                num = 1;
+                count = 1;
             } else {
-                num++;
+                count++;
             }
         }
         return list;
