@@ -1,7 +1,5 @@
 package com.learn.string.easy;
 
-import java.util.Stack;
-
 /**
  * @author : Kristen
  * @date : 2022/1/3
@@ -10,21 +8,20 @@ import java.util.Stack;
  */
 public class EP917 {
     public String reverseOnlyLetters(String s) {
-        Stack<Character> letters = new Stack<>();
-        for (char c : s.toCharArray()) {
-            if (Character.isLetter(c)) {
-                letters.push(c);
+        char[] ch = s.toCharArray();
+        for (int i = 0, j = ch.length - 1; i < j; ) {
+            while (i < j && !Character.isLetter(ch[i])) {
+                i++;
+            }
+            while (i < j && !Character.isLetter(ch[j])) {
+                j--;
+            }
+            if (i < j) {
+                char c = ch[i];
+                ch[i++] = ch[j];
+                ch[j--] = c;
             }
         }
-
-        StringBuilder sb = new StringBuilder();
-        for (char c : s.toCharArray()) {
-            if (Character.isLetter(c)) {
-                sb.append(letters.pop());
-            } else {
-                sb.append(c);
-            }
-        }
-        return sb.toString();
+        return String.valueOf(ch);
     }
 }
