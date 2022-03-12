@@ -11,11 +11,11 @@ public class EP1576 {
         char[] sb = s.toCharArray();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '?') {
-                char a = 'a';
-                while ((i > 0 && sb[i - 1] == a) || (i < s.length() - 1 && sb[i + 1] == a)) {
-                    a++;
+                char ch = 'a';
+                while ((i > 0 && sb[i - 1] == ch) || (i < s.length() - 1 && sb[i + 1] == ch)) {
+                    ch++;
                 }
-                sb[i] = a;
+                sb[i] = ch;
             }
         }
         return new String(sb);

@@ -13,18 +13,18 @@ import java.util.List;
 public class EP1200 {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         Arrays.sort(arr);
-        List<List<Integer>> llist = new ArrayList<>();
+        List<List<Integer>> list = new ArrayList<>();
         int absolute = Integer.MAX_VALUE, num;
         for (int i = 0; i < arr.length - 1; i++) {
             num = Math.abs(arr[i + 1] - arr[i]);
             if (num < absolute) {
-                llist.clear();
-                llist.add(Arrays.asList(arr[i], arr[i + 1]));
+                list.clear();
+                list.add(Arrays.asList(arr[i], arr[i + 1]));
                 absolute = Math.abs(arr[i + 1] - arr[i]);
             } else if (num == absolute) {
-                llist.add(Arrays.asList(arr[i], arr[i + 1]));
+                list.add(Arrays.asList(arr[i], arr[i + 1]));
             }
         }
-        return llist;
+        return list;
     }
 }
