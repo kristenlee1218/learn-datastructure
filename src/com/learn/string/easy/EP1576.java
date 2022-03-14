@@ -8,16 +8,17 @@ package com.learn.string.easy;
  */
 public class EP1576 {
     public String modifyString(String s) {
-        char[] sb = s.toCharArray();
+        char[] ch = s.toCharArray();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '?') {
-                char ch = 'a';
-                while ((i > 0 && sb[i - 1] == ch) || (i < s.length() - 1 && sb[i + 1] == ch)) {
-                    ch++;
+                char c = 'a';
+                while ((i > 0 && ch[i - 1] == c)
+                        || (i < s.length() - 1 && ch[i + 1] == c)) {
+                    c++;
                 }
-                sb[i] = ch;
+                ch[i] = c;
             }
         }
-        return new String(sb);
+        return new String(ch);
     }
 }
