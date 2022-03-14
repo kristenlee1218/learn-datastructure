@@ -8,17 +8,17 @@ package com.learn.hashtable.easy;
  * 如果可以构成，返回 true；否则返回 false
  */
 public class EP383 {
-    public boolean canConstruct(String ransomNote, String magazine) {
-        if (ransomNote.length() > magazine.length()) {
+    public boolean canConstruct(String ransom, String magazine) {
+        if (ransom.length() > magazine.length()) {
             return false;
         }
-        int[] cnt = new int[26];
+        int[] result = new int[26];
         for (char c : magazine.toCharArray()) {
-            cnt[c - 'a']++;
+            result[c - 'a']++;
         }
-        for (char c : ransomNote.toCharArray()) {
-            cnt[c - 'a']--;
-            if (cnt[c - 'a'] < 0) {
+        for (char c : ransom.toCharArray()) {
+            result[c - 'a']--;
+            if (result[c - 'a'] < 0) {
                 return false;
             }
         }

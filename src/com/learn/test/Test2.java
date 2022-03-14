@@ -6,15 +6,21 @@ package com.learn.test;
  * @description :
  */
 public class Test2 {
-    public String gcdOfStrings(String str1, String str2) {
-        if (!(str1 + str2).equals(str2 + str1)) {
-            return "";
+    public boolean canConstruct(String ransom, String magazine) {
+        if (ransom.length() > magazine.length()) {
+            return false;
         }
-        return str1.substring(0, gcd(str1.length(), str2.length()));
-    }
-
-    public int gcd(int a, int b) {
-        return b == 0 ? a : gcd(b, a % b);
+        int[] result = new int[26];
+        for (char c : magazine.toCharArray()) {
+            result[c - 'a']++;
+        }
+        for (char c : ransom.toCharArray()) {
+            result[c - 'a']--;
+            if (result[c - 'a'] < 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 
