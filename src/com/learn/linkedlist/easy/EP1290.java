@@ -8,11 +8,11 @@ package com.learn.linkedlist.easy;
  */
 public class EP1290 {
     public int getDecimalValue(ListNode head) {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         while (head != null) {
-            str += head.val;
+            str.append(head.val);
             head = head.next;
         }
-        return Integer.valueOf(str, 2);
+        return Integer.valueOf(str.toString(), 2);
     }
 }

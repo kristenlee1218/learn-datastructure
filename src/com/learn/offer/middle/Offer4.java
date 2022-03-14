@@ -13,10 +13,11 @@ public class Offer4 {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
         }
-        for (int i = 0; i < matrix.length; i++) {
+        for (int[] ints : matrix) {
             for (int j = 0; j < matrix[0].length; j++) {
-                if (matrix[i][j] == target) {
+                if (ints[j] == target) {
                     flag = true;
+                    break;
                 }
             }
         }

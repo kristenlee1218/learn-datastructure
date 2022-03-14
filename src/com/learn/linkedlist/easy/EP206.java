@@ -7,13 +7,13 @@ package com.learn.linkedlist.easy;
  */
 public class EP206 {
     public ListNode reverse(ListNode list) {
-        ListNode curr = list;
+        ListNode cur = list;
         ListNode pre = null;
-        while (curr != null) {
-            ListNode next = curr.next;
-            curr.next = pre;
-            pre = curr;
-            curr = next;
+        while (cur != null) {
+            ListNode next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
         }
         return pre;
     }

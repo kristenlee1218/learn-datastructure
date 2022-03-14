@@ -18,8 +18,7 @@ public class Offer13 {
         if (k == 0) {
             return 1;
         }
-        Queue<int[]> queue = new LinkedList<int[]>();
-        // 向右和向下的方向数组
+        Queue<int[]> queue = new LinkedList<>();
         int[] dx = {0, 1};
         int[] dy = {1, 0};
         boolean[][] vis = new boolean[m][n];

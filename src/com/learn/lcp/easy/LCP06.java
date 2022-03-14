@@ -9,11 +9,11 @@ package com.learn.lcp.easy;
 public class LCP06 {
     public int minCount(int[] coins) {
         int sum = 0;
-        for (int i = 0; i < coins.length; i++) {
-            if (coins[i] % 2 == 0) {
-                sum += coins[i] / 2;
+        for (int coin : coins) {
+            if (coin % 2 == 0) {
+                sum += coin / 2;
             } else {
-                sum += coins[i] / 2 + 1;
+                sum += coin / 2 + 1;
             }
         }
         return sum;
