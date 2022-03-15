@@ -8,14 +8,14 @@ package com.learn.lcp.easy;
  */
 public class LCP06 {
     public int minCount(int[] coins) {
-        int sum = 0;
+        int count = 0;
         for (int coin : coins) {
             if (coin % 2 == 0) {
-                sum += coin / 2;
+                count += coin / 2;
             } else {
-                sum += coin / 2 + 1;
+                count += coin / 2 + 1;
             }
         }
-        return sum;
+        return count;
     }
 }
