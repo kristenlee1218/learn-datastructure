@@ -12,8 +12,7 @@ public class EP1576 {
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '?') {
                 char c = 'a';
-                while ((i > 0 && ch[i - 1] == c)
-                        || (i < s.length() - 1 && ch[i + 1] == c)) {
+                while ((i > 0 && ch[i - 1] == c) || (i < s.length() - 1 && ch[i + 1] == c)) {
                     c++;
                 }
                 ch[i] = c;
