@@ -1,7 +1,7 @@
 package com.learn.test;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author : Kristen
@@ -9,30 +9,21 @@ import java.util.Map;
  * @description :
  */
 public class Test1 {
-    public boolean wordPattern(String pattern, String s) {
-        String[] str = s.split(" ");
-        char[] ch = pattern.toCharArray();
-        if (str.length != ch.length) {
-            return false;
+    public List<String> generatePossibleNextMoves(String s) {
+        List<String> list = new ArrayList<>();
+        if (s == null || s.length() < 2) {
+            return list;
         }
-        Map<Character, String> map1 = new HashMap<>();
-        Map<String, Character> map2 = new HashMap<>();
-        for (int i = 0; i < str.length; i++) {
-            if (map1.containsKey(ch[i])) {
-                if (!map1.get(ch[i]).equals(str[i])) {
-                    return false;
-                }
-            } else {
-                map1.put(ch[i], str[i]);
-            }
-            if (map2.containsKey(str[i])) {
-                if (map2.get(str[i]) != ch[i]) {
-                    return false;
-                }
-            } else {
-                map2.put(str[i], ch[i]);
+        char[] ch = s.toCharArray();
+        for (int i = 0; i < ch.length - 1; i++) {
+            if (ch[i] == '+' && ch[i] == ch[i + 1]) {
+                ch[i] = '-';
+                ch[i + 1] = '-';
+                list.add(new String(ch));
+                ch[i] = '+';
+                ch[i + 1] = '+';
             }
         }
-        return true;
+        return list;
     }
 }
