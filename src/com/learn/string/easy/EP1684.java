@@ -4,8 +4,8 @@ package com.learn.string.easy;
  * @author : Kristen
  * @date : 2022/1/14
  * @description :一个由不同字符组成的字符串 allowed 和一个字符串数组 words。
- * 如果一个字符串的每一个字符都在 allowed 中，就称这个字符串是一致字符串、请返
- * 回 words 数组中一致字符串的数目
+ * 如果一个字符串的每一个字符都在 s 中，就称这个字符串是一致字符串、请返回 words
+ * 数组中一致字符串的数目
  */
 public class EP1684 {
     public int countConsistentStrings(String str, String[] words) {
