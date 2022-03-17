@@ -11,19 +11,19 @@ import java.util.Map;
  * 称数，其输入将会以一个字符串的形式来表达数字
  */
 public class EP246 {
-    public boolean isStrobogrammatic(String num) {
+    public boolean isStrobogrammatic(String s) {
         Map<Character, Character> map = new HashMap<>();
         map.put('0', '0');
         map.put('1', '1');
         map.put('6', '9');
         map.put('8', '8');
         map.put('9', '6');
-        int i = 0, j = num.length() - 1;
+        int i = 0, j = s.length() - 1;
         while (i <= j) {
-            if (map.get(num.charAt(i)) == null || map.get(num.charAt(j)) == null) {
+            if (map.get(s.charAt(i)) == null || map.get(s.charAt(j)) == null) {
                 return false;
             }
-            if (map.get(num.charAt(i)) != num.charAt(j)) {
+            if (map.get(s.charAt(i)) != s.charAt(j)) {
                 return false;
             }
             i++;
