@@ -7,7 +7,6 @@ package com.learn.matrix.easy;
  * 是第 i 位客户在第 j 家银行托管的资产数量。返回最富有客户所拥有的资产总量。
  * 客户的资产总量就是他们在各家银行托管的资产数量之和。最富有客户就是资产
  * 总量最大的客户
- *
  */
 public class EP1672 {
     public int maximumWealth(int[][] accounts) {

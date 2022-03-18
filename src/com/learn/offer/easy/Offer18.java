@@ -7,14 +7,6 @@ package com.learn.offer.easy;
  * 返回删除后的链表的头节点
  */
 
-/*class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-    }
-}*/
-
 public class Offer18 {
 
     public ListNode deleteNode(ListNode head, int val) {

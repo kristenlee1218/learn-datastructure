@@ -13,14 +13,7 @@ import java.util.Stack;
  * @date : 2021/8/5
  * @description :
  */
-class ListNode {
-    int val;
-    ListNode next;
 
-    ListNode(int x) {
-        val = x;
-    }
-}
 
 public class Offer6 {
 

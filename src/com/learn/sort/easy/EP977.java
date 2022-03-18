@@ -8,7 +8,6 @@ import java.util.Arrays;
  * @description :给你一个按非递减顺序排序的整数数组 nums，返回每个数字的平
  * 方组成的新数组，要求也按非递减顺序排序
  */
-
 public class EP977 {
     public int[] sortedSquares(int[] nums) {
         for (int i = 0; i < nums.length; i++) {

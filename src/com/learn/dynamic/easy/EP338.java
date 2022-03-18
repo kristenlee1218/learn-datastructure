@@ -5,7 +5,6 @@ package com.learn.dynamic.easy;
  * @date : 2021/10/26
  * @description :一个整数 n，对于 0 <= i <= n 中的每个 i，
  * 计算其二进制表示中 1 的个数，返回一个长度为 n + 1 的数组 nums
- * <p>
  * 解析：
  * i & (i - 1)可以去掉 i 最右边的一个 1（如果有）
  * 因此 i & (i - 1) 是比 i 小的

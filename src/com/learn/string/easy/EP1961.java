@@ -8,7 +8,6 @@ package com.learn.string.easy;
  * 可以由 words 中的前 k（k 为 正数）个字符串按顺序相连得到，且 k 不超过
  * words.length。如果 s 是 words 的前缀字符串，返回 true；否则返回 false
  */
-
 public class EP1961 {
     public boolean isPrefixString(String s, String[] words) {
         StringBuilder sb = new StringBuilder();
