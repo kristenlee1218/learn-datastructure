@@ -5,7 +5,6 @@ package com.learn.tree.easy;
  * @date ：2022/3/11
  * @description :二叉树的定义
  */
-
 public class TreeNode {
     int val;
     TreeNode left;
