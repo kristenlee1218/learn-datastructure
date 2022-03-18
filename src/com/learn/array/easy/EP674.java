@@ -4,7 +4,7 @@ package com.learn.array.easy;
  * @author : Kristen
  * @date : 2021/7/18
  * @description :给定一个未经排序的整数数组，找到最长且连续递增的子序列，
- * 并返回该序列的长度。
+ * 并返回该序列的长度
  */
 
 public class EP674 {

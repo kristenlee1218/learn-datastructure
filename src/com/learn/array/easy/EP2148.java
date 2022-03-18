@@ -14,9 +14,9 @@ public class EP2148 {
             return 0;
         }
         Arrays.sort(nums);
-        int count = 0, pre = nums[0], val = nums[nums.length - 1];
+        int count = 0, pre = nums[0], value = nums[nums.length - 1];
         for (int i = 1; i < nums.length - 1; i++) {
-            if (nums[i] > pre && nums[i] < val) {
+            if (nums[i] > pre && nums[i] < value) {
                 count++;
             }
         }

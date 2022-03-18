@@ -10,7 +10,6 @@ import java.util.Arrays;
  * 费，他想要买尽可能多的雪糕。给你价格数组 costs 和现金量 coins，请你计算并
  * 返回 Tony 用 coins 现金能够买到的雪糕的最大数量
  */
-
 public class EP1833 {
     public int maxIceCream(int[] costs, int coins) {
         Arrays.sort(costs);
