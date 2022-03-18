@@ -16,13 +16,13 @@ public class EP1394 {
         for (int x : arr) {
             m.put(x, m.getOrDefault(x, 0) + 1);
         }
-        int ans = -1;
+        int result = -1;
         for (Map.Entry<Integer, Integer> entry : m.entrySet()) {
             int key = entry.getKey(), value = entry.getValue();
             if (key == value) {
-                ans = Math.max(ans, key);
+                result = Math.max(result, key);
             }
         }
-        return ans;
+        return result;
     }
 }

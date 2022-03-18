@@ -1,7 +1,5 @@
 package com.learn.hashtable.easy;
 
-import java.util.HashMap;
-
 /**
  * @author : Kristen
  * @date : 2021/7/25
