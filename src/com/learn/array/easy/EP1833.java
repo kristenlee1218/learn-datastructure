@@ -14,7 +14,6 @@ public class EP1833 {
     public int maxIceCream(int[] costs, int coins) {
         Arrays.sort(costs);
         int sum = 0, count = 0;
-        // 贪心算法
         for (int cost : costs) {
             sum += cost;
             if (sum > coins) {

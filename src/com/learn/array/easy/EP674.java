@@ -6,7 +6,6 @@ package com.learn.array.easy;
  * @description :给定一个未经排序的整数数组，找到最长且连续递增的子序列，
  * 并返回该序列的长度
  */
-
 public class EP674 {
     public int findLengthOfLCIS(int[] nums) {
         int result = 1;
