@@ -7,12 +7,12 @@ package com.learn.bit.easy;
  * 换为十进制表示，可以得到这个整数的补数
  */
 public class EP476 {
-    public int findComplement(int num) {
+    public int findComplement(int n) {
         int result = 1;
-        while (result < num) {
+        while (result < n) {
             result = result << 1;
             result++;
         }
-        return num ^ result;
+        return n ^ result;
     }
 }
