@@ -10,7 +10,7 @@ import java.util.List;
  * 所有可能的子集（幂集）、解集不能包含重复的子集。可以按任意顺序返回解集
  */
 public class EP78 {
-    public List<List<Integer>> subsets(int[] nums) {
+    public List<List<Integer>> subSets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         list.add(new ArrayList<>());
         for (int num : nums) {
