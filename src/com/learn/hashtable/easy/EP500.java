@@ -2,22 +2,24 @@ package com.learn.hashtable.easy;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * @author : Kristen
  * @date : 2021/8/18
- * @description :一个字符串数组 words ，只返回可以使用在美式键盘同
- * 一行的字母打印出来的单词
+ * @description :一个字符串数组 words，只返回可以使用
+ * 在美式键盘同一行的字母打印出来的单词
  */
 public class EP500 {
     public String[] findWords(String[] words) {
-        ArrayList<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         String row1 = "qwertyuiop";
         String row2 = "asdfghjkl";
         String row3 = "zxcvbnm";
-        HashSet<Character> set1 = new HashSet<>();
-        HashSet<Character> set2 = new HashSet<>();
-        HashSet<Character> set3 = new HashSet<>();
+        Set<Character> set1 = new HashSet<>();
+        Set<Character> set2 = new HashSet<>();
+        Set<Character> set3 = new HashSet<>();
         for (int i = 0; i < row1.length(); i++) {
             set1.add(row1.charAt(i));
         }
@@ -52,10 +54,10 @@ public class EP500 {
                 list.add(s);
             }
         }
-        String[] res = new String[list.size()];
+        String[] str = new String[list.size()];
         for (int i = 0; i < list.size(); i++) {
-            res[i] = list.get(i);
+            str[i] = list.get(i);
         }
-        return res;
+        return str;
     }
 }

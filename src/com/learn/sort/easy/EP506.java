@@ -12,24 +12,24 @@ import java.util.Map;
  * "Silver Medal", "Bronze Medal"）
  */
 public class EP506 {
-    public String[] findRelativeRanks(int[] nums) {
-        String[] str = new String[nums.length];
+    public String[] findRelativeRanks(int[] score) {
+        String[] str = new String[score.length];
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
+        for (int i = 0; i < score.length; i++) {
+            map.put(score[i], i);
         }
-        Arrays.sort(nums);
-        int j = nums.length - 1;
+        Arrays.sort(score);
+        int j = score.length - 1;
         for (int i = 0; i < str.length; i++) {
             if (j >= 0) {
-                if (j == nums.length - 1) {
-                    str[map.get(nums[j])] = "Gold Medal";
-                } else if (j == nums.length - 2) {
-                    str[map.get(nums[j])] = "Silver Medal";
-                } else if (j == nums.length - 3) {
-                    str[map.get(nums[j])] = "Bronze Medal";
+                if (j == score.length - 1) {
+                    str[map.get(score[j])] = "Gold Medal";
+                } else if (j == score.length - 2) {
+                    str[map.get(score[j])] = "Silver Medal";
+                } else if (j == score.length - 3) {
+                    str[map.get(score[j])] = "Bronze Medal";
                 } else {
-                    str[map.get(nums[j])] = i + 1 + "";
+                    str[map.get(score[j])] = i + 1 + "";
                 }
                 j--;
             }

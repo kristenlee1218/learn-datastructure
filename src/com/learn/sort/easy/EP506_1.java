@@ -12,10 +12,10 @@ import java.util.Arrays;
 public class EP506_1 {
     public String[] findRelativeRanks(int[] score) {
         String[] str = new String[score.length];
-        int[] clone = Arrays.copyOf(score, score.length);
-        Arrays.sort(clone);
+        int[] nums = Arrays.copyOf(score, score.length);
+        Arrays.sort(nums);
         for (int i = 0; i < score.length; i++) {
-            int rank = score.length - Arrays.binarySearch(clone, score[i]);
+            int rank = score.length - Arrays.binarySearch(nums, score[i]);
             if (rank == 1) {
                 str[i] = "Gold Medal";
             } else if (rank == 2) {

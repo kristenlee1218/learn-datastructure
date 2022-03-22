@@ -8,7 +8,5 @@ import java.util.List;
  * @description :
  */
 public class Test4 {
-    public List<String> generatePossibleNextMoves(String s) {
 
-    }
 }

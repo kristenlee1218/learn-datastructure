@@ -1,6 +1,10 @@
 package com.learn.test;
 
+
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author : Kristen
@@ -8,20 +12,53 @@ import java.util.List;
  * @description :
  */
 public class Test1 {
-    public boolean validWordSquare(List<String> words) {
-        for (int i = 0; i < words.size(); i++) {
-            for (int j = 0; j < words.get(i).length(); j++) {
-                if (words.get(i).length() > words.size()) {
-                    return false;
+    public String[] findWords(String[] words) {
+        List<String> list = new ArrayList<>();
+        String row1 = "qwertyuiop";
+        String row2 = "asdfghjkl";
+        String row3 = "zxcvbnm";
+        Set<Character> set1 = new HashSet<>();
+        Set<Character> set2 = new HashSet<>();
+        Set<Character> set3 = new HashSet<>();
+
+        for (int i = 0; i < row1.length(); i++) {
+            set1.add(row1.charAt(i));
+        }
+        for (int i = 0; i < row2.length(); i++) {
+            set2.add(row2.charAt(i));
+        }
+        for (int i = 0; i < row3.length(); i++) {
+            set3.add(row3.charAt(i));
+        }
+        for (String s : words) {
+            boolean flag1 = false;
+            boolean flag2 = false;
+            boolean flag3 = false;
+            for (int j = 0; j < s.length(); j++) {
+                if (set1.contains(s.charAt(j))) {
+                    flag1 = true;
                 }
-                if (words.get(j).length() - 1 < i) {
-                    return false;
+                if (set2.contains(s.charAt(j))) {
+                    flag2 = true;
                 }
-                if (words.get(i).charAt(j) != words.get(j).charAt(i)) {
-                    return false;
+                if (set3.contains(s.charAt(j))) {
+                    flag3 = true;
                 }
             }
+            if (flag1 && !flag2 && !flag3) {
+                list.add(s);
+            }
+            if (!flag1 && flag2 && !flag3) {
+                list.add(s);
+            }
+            if (!flag1 && !flag2 && flag3) {
+                list.add(s);
+            }
         }
-        return true;
+        String[] str = new String[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            str[i] = list.get(i);
+        }
+        return str;
     }
 }
