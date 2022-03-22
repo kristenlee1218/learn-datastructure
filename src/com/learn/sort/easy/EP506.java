@@ -29,7 +29,7 @@ public class EP506 {
                 } else if (j == score.length - 3) {
                     str[map.get(score[j])] = "Bronze Medal";
                 } else {
-                    str[map.get(score[j])] = i + 1 + "";
+                    str[map.get(score[j])] = String.valueOf(i+1);
                 }
                 j--;
             }
