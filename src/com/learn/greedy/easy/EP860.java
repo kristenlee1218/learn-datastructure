@@ -7,8 +7,8 @@ package com.learn.greedy.easy;
  * 你的产品，（按账单 bills 支付的顺序）一次购买一杯。每位顾客只买一杯柠
  * 檬水，然后向你付 5 美元、10 美元或 20 美元。你必须给每个顾客正确找零，
  * 也就是说净交易是每位顾客向你支付 5 美元。注意，一开始你手头没有任何零钱。
- * 一个整数数组 bills ，其中 bills[i] 是第 i 位顾客付的账。如果你能给
- * 每位顾客正确找零，返回 true ，否则返回 false
+ * 一个整数数组 bills，其中 bills[i] 是第 i 位顾客付的账。如果你能给
+ * 每位顾客正确找零，返回 true，否则返回 false
  */
 public class EP860 {
     public boolean lemonadeChange(int[] bills) {
