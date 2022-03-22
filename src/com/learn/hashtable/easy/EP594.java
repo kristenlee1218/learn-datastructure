@@ -12,13 +12,13 @@ import java.util.Arrays;
 public class EP594 {
     public int findLHS(int[] nums) {
         Arrays.sort(nums);
-        int begin = 0, result = 0;
-        for (int end = 0; end < nums.length; end++) {
-            while (nums[end] - nums[begin] > 1) {
-                begin++;
+        int i = 0, result = 0;
+        for (int j = 0; j < nums.length; j++) {
+            while (nums[j] - nums[i] > 1) {
+                i++;
             }
-            if (nums[end] - nums[begin] == 1) {
-                result = Math.max(result, end - begin + 1);
+            if (nums[j] - nums[i] == 1) {
+                result = Math.max(result, j - i + 1);
             }
         }
         return result;
