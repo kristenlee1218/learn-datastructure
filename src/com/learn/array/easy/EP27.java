@@ -9,7 +9,6 @@ package com.learn.array.easy;
  * 你不需要考虑数组中超出新长度后面的元素移除某值的元素，
  * 可能会有多个，如何解决多个是本题的关键
  */
-
 public class EP27 {
     public int removeElement(int[] nums, int value) {
         int index = 0;
