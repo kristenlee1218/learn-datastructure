@@ -9,29 +9,29 @@ package com.learn.hashtable.easy;
  * 换 A[i] 和 A[j] 处的字符
  */
 public class EP859 {
-    public boolean buddyStrings(String s, String goal) {
-        if (s.length() != goal.length()) {
+    public boolean buddyStrings(String a, String b) {
+        if (a.length() != b.length()) {
             return false;
         }
         int[] nums1 = new int[26];
         int[] nums2 = new int[26];
         int sum = 0;
-        for (int i = 0; i < s.length(); i++) {
-            nums1[s.charAt(i) - 'a']++;
-            nums2[goal.charAt(i) - 'a']++;
-            if (s.charAt(i) != goal.charAt(i)) {
+        for (int i = 0; i < a.length(); i++) {
+            nums1[a.charAt(i) - 'a']++;
+            nums2[b.charAt(i) - 'a']++;
+            if (a.charAt(i) != b.charAt(i)) {
                 sum++;
             }
         }
-        boolean ok = false;
+        boolean flag = false;
         for (int i = 0; i < 26; i++) {
             if (nums1[i] != nums2[i]) {
                 return false;
             }
             if (nums1[i] > 1) {
-                ok = true;
+                flag = true;
             }
         }
-        return sum == 2 || (sum == 0 && ok);
+        return sum == 2 || (sum == 0 && flag);
     }
 }
