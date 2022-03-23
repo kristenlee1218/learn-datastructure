@@ -1,6 +1,7 @@
 package com.learn.hashtable.easy;
 
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author : Kristen
@@ -17,7 +18,7 @@ import java.util.HashSet;
  * 所有词不同单词翻译的数量。
  */
 public class EP804 {
-    public static String[] map = {".-", "-...", "-.-.", "-..",
+    public static String[] str = {".-", "-...", "-.-.", "-..",
             ".", "..-.", "--.", "....", "..", ".---", "-.-",
             ".-..", "--", "-.", "---", ".--.", "--.-", ".-.",
             "...", "-", "..-", "...-", ".--", "-..-", "-.--",
@@ -27,11 +28,11 @@ public class EP804 {
         if (words == null) {
             return 0;
         }
-        HashSet<String> set = new HashSet<String>();
+        Set<String> set = new HashSet<>();
         for (String s : words) {
             StringBuilder sb = new StringBuilder();
             for (char c : s.toCharArray()) {
-                sb.append(map[c - 'a']);
+                sb.append(str[c - 'a']);
             }
             set.add(sb.toString());
         }

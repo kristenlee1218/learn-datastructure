@@ -10,11 +10,11 @@ public class EP680 {
     public boolean validPalindrome(String s) {
         int left = 0;
         int right = s.length() - 1;
-        char[] charString = s.toCharArray();
+        char[] ch = s.toCharArray();
         while (left < right) {
-            if (charString[left] != charString[right]) {
-                return validPalindrome(charString, left + 1, right)
-                        || validPalindrome(charString, left, right - 1);
+            if (ch[left] != ch[right]) {
+                return validPalindrome(ch, left + 1, right)
+                        || validPalindrome(ch, left, right - 1);
             }
             left++;
             right--;
@@ -22,9 +22,9 @@ public class EP680 {
         return true;
     }
 
-    public boolean validPalindrome(char[] charString, int left, int right) {
+    public boolean validPalindrome(char[] ch, int left, int right) {
         while (left < right) {
-            if (charString[left] != charString[right]) {
+            if (ch[left] != ch[right]) {
                 return false;
             }
             left++;
