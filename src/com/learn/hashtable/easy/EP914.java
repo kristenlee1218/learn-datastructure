@@ -14,9 +14,9 @@ public class EP914 {
             counter[num]++;
         }
         int x = 0;
-        for (int cnt : counter) {
-            if (cnt > 0) {
-                x = gcd(x, cnt);
+        for (int count : counter) {
+            if (count > 0) {
+                x = gcd(x, count);
                 if (x == 1) {
                     return false;
                 }

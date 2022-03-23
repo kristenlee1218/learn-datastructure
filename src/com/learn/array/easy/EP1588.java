@@ -7,12 +7,12 @@ package com.learn.array.easy;
  * 子数组定义为原数组中的一个连续子序列。请返回 arr 中所有奇数长度子数组的和
  */
 public class EP1588 {
-    public int sumOddLengthSubarrays(int[] arr) {
+    public int sumOddLengthSubarrays(int[] nums) {
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             int temp = 0;
-            for (int j = i; j < arr.length; j++) {
-                temp += arr[j];
+            for (int j = i; j < nums.length; j++) {
+                temp += nums[j];
                 if (((j - i) % 2) == 0) {
                     sum += temp;
                 }

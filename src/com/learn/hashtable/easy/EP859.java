@@ -13,31 +13,25 @@ public class EP859 {
         if (a.length() != b.length()) {
             return false;
         }
-        if (a.equals(b)) {
-            int[] count = new int[26];
-            for (int i = 0; i < a.length(); ++i) {
-                count[a.charAt(i) - 'a']++;
+        int[] nums1 = new int[26];
+        int[] nums2 = new int[26];
+        int sum = 0;
+        for (int i = 0; i < a.length(); i++) {
+            nums1[a.charAt(i) - 'a']++;
+            nums2[b.charAt(i) - 'a']++;
+            if (a.charAt(i) != b.charAt(i)) {
+                sum++;
             }
-            for (int c : count) {
-                if (c > 1) {
-                    return true;
-                }
-            }
-            return false;
-        } else {
-            int first = -1, second = -1;
-            for (int i = 0; i < a.length(); ++i) {
-                if (a.charAt(i) != b.charAt(i)) {
-                    if (first == -1) {
-                        first = i;
-                    } else if (second == -1) {
-                        second = i;
-                    } else {
-                        return false;
-                    }
-                }
-            }
-            return (second != -1 && a.charAt(first) == b.charAt(second) && a.charAt(second) == b.charAt(first));
         }
+        boolean flag = false;
+        for (int i = 0; i < 26; i++) {
+            if (nums1[i] != nums2[i]) {
+                return false;
+            }
+            if (nums1[i] > 1) {
+                flag = true;
+            }
+        }
+        return sum == 2 || (sum == 0 && flag);
     }
 }

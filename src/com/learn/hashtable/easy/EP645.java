@@ -10,7 +10,6 @@ import java.util.Arrays;
  * 数字并且有一个数字重复。给定一个数组 nums 代表了集合 S 发生错误后的
  * 结果。请找出重复出现的整数，再找到丢失的整数，将它们以数组的形式返回
  */
-
 public class EP645 {
     public int[] findErrorNums(int[] nums) {
         int[] result = new int[2];

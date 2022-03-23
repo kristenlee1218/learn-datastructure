@@ -8,7 +8,6 @@ package com.learn.array.easy;
  * 组空间，你必须在原地修改输入数组并在使用 O(1)额外空间的条件下完成
  * 移除所有重复的元素、使用双指针的方式
  */
-
 public class EP26 {
     public int removeDuplicates(int[] nums) {
         int i = 0;
