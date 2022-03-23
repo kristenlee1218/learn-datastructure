@@ -14,15 +14,15 @@ import java.util.Map;
 public class EP2053 {
     public String kthDistinct(String[] str, int k) {
         Map<String, Integer> map = new HashMap<>();
-        for (String value : str) {
-            int count = map.getOrDefault(value, 0) + 1;
-            map.put(value, count);
+        for (String s : str) {
+            int count = map.getOrDefault(s, 0) + 1;
+            map.put(s, count);
         }
-        for (String a : str) {
-            if (map.get(a) == 1) {
+        for (String s : str) {
+            if (map.get(s) == 1) {
                 k--;
                 if (k == 0) {
-                    return a;
+                    return s;
                 }
             }
         }

@@ -11,9 +11,9 @@ import java.util.Map;
  * 如果数组中存在多个幸运数，只需返回最大的那个。如果数组中不含幸运数则返回 -1
  */
 public class EP1394 {
-    public int findLucky(int[] arr) {
+    public int findLucky(int[] nums) {
         Map<Integer, Integer> m = new HashMap<>();
-        for (int x : arr) {
+        for (int x : nums) {
             m.put(x, m.getOrDefault(x, 0) + 1);
         }
         int result = -1;
