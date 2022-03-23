@@ -13,21 +13,20 @@ import java.util.Arrays;
 
 public class EP645 {
     public int[] findErrorNums(int[] nums) {
-        boolean[] boo = new boolean[nums.length + 1];
-        int duplicate = 0, absent = 0;
-        for (int i : nums) {
-            if (boo[i]) {
-                duplicate = i;
-            } else {
-                boo[i] = true;
+        int[] result = new int[2];
+        Arrays.sort(nums);
+        int pre = 0;
+        for (int value : nums) {
+            if (value == pre) {
+                result[0] = pre;
+            } else if (value - pre > 1) {
+                result[1] = pre + 1;
             }
+            pre = value;
         }
-        for (int k = 1; k <= nums.length; k++) {
-            if (!boo[k]) {
-                absent = k;
-                break;
-            }
+        if (nums[nums.length - 1] != nums.length) {
+            result[1] = nums.length;
         }
-        return new int[]{duplicate, absent};
+        return result;
     }
 }
