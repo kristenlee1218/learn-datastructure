@@ -27,7 +27,6 @@ public class EP228 {
                 }
             }
         }
-
         return list;
     }
 }
