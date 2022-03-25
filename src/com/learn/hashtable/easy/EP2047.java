@@ -15,4 +15,14 @@ package com.learn.hashtable.easy;
  * 请找出并返回 sentence 中有效单词的数目
  */
 public class EP2047 {
+    public int countValidWords(String sentence) {
+        String regex = "([a-z]*|([a-z]+-[a-z]+))[!.,]?";
+        int count = 0;
+        for (String s : sentence.split(" ")) {
+            if (s.length() > 0 && s.matches(regex)) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
