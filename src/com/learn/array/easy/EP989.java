@@ -1,7 +1,6 @@
 package com.learn.array.easy;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -13,20 +12,15 @@ import java.util.List;
  */
 public class EP989 {
     public List<Integer> addToArrayForm(int[] nums, int k) {
-        List<Integer> list = new ArrayList<>();
-        for (int i = nums.length - 1; i >= 0; --i) {
-            int sum = nums[i] + k % 10;
-            k /= 10;
-            if (sum >= 10) {
-                k++;
-                sum -= 10;
+        LinkedList<Integer> list = new LinkedList<>();
+        int i = nums.length - 1;
+        while (i >= 0 || k > 0) {
+            if (i >= 0) {
+                k += nums[i--];
             }
-            list.add(sum);
+            list.addFirst(k % 10);
+            k /= 10;
         }
-        for (; k > 0; k /= 10) {
-            list.add(k % 10);
-        }
-        Collections.reverse(list);
         return list;
     }
 }
