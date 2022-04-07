@@ -12,10 +12,10 @@ public class EP9 {
             return false;
         }
         int cur = 0;
-        int num = x;
-        while (num != 0) {
-            cur = cur * 10 + num % 10;
-            num /= 10;
+        int n = x;
+        while (n != 0) {
+            cur = cur * 10 + n % 10;
+            n /= 10;
         }
         return cur == x;
     }
