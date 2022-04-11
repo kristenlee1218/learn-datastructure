@@ -3,8 +3,8 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description :给一个整数 n。如果 n 恰好有三个正除数，返回 true；否则，
- * 返回 false。如果存在整数 k，满足 n = k * m，那么整数 m 就是 n 的一个除数
+ * @description :给一个整数 n。如果 n 恰好有三个正除数，返回 true；否则，返
+ * 回 false。如果存在整数 k，满足 n = k * m，那么整数 m 就是 n 的一个除数
  */
 public class EP1952 {
     public boolean isThree(int n) {

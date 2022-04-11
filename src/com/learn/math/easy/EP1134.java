@@ -3,9 +3,9 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2021/10/29
- * @description :假设存在一个 k 位数 n，其每一位上的数字的 k 次幂的总和也是 n，
- * 那么这个数是阿姆斯特朗数。一个正整数 n 来判定是否是阿姆斯特朗数，是则返回
- * true，不是则返回 false
+ * @description :假设存在一个 k 位数 n，其每一位上的数字的 k 次幂的总
+ * 和也是 n，这个数是阿姆斯特朗数。一个正整数 n 来判定是否是阿姆斯特朗数，
+ * 是则返回 true，不是则返回 false
  */
 public class EP1134 {
     public boolean isArmstrong(int n) {

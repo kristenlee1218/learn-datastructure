@@ -5,9 +5,8 @@ import java.util.Arrays;
 /**
  * @author : Kristen
  * @date : 2022/3/13
- * @description :一个四位正整数 num。请使用 num 中的数位，
- * 将 num 拆成两个新的整数 new1 和 new2。new1 和 new2
- * 中可以有前导 0，且 num 中所有数位都必须使用
+ * @description :一个四位正整数 num。请使用 num 中的数位，将 num 拆成两个新的整
+ * 数 new1 和 new2。new1 和 new2 中可以有前导 0，且 num 中所有数位都必须使用
  */
 public class EP2160 {
     public int minimumSum(int num) {

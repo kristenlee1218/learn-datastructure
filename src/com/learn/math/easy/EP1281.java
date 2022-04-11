@@ -3,8 +3,7 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/6
- * @description : 一个整数 n，计算并返回该整数「各位数字之积」
- * 与「各位数字之和」的差
+ * @description : 一个整数 n，计算并返回该整数「各位数字之积」与「各位数字之和」的差
  */
 public class EP1281 {
     public int subtractProductAndSum(int n) {
