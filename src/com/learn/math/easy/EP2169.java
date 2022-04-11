@@ -3,7 +3,7 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2022/3/13
- * @description :两个非负整数 num1 和 num2、每一步操作中，如果
+ * @description : 两个非负整数 num1 和 num2、每一步操作中，如果
  * num1 >= num2，必须用 num1 减 num2；否则，必须用 num2 减 num1
  */
 public class EP2169 {
