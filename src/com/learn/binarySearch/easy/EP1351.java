@@ -9,9 +9,9 @@ package com.learn.binarySearch.easy;
 public class EP1351 {
     public int countNegatives(int[][] grid) {
         int count = 0;
-        for (int i = 0; i < grid.length; i++) {
+        for (int[] ints : grid) {
             for (int j = 0; j < grid[0].length; j++) {
-                if (grid[i][j] < 0) {
+                if (ints[j] < 0) {
                     count++;
                 }
             }
