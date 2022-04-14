@@ -4,5 +4,8 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="learn-datastructure" target="" />
+    </bytecodeTargetLevel>
   </component>
 </project>

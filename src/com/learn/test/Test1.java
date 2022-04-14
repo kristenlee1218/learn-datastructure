@@ -9,23 +9,17 @@ import java.util.List;
  * @description :
  */
 public class Test1 {
-    public static void main(String[] args) {
-        String[] strs = {"flower", "flow", "flight"};
-        Test1.longestCommonPrefix(strs);
-    }
-
-    public static String longestCommonPrefix(String[] str) {
-        if (str.length == 0) {
-            return "";
+    public boolean checkPerfectNumber(int n) {
+        if (n == 1) {
+            return false;
         }
-        for (int i = 0; i < str[0].length(); i++) {
-            char temp = str[0].charAt(i);
-            for (int j = 1; j < str.length; j++) {
-                if (i == str[j].length() || temp != str[j].charAt(i)) {
-                    return str[0].substring(0, i);
-                }
+        int sum = 1;
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                sum += i;
+                sum += n / i;
             }
         }
-        return str[0];
+        return sum == n;
     }
 }
