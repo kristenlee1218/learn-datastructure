@@ -1,5 +1,9 @@
 package com.learn.test;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,17 +13,21 @@ import java.util.List;
  * @description :
  */
 public class Test1 {
-    public boolean checkPerfectNumber(int n) {
-        if (n == 1) {
-            return false;
-        }
-        int sum = 1;
-        for (int i = 2; i < Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                sum += i;
-                sum += n / i;
+    public List<Integer> selfDividingNumbers(int left, int right) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = left; i <= right; i++) {
+            int temp = i;
+            while (temp > 0) {
+                if (temp % 10 == 0 || i % (temp % 10) != 0) {
+                    break;
+                }
+                temp /= 10;
+
+            }
+            if (temp == 0) {
+                list.add(i);
             }
         }
-        return sum == n;
+        return list;
     }
 }

@@ -9,16 +9,15 @@ package com.learn.math.easy;
 public class EP762 {
     public int countPrimeSetBits(int l, int r) {
         int result = 0;
-        for (int x = l; x <= r; ++x) {
-            if (isSmallPrime(Integer.bitCount(x))) {
+        for (int i = l; i <= r; i++) {
+            if (isSmallPrime(Integer.bitCount(i))) {
                 result++;
             }
         }
         return result;
     }
 
-    public boolean isSmallPrime(int x) {
-        return (x == 2 || x == 3 || x == 5 || x == 7
-                || x == 11 || x == 13 || x == 17 || x == 19);
+    public boolean isSmallPrime(int i) {
+        return (i == 2 || i == 3 || i == 5 || i == 7 || i == 11 || i == 13 || i == 17 || i == 19);
     }
 }
