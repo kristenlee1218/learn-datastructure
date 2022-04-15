@@ -3,9 +3,8 @@ package com.learn.matrix.easy;
 /**
  * @author : Kristen
  * @date : 2021/11/10
- * @description :给你两个大小为 n x n 的二进制矩阵 mat 和 target。
- * 度顺时针轮转矩阵 mat 中的元素若干次，如果能够使 mat 现以 90 与
- * target 一致，返回 true；否则，返回 false
+ * @description :两个大小为 n x n 的二进制矩阵 mat 和 target。度顺时针轮转矩阵 mat
+ * 中的元素若干次，如果能够使 mat 现以 90 与 target 一致，返回 true；否则，返回 false
  */
 public class EP1886 {
     public boolean findRotation(int[][] mat, int[][] target) {
