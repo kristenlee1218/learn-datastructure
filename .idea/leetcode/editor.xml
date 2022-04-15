@@ -3,6 +3,28 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1025]除数博弈.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1025]除数博弈.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1025" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1025]除数博弈.java" />
+              <option name="titleSlug" value="divisor-game" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1037]有效的回旋镖.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1037]有效的回旋镖.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1037" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1037]有效的回旋镖.java" />
+              <option name="titleSlug" value="valid-boomerang" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[122]买卖股票的最佳时机 II.java">
           <value>
             <LeetcodeEditor>
@@ -194,6 +216,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[836]矩形重叠.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[836]矩形重叠.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com836" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[836]矩形重叠.java" />
+              <option name="titleSlug" value="rectangle-overlap" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[859]亲密字符串.java">
           <value>
             <LeetcodeEditor>
@@ -213,6 +246,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[860]柠檬水找零.java" />
               <option name="titleSlug" value="lemonade-change" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[868]二进制间距.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[868]二进制间距.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com868" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[868]二进制间距.java" />
+              <option name="titleSlug" value="binary-gap" />
             </LeetcodeEditor>
           </value>
         </entry>

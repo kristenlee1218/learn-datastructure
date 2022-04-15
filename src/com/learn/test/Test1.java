@@ -1,22 +1,21 @@
 package com.learn.test;
 
+import org.omg.CORBA.MARSHAL;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author : Kristen
  * @date : 2021/8/14
  * @description :
  */
 public class Test1 {
-    public boolean checkPerfectNumber(int n) {
-        if (n == 1) {
-            return false;
-        }
-        int sum = 1;
-        for (int i = 2; i < Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                sum += i;
-                sum += n / i;
-            }
-        }
-        return sum == n;
+    public boolean isBoomerang(int[][] points) {
+        int x1 = points[0][0] - points[1][0];
+        int y1 = points[0][1] - points[1][1];
+        int x2 = points[0][0] - points[2][0];
+        int y2 = points[0][1] - points[2][1];
+        return x1 * y2 != x2 * y1;
     }
 }

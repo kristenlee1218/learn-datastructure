@@ -4,7 +4,7 @@ package com.learn.math.easy;
  * @author : Kristen
  * @date : 2021/10/18
  * @description :从 1 到 n 的数设计排列方案，使得所有的「质数」都
- * 应该被放在「质数索引」（索引从 1 开始）上；需要返回可能的方案总数
+ * 应该被放在「质数索引」（索引从 1 开始）上，需要返回可能的方案总数
  */
 public class EP1175 {
     public int isPrime(int n) {
