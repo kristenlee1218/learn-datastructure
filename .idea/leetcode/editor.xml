@@ -25,10 +25,87 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1103]分糖果 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1103]分糖果 II.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1103" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1103]分糖果 II.java" />
+              <option name="titleSlug" value="distribute-candies-to-people" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1118]一月有多少天.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1118]一月有多少天.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1118" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1118]一月有多少天.java" />
+              <option name="titleSlug" value="number-of-days-in-a-month" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1134]阿姆斯特朗数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1134]阿姆斯特朗数.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1134" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1134]阿姆斯特朗数.java" />
+              <option name="titleSlug" value="armstrong-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1154]一年中的第几天.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1154]一年中的第几天.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1154" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1154]一年中的第几天.java" />
+              <option name="titleSlug" value="day-of-the-year" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1175]质数排列.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1175]质数排列.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1175" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1175]质数排列.java" />
+              <option name="titleSlug" value="prime-arrangements" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1185]一周中的第几天.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1185]一周中的第几天.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1185" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1185]一周中的第几天.java" />
+              <option name="titleSlug" value="day-of-the-week" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[122]买卖股票的最佳时机 II.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[122]买卖股票的最佳时机 II.java" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1342]将数字变成 0 的操作次数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1342]将数字变成 0 的操作次数.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1342" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1342]将数字变成 0 的操作次数.java" />
+              <option name="titleSlug" value="number-of-steps-to-reduce-a-number-to-zero" />
             </LeetcodeEditor>
           </value>
         </entry>
