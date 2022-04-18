@@ -8,8 +8,8 @@ package com.learn.offer.easy;
  * 答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
  */
 public class Offer10_2 {
-    public int fib(int n) {
-        int a = 0, b = 1, sum;
+    public int numWays(int n) {
+        int a = 1, b = 1, sum;
         for (int i = 0; i < n; i++) {
             sum = (a + b) % 1000000007;
             a = b;
