@@ -7,8 +7,8 @@ package com.learn.binarySearch.easy;
  * 则返回 true，否则返回 false
  */
 public class EP367_2 {
-    public boolean isPerfectSquare(int num) {
-        int x = (int) Math.sqrt(num);
-        return x * x == num;
+    public boolean isPerfectSquare(int n) {
+        int x = (int) Math.sqrt(n);
+        return x * x == n;
     }
 }

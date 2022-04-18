@@ -7,10 +7,10 @@ package com.learn.binarySearch.easy;
  * 则返回 true，否则返回 false
  */
 public class EP367_1 {
-    public boolean isPerfectSquare(int num) {
+    public boolean isPerfectSquare(int n) {
         long x = 1, result = 1;
-        while (result <= num) {
-            if (result == num) {
+        while (result <= n) {
+            if (result == n) {
                 return true;
             }
             x++;
