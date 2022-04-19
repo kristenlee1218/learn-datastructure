@@ -1,9 +1,6 @@
 package com.learn.test;
 
-import org.omg.CORBA.MARSHAL;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Calendar;
 
 /**
  * @author : Kristen
@@ -11,11 +8,9 @@ import java.util.List;
  * @description :
  */
 public class Test1 {
-    public int numberOfSteps(int n) {
-        if (n % 2 == 0) {
-            return n / 2;
-        }else{
-            return n/2+1;
-        }
+    public static void main(String[] args) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, 2020);
+        System.out.println(calendar.getWeeksInWeekYear());
     }
 }

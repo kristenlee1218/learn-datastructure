@@ -7,27 +7,22 @@ package com.learn.math.easy;
  * 应该被放在「质数索引」（索引从 1 开始）上，需要返回可能的方案总数
  */
 public class EP1175 {
-    public int isPrime(int n) {
-        for (int i = 3; i <= (int) Math.sqrt(n); i += 2) {
-            if (n % i == 0) {
-                return 0;
+    public int numPrimeArrangements(int n) {
+        int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+        int count = 0;
+        for (int prime : primes) {
+            if (n >= prime) {
+                count++;
             }
         }
-        return 1;
-    }
-
-    public int numPrimeArrangements(int n) {
-        int primeCount = n >= 2 ? 1 : 0;
-        for (int i = 3; i <= n; i += 2) {
-            primeCount += isPrime(i);
-        }
         long result = 1;
-        for (int i = 2; i <= primeCount; i++) {
-            result = result * i % 1000000007;
+        final int mod = (int) 1e9 + 7;
+        for (int i = 1; i <= count; i++) {
+            result = result * i % mod;
         }
-        for (int i = n - primeCount; i > 1; i--) {
-            result = result * i % 1000000007;
+        for (int i = 1; i <= n - count; i++) {
+            result = result * i % mod;
         }
-        return (int) result;
+        return (int) result % mod;
     }
 }
