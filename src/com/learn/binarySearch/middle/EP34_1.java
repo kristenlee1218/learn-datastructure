@@ -3,14 +3,15 @@ package com.learn.binarySearch.middle;
 /**
  * @author : Kristen
  * @date : 2021/11/3
- * @description :
+ * @description :给定一个按照升序排列的整数数组 nums，和一个目标值 target。
+ * 找出给定目标值在数组中的开始位置和结束位置。如果数组中不存在目标值 target，
+ * 返回 [-1, -1]
  */
 public class EP34_1 {
     public int[] searchRange(int[] nums, int target) {
         int leftIndex = binarySearch(nums, target, true);
         int rightIndex = binarySearch(nums, target, false) - 1;
-        if (leftIndex <= rightIndex && rightIndex < nums.length &&
-                nums[leftIndex] == target && nums[rightIndex] == target) {
+        if (leftIndex <= rightIndex && rightIndex < nums.length && nums[leftIndex] == target && nums[rightIndex] == target) {
             return new int[]{leftIndex, rightIndex};
         }
         return new int[]{-1, -1};

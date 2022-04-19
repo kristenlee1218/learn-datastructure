@@ -11,13 +11,11 @@ import java.util.List;
  * @description :
  */
 public class Test1 {
-    public boolean isArmstrong(int n) {
-        int count = n, sum = 0;
-        int k = String.valueOf(n).length();
-        for (int i = 0; i < k; i++) {
-            sum += Math.pow(count % 10, k);
-            count /= 10;
+    public int numberOfSteps(int n) {
+        if (n % 2 == 0) {
+            return n / 2;
+        }else{
+            return n/2+1;
         }
-        return sum == n;
     }
 }
