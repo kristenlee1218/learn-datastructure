@@ -1,4 +1,4 @@
-package com.learn.dynamic.easy;
+package com.learn.doublePointers;
 
 /**
  * @author : Kristen
