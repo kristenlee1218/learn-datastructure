@@ -11,18 +11,18 @@ import java.util.List;
  * 绝对差的元素对，并且按升序的顺序返回
  */
 public class EP1200 {
-    public List<List<Integer>> minimumAbsDifference(int[] arr) {
-        Arrays.sort(arr);
+    public List<List<Integer>> minimumAbsDifference(int[] nums) {
+        Arrays.sort(nums);
         List<List<Integer>> list = new ArrayList<>();
         int absolute = Integer.MAX_VALUE, num;
-        for (int i = 0; i < arr.length - 1; i++) {
-            num = Math.abs(arr[i + 1] - arr[i]);
+        for (int i = 0; i < nums.length - 1; i++) {
+            num = Math.abs(nums[i + 1] - nums[i]);
             if (num < absolute) {
                 list.clear();
-                list.add(Arrays.asList(arr[i], arr[i + 1]));
-                absolute = Math.abs(arr[i + 1] - arr[i]);
+                list.add(Arrays.asList(nums[i], nums[i + 1]));
+                absolute = Math.abs(nums[i + 1] - nums[i]);
             } else if (num == absolute) {
-                list.add(Arrays.asList(arr[i], arr[i + 1]));
+                list.add(Arrays.asList(nums[i], nums[i + 1]));
             }
         }
         return list;
