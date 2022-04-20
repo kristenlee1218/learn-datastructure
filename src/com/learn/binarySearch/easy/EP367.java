@@ -8,13 +8,13 @@ package com.learn.binarySearch.easy;
  */
 public class EP367 {
     public boolean isPerfectSquare(int n) {
-        int i = 1, j = n;
-        while (i <= j) {
-            int mid = (i + j) / 2;
+        int left = 1, right = n;
+        while (left <= right) {
+            int mid = (left + right) / 2;
             if ((long) mid * mid < n) {
-                i = mid + 1;
+                left = mid + 1;
             } else if ((long) mid * mid > n) {
-                j = mid - 1;
+                right = mid - 1;
             } else {
                 return true;
             }
