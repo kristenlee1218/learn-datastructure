@@ -1,4 +1,4 @@
-package com.learn.array.easy;
+package com.learn.doublePointers.easy;
 
 /**
  * @author : Kristen

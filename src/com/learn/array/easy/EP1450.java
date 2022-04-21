@@ -10,7 +10,6 @@ package com.learn.array.easy;
  * [startTime[i], endTime[i]]（含）的学生人数
  */
 public class EP1450 {
-
     public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
         int count = 0;
         for (int i = 0; i < startTime.length; i++) {
