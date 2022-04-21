@@ -1,4 +1,4 @@
-package com.learn.binarySearch.easy;
+package com.learn.matrix.easy;
 
 import java.util.TreeMap;
 
