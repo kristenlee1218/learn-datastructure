@@ -1,4 +1,4 @@
-package com.learn.binarySearch.easy;
+package com.learn.math.easy;
 
 /**
  * @author : Kristen

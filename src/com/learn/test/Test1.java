@@ -1,11 +1,14 @@
 package com.learn.test;
 
 public class Test1 {
-    public static void main(String[] args) {
-        int left = 10, right = 20;
-        int mid1 = (right + left) / 2;
-        int mid2 = left + (right - left) / 2;
-        System.out.println(mid1);
-        System.out.println(mid2);
+    public int arrangeCoins(int n) {
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (n >= i) {
+                n -= i;
+                count++;
+            }
+        }
+        return count + 1;
     }
 }
