@@ -8,6 +8,6 @@ package com.learn.interview.easy;
  */
 public class EP1607 {
     public static int maximum(int a, int b) {
-        return Math.max(a, b);
+        return a > b ? a : b;
     }
 }
