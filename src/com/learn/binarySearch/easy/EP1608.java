@@ -11,14 +11,14 @@ import java.util.Arrays;
 public class EP1608 {
     public int specialArray(int[] nums) {
         Arrays.sort(nums);
-        if (nums[0] > nums.length - 1) {
-            return nums.length;
-        }
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] >= nums.length - i && nums[i - 1] < nums.length - i) {
-                return nums.length - i;
+        int count = 0;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            if (nums[i] > count) {
+                count++;
+            } else if (nums[i] == count) {
+                return -1;
             }
         }
-        return -1;
+        return count;
     }
 }
