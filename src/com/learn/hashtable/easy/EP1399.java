@@ -6,9 +6,9 @@ import java.util.Map;
 /**
  * @author : Kristen
  * @date : 2021/8/31
- * @description :一个整数 n、请先求出从 1 到 n 的每个整数 10 进制
- * 表示下的数位和（每一位上的数字相加），然后把数位和相等的数字放到同一
- * 个组中。请统计每个组中的数字数目，并返回数字数目并列最多的组有多少个
+ * @description :一个整数 n、请先求出从 1 到 n 的每个整数 10 进制表
+ * 示下的数位和（每一位上的数字相加），然后把数位和相等的数字放到同一个
+ * 组中。请统计每个组中的数字数目，并返回数字数目并列最多的组有多少个
  */
 public class EP1399 {
     public int countLargestGroup(int n) {

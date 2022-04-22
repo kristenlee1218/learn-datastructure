@@ -8,8 +8,8 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2021/10/31
- * @description :给出三个均为严格递增排列的整数数组 arr1，arr2
- * 和 arr3。返回一个由仅在这三个数组中同时出现的整数所构成的有序数组
+ * @description :给出三个均为严格递增排列的整数数组 arr1，arr2 和
+ * arr3。返回一个由仅在这三个数组中同时出现的整数所构成的有序数组
  */
 public class EP1213 {
     public List<Integer> arraysIntersection(int[] nums1, int[] nums2, int[] nums3) {
