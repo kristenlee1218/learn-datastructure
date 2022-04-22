@@ -1,4 +1,4 @@
-package com.learn.binarySearch.easy;
+package com.learn.doublePointers.easy;
 
 import java.util.Arrays;
 
