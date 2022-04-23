@@ -11,14 +11,11 @@ import java.util.Stack;
 /**
  * @author : Kristen
  * @date : 2021/8/5
- * @description :
+ * @description : 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）
  */
-
-
 public class Offer6 {
-
     public int[] reversePrint(ListNode head) {
-        Stack<ListNode> stack = new Stack<ListNode>();
+        Stack<ListNode> stack = new Stack<>();
         ListNode temp = head;
         while (temp != null) {
             stack.push(temp);
