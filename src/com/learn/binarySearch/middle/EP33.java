@@ -10,7 +10,7 @@ package com.learn.binarySearch.middle;
  * [4,5,6,7,0,1,2]。旋转后的数组 nums 和一个整数 target，如果 nums 中存在这个
  * 目标值 target，则返回它的下标，否则返回 -1
  */
-public class Ep33 {
+public class EP33 {
     public int search(int[] nums, int target) {
         if (nums.length == 0) {
             return -1;
