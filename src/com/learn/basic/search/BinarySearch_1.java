@@ -16,8 +16,6 @@ public class BinarySearch_1 {
             return mid;
         }
 
-        mid = (low + high) / 2;
-
         if (value < a[mid]) {
             return binarySearch(a, value, low, mid - 1);
         }
