@@ -54,13 +54,13 @@ public class BinaryTree<Key extends Comparable<Key>, Value> {
         }
         int cmp = key.compareTo(x.key);
         if (cmp > 0) {
-            // 如果要查询的 key 大于当前结点的 key，则继续找当前结点的右子结点；
+            // 如果要查询的 key 大于当前结点的 key，则继续找当前结点的右子结点
             return get(x.right, key);
         } else if (cmp < 0) {
-            // 如果要查询的 key 小于当前结点的 key，则继续找当前结点的左子结点；
+            // 如果要查询的 key 小于当前结点的 key，则继续找当前结点的左子结点
             return get(x.left, key);
         } else {
-            // 如果要查询的 key 等于当前结点的 key，则树中返回当前结点的 value。
+            // 如果要查询的 key 等于当前结点的 key，则树中返回当前结点的 value
             return x.value;
         }
     }
