@@ -9,7 +9,7 @@ package com.learn.basic.search;
  */
 public class SequenceSearch {
     public static int sequenceSearch(int[] a, int key) {
-        for (int i = 0, length = a.length; i < length; i++) {
+        for (int i = 0; i < a.length; i++) {
             if (a[i] == key) {
                 return i;
             }
