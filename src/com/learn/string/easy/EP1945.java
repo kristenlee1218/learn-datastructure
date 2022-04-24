@@ -11,7 +11,7 @@ package com.learn.string.easy;
  * 转化："zbax" ➝ "(26)(2)(1)(24)" ➝ "262124" ➝ 262124
  * 转换 #1：262124 ➝ 2 + 6 + 2 + 1 + 2 + 4 ➝ 17
  * 转换 #2：17 ➝ 1 + 7 ➝ 8
- * 返回执行上述操作后得到的结果整数。
+ * 返回执行上述操作后得到的结果整数
  */
 public class EP1945 {
     public int getLucky(String s, int k) {

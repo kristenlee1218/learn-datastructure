@@ -1,4 +1,4 @@
-package com.learn.dynamic.middle;
+package com.learn.math.middle;
 
 /**
  * @author : Kristen

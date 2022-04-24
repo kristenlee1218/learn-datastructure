@@ -1,4 +1,4 @@
-package com.learn.string.middle;
+package com.learn.array.middle;
 
 import java.util.ArrayList;
 import java.util.List;
