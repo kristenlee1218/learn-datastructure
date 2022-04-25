@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/31
- * @description :一个下标从 0 开始的整数数组 nums，如果恰好删除一个元素后，
+ * @description : 一个下标从 0 开始的整数数组 nums，如果恰好删除一个元素后，
  * 数组严格递增，那么请返回 true，否则返回 false、如果数组本身已经是严格
  * 递增的，返回 true
  */

@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2021/8/31
- * @description :一个数组 items ，其中 items[i] = [typei, colori, namei]，
+ * @description : 一个数组 items，其中 items[i] = [typei, colori, namei]，
  * 描述第 i 件物品的类型、颜色以及名称。另给一条由两个字符串 ruleKey 和 ruleValue
  * 表示的检索规则。如果第 i 件物品能满足下述条件之一，则认为该物品与给定的检索规则匹配：
  * ruleKey == "type" 且 ruleValue == typei

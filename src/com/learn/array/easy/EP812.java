@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/31
- * @description :给定包含多个点的集合，从其中取三个点组成三角形，
+ * @description : 给定包含多个点的集合，从其中取三个点组成三角形，
  * 返回能组成的最大三角形的面积
  */
 public class EP812 {

@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/6
- * @description :一个整数数组 nums，请返回位数为偶数的数字的个数
+ * @description : 一个整数数组 nums，请返回位数为偶数的数字的个数
  */
 public class EP1295 {
     public int findNumbers(int[] nums) {

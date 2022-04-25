@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/18
- * @description :给定一个二进制数组，计算其中最大连续 1 的个数
+ * @description : 给定一个二进制数组，计算其中最大连续 1 的个数
  */
 public class EP485 {
     public int findMaxConsecutiveOnes(int[] nums) {

@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/18
- * @description :给一个下标从 0 开始的整数数组 nums，返回满足
+ * @description : 给一个下标从 0 开始的整数数组 nums，返回满足
  * 下述条件的不同四元组 (a, b, c, d) 的数目：nums[a] + nums[b]
  * + nums[c] == nums[d]，且 a < b < c < d
  */

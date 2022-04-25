@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/6
- * @description :一个数组 nums、所有元素与 nums 相同，但按非递
+ * @description : 一个数组 nums、所有元素与 nums 相同，但按非递
  * 减顺序排列、如果 nums 能够由源数组轮转若干位置（包括 0 个位置）
  * 得到，则返回 true；否则返回 false
  */

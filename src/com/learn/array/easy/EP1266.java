@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description :平面上有 n 个点，点的位置用整数坐标表示 points[i] = [xi, yi]。
+ * @description : 平面上有 n 个点，点的位置用整数坐标表示 points[i] = [xi, yi]。
  * 计算访问所有这些点需要的最小时间（以秒为单位）
  */
 public class EP1266 {

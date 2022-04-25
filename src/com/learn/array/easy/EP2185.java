@@ -3,7 +3,7 @@ package com.learn.array.easy;
 /**
  * @author : Kristen
  * @date : 2022/3/24
- * @description :一个字符串数组 words 和一个字符串 pref。返回 words 中以
+ * @description : 一个字符串数组 words 和一个字符串 pref。返回 words 中以
  * pref 作为前缀的字符串的数目。字符串 s 的前缀就是 s 的任一前导连续字符串
  */
 public class EP2185 {
