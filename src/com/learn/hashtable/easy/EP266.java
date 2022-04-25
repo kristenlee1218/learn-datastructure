@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2022/1/2
- * @description :给定一个字符串，判断该字符串中是否可以通过重新排列组合，
+ * @description : 给定一个字符串，判断该字符串中是否可以通过重新排列组合，
  * 形成一个回文字符串
  */
 public class EP266 {

@@ -3,7 +3,7 @@ package com.learn.hashtable.easy;
 /**
  * @author : Kristen
  * @date : 2021/11/6
- * @description :给定两个字符串 s 和 t，判断 t 是否是 s 的字母异位词
+ * @description : 给定两个字符串 s 和 t，判断 t 是否是 s 的字母异位词
  */
 public class EP242_1 {
     public boolean isAnagram(String s, String t) {

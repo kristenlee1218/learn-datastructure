@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2021/8/6
- * @description :给定一个非负整数 row，生成「杨辉三角」的前 row 行。
+ * @description : 给定一个非负整数 row，生成「杨辉三角」的前 row 行。
  * 在「杨辉三角」中，每个数是它左上方和右上方的数的和
  */
 public class EP118 {

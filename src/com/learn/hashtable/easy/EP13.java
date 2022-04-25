@@ -3,7 +3,7 @@ package com.learn.hashtable.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/13
- * @description :罗马数字包含以下七种字符: I， V， X， L，C，D 和 M
+ * @description : 罗马数字包含以下七种字符: I， V， X， L，C，D 和 M
  * 字符          数值
  * I             1
  * V             5
