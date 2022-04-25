@@ -3,7 +3,7 @@ package com.learn.interview.easy;
 /**
  * @author : Kristen
  * @date : 2022/2/1
- * @description :字符串轮转。给定两个字符串 s1 和 s2，请编写代码检查 s2
+ * @description : 字符串轮转。给定两个字符串 s1 和 s2，请编写代码检查 s2
  * 是否为 s1 旋转而成（比如，waterbottle 是 erbottlewat 旋转后的字符串）
  */
 public class EP0109 {

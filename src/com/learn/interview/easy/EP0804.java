@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2022/2/1
- * @description :一个整数数组 nums，数组中的元素互不相同。返回该数组所有
+ * @description : 一个整数数组 nums，数组中的元素互不相同。返回该数组所有
  * 可能的子集（幂集）、解集不能包含重复的子集。可以按任意顺序返回解集
  */
 public class EP0804 {

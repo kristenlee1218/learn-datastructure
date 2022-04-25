@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author : Kristen
  * @date : 2022/1/31
- * @description :给定两个字符串 s1 和 s2，请编写一个程序，确定其
+ * @description : 给定两个字符串 s1 和 s2，请编写一个程序，确定其
  * 中一个字符串的字符重新排列后，能否变成另一个字符串
  */
 public class EP0102 {
