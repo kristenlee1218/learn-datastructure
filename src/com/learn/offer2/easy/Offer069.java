@@ -12,7 +12,7 @@ package com.learn.offer2.easy;
  * < ... arr[i - 1] < arr[i] > arr[i + 1] > ... >
  * arr[arr.length - 1] 的下标 i
  */
-public class Offer69 {
+public class Offer069 {
     public int peakIndexInMountainArray(int[] nums) {
         for (int i = 1; i < nums.length - 1; i++) {
             if (nums[i] > nums[i + 1]) {

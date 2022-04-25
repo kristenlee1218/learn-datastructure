@@ -8,7 +8,7 @@ package com.learn.offer2.easy;
  * 的整数数组的形式返回这两个数的下标值。numbers 的下标从 1 开始计数，
  * 所以答案数组应当满足 1 <= answer[0] < answer[1] <= numbers.length
  */
-public class Offer6 {
+public class Offer006 {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {

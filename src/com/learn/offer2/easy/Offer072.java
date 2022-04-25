@@ -7,7 +7,7 @@ package com.learn.offer2.easy;
  * int sqrt(int x) 函数正数的平方根有两个，只输出其中的正数平方根。
  * 如果平方根不是整数，输出只保留整数的部分，小数部分将被舍去
  */
-public class Offer72 {
+public class Offer072 {
     public int mySqrt(int x) {
         return Math.abs((int) Math.sqrt(x));
     }

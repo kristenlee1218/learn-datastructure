@@ -9,7 +9,7 @@ package com.learn.offer2.easy;
  * 上爬一个阶梯或者爬两个阶梯。请找出达到楼层顶部的最低花费。
  * 在开始时可以选择从下标为 0 或 1 的元素作为初始阶梯
  */
-public class Offer88 {
+public class Offer088 {
     public int minCostClimbingStairs(int[] cost) {
         int[] result = new int[cost.length + 1];
         result[0] = result[1] = 0;
