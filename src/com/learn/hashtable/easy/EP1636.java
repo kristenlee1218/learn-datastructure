@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @author : Kristen
  * @date : 2021/11/6
- * @description :一个整数数组 nums，请将数组按照每个值的频率升序排序。如
+ * @description : 一个整数数组 nums，请将数组按照每个值的频率升序排序。如
  * 果有多个值的频率相同，请按照数值本身将它们降序排序、请你返回排序后的数组
  */
 public class EP1636 {

@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2021/8/18
- * @description :一个字符串数组 words，只返回可以使用
+ * @description : 一个字符串数组 words，只返回可以使用
  * 在美式键盘同一行的字母打印出来的单词
  */
 public class EP500 {

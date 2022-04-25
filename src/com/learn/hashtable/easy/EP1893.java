@@ -3,7 +3,7 @@ package com.learn.hashtable.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/18
- * @description :一个二维整数数组 ranges 和两个整数 left 和 right。
+ * @description : 一个二维整数数组 ranges 和两个整数 left 和 right。
  * 每个 ranges[i] = [starti, endi] 表示一个从 starti 到 endi 的闭
  * 区间。如果闭区间 [left, right] 内每个整数都被ranges 中至少一个区间
  * 覆盖，那么请返回 true，否则返回 false。已知区间 ranges[i] =

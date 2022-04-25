@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2021/11/7
- * @description :三个整数数组 nums1、nums2 和 nums3，请构造并返回一个
+ * @description : 三个整数数组 nums1、nums2 和 nums3，请构造并返回一个
  * 与这三个数组都不同的数组，且由至少在两个数组中出现的所有值组成。数组中的元
  * 素可以按任意顺序排列
  */
