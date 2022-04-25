@@ -3,9 +3,9 @@ package com.learn.matrix.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description :一个 m x n 的整数网格 accounts，其中 accounts[i][j]是第
- * i 位客户在第 j 家银行托管的资产数量。返回最富有客户所拥有的资产总量。客户的
- * 资产总量就是在各家银行托管的资产数量之和。最富有客户就是资产总量最大的客户
+ * @description : 一个 m x n 的整数网格 accounts，其中 accounts[i][j]是
+ * 第 i 位客户在第 j 家银行托管的资产数量。返回最富有客户所拥有的资产总量。客户
+ * 的资产总量就是在各家银行托管的资产数量之和。最富有客户就是资产总量最大的客户
  */
 public class EP1672 {
     public int maximumWealth(int[][] accounts) {
