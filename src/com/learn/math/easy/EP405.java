@@ -3,7 +3,7 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/13
- * @description :给定一个整数，编写一个算法将这个数转换为十六进制数。
+ * @description : 给定一个整数，编写一个算法将这个数转换为十六进制数。
  * 对于负整数，通常使用补码运算方法
  * 注意:
  * 十六进制中所有字母 (a-f) 都必须是小写。

@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2021/8/14
- * @description :一个平方和三元组 (a,b,c) 指的是满足 a^2 + b^2 = c^2 的整数三元
+ * @description : 一个平方和三元组 (a,b,c) 指的是满足 a^2 + b^2 = c^2 的整数三元
  * 组 a，b 和 c。一个整数 n，请返回满足 1 <= a, b, c <= n 的平方和三元组的数目
  */
 public class EP1925 {

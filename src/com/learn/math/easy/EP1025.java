@@ -3,7 +3,7 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2021/10/26
- * @description :爱丽丝和鲍勃一起玩游戏，他们轮流行动。爱丽丝先手开局。
+ * @description : 爱丽丝和鲍勃一起玩游戏，他们轮流行动。爱丽丝先手开局。
  * 最初，黑板上有一个数字 N。在每个玩家的回合，玩家需要执行以下操作：
  * 选出任一 x，满足 0 < x < N 且 N % x == 0
  * 用 N - x 替换黑板上的数字 N

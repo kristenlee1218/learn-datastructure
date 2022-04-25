@@ -3,7 +3,7 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2021/10/29
- * @description :给定两个整数 L 和 R，找到闭区间 [L, R] 范围内，
+ * @description : 给定两个整数 L 和 R，找到闭区间 [L, R] 范围内，
  * 计算置位位数为质数的整数个数，计算置位代表二进制表示中 1 的个数
  *
  * 本质的问题就是计算在 [L, R] 范围内的数的二进制表示中，有几个数的 1 的个数为质数

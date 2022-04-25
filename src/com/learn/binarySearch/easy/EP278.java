@@ -3,7 +3,7 @@ package com.learn.binarySearch.easy;
 /**
  * @author : Kristen
  * @date : 2021/10/27
- * @description :一个团队开发新的产品。不幸的是，产品的最新版本没有通过质量检测。由
+ * @description : 一个团队开发新的产品。不幸的是，产品的最新版本没有通过质量检测。由
  * 于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。假设有 n
  * 个版本 [1, 2, ..., n]，想找出导致之后所有版本出错的第一个错误的版本。可以通过调
  * 用 boolean isBadVersion(version) 接口来判断版本号 version 是否在单元测试中

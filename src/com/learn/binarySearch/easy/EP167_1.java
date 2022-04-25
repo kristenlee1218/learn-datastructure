@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * @author : Kristen
  * @date : 2021/7/17
- * @description :给定一个已按照升序排列的整数数组 numbers，
+ * @description : 给定一个已按照升序排列的整数数组 numbers，
  * 请从数组中找出两个数满足相加之和等于目标数 target
  */
 public class EP167_1 {

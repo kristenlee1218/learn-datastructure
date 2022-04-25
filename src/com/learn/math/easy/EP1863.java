@@ -3,7 +3,7 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/1
- * @description :一个数组的异或总和定义为数组中所有元素
+ * @description : 一个数组的异或总和定义为数组中所有元素
  * 按位 XOR 的结果；如果数组为空，则异或总和为 0
  */
 public class EP1863 {

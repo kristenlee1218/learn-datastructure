@@ -3,7 +3,7 @@ package com.learn.math.easy;
 /**
  * @author : Kristen
  * @date : 2021/10/29
- * @description :指定年份 Y 和月份 M，请计算出该月一共有多少天
+ * @description : 指定年份 Y 和月份 M，请计算出该月一共有多少天
  */
 public class EP1118 {
     public int numberOfDays(int year, int month) {
