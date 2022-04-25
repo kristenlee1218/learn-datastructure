@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author ：Kristen
  * @date ：2022/4/24
- * @description :斐波那契查找
+ * @description : 斐波那契查找
  * 斐波那契查找（Fib Search）与折半查找很相似，是根据斐波那契序列
  * 的特点对有序表进行分割的。要求开始表中记录的个数为某个斐波那契数
  * 小 1，及 n=F(k)-1；开始将 k 值与第 F(k-1) 位置的记录进行比较

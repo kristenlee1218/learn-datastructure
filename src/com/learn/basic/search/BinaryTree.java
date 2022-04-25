@@ -3,7 +3,10 @@ package com.learn.basic.search;
 /**
  * @author ：Kristen
  * @date ：2022/4/24
- * @description :
+ * @description : 斐波那契查找
+ * 斐波那契查找（Fib Search）与折半查找很相似，是根据斐波那契序列的特点对有序表
+ * 进行分割的。要求开始表中记录的个数为某个斐波那契数小 1，及 n=F(k)-1；开始将
+ * k 值与第 F(k-1) 位置的记录进行比较及 mid = low + F(k-1)-1
  */
 public class BinaryTree<Key extends Comparable<Key>, Value> {
     // 记录根结点

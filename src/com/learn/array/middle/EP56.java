@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :给出一个区间的集合，请合并所有重叠的区间
+ * @description : 给出一个区间的集合，请合并所有重叠的区间
  */
 public class EP56 {
     public int[][] merge(int[][] intervals) {

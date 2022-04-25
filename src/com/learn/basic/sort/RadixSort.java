@@ -8,8 +8,8 @@ package com.learn.basic.sort;
  *
  * 又称 “桶子法”（bucket sort）或 bin sort，顾名思义，它是透过键值的部份资
  * 讯，将要排序的元素分配至某些 “桶” 中，藉以达到排序的作用，基数排序法是属于
- * 稳定性的排序，其时间复杂度为 O(nlog(r)m)，其中 r 为所采取的基数，而 m
- * 为堆数，在某些时候，基数排序法的效率高于其它的稳定性排序法
+ * 稳定性的排序，其时间复杂度为 O(nlog(r)m)，其中 r 为所采取的基数，而 m 为
+ * 堆数，在某些时候，基数排序法的效率高于其它的稳定性排序法
  */
 public class RadixSort {
     public void radixSort(int[] array, int d) {
