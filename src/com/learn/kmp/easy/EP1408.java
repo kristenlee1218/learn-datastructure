@@ -8,8 +8,8 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2022/1/6
- * @description :一个字符串数组 words，数组中的每个字符串都可以看作是
- * 一个单词。请按任意顺序返回 words 中是其他单词的子字符串的所有单词
+ * @description : 一个字符串数组 words，数组中的每个字符串都可以看作
+ * 是一个单词。请按任意顺序返回 words 中是其他单词的子字符串的所有单词
  */
 public class EP1408 {
     public List<String> stringMatching(String[] words) {
