@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @author ：Kristen
  * @date ：2022/3/11
- * @description :树的定义
+ * @description : 树的定义
  */
 class Node {
     public int val;
