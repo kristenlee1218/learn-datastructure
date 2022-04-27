@@ -19,7 +19,7 @@ public class EP2248 {
             }
         }
         List<Integer> list = new ArrayList<>();
-        for (int i = 1; i <= 1000; i++) {
+        for (int i = 1; i <= result.length - 1; i++) {
             if (result[i] == nums.length) {
                 list.add(i);
             }
