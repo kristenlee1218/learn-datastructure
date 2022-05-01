@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :给出字符串 text 和字符串列表 words, 返回所有的
+ * @description : 给出字符串 text 和字符串列表 words, 返回所有的
  * 索引对 [i, j] 使得在索引对范围内的子字符串 text[i]...text[j]
  * （包括 i 和 j）属于字符串列表 words
  */

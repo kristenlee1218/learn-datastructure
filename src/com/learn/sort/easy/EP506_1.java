@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author : Kristen
  * @date : 2021/11/4
- * @description :给出 N 名运动员的成绩，找出他们的相对名次并授予前三
+ * @description : 给出 N 名运动员的成绩，找出他们的相对名次并授予前三
  * 名对应的奖牌。前三名运动员将会被分别授予 “金牌”，“银牌” 和 “铜牌”
  * （"Gold Medal", Silver Medal", "Bronze Medal"）
  */

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :整数数组 arr 其中每个元素都不相同。请找到所有具有最小
+ * @description : 整数数组 arr 其中每个元素都不相同。请找到所有具有最小
  * 绝对差的元素对，并且按升序的顺序返回
  */
 public class EP1200 {

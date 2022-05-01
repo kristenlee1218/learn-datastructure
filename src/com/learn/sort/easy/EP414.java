@@ -3,10 +3,9 @@ package com.learn.sort.easy;
 /**
  * @author : Kristen
  * @date : 2021/7/17
- * @description :给一个非空数组，返回此数组中第三大的数。
+ * @description : 给一个非空数组，返回此数组中第三大的数。
  * 如果不存在，则返回数组中最大的数
  */
-
 public class EP414 {
     public static int thirdMax(int[] nums) {
         int one = Integer.MIN_VALUE;
