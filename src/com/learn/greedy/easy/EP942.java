@@ -20,7 +20,6 @@ public class EP942 {
                 result[i] = high--;
             }
         }
-
         result[s.length()] = low;
         return result;
     }
