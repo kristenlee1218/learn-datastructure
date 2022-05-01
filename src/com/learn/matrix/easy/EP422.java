@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2022/1/2
- * @description : 一个单词序列，判断其是否形成了一个有效的单词方块。
+ * @description : 一个单词序列，判断其是否形成了一个有效的单词方块
  * 有效的单词方块是指此由单词序列组成的文字方块的第 k 行和第 k 列
  * (0 ≤ k < max(行数, 列数)) 所显示的字符串完全相同
  */
@@ -16,6 +16,7 @@ public class EP422 {
                 if (words.get(i).length() > words.size()) {
                     return false;
                 }
+                // 若 words.get(j).charAt(i) 不存在，则返回 false
                 if (words.get(j).length() - 1 < i) {
                     return false;
                 }

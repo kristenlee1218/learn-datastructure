@@ -11,25 +11,17 @@ package com.learn.matrix.easy;
  * reshape 操作是可行且合理的，则输出新的重塑矩阵；否则输出原始矩阵
  */
 public class EP566 {
-    public int[][] matrixReshape(int[][] mat, int r, int c) {
-        int col = mat.length;
-        int row = mat[0].length;
-        if (col * row != r * c) {
-            return mat;
+    public int[][] matrixReshape(int[][] nums, int r, int c) {
+        int m = nums.length;
+        int n = nums[0].length;
+        if (m * n != r * c) {
+            return nums;
         }
 
-        int m = 0;
-        int n = 0;
-        int[][] newMat = new int[r][c];
-        for (int[] mats : mat) {
-            for (int j = 0; j < row; j++) {
-                newMat[m][n++] = mats[j];
-                if (n == c) {
-                    n = 0;
-                    m++;
-                }
-            }
+        int[][] mat = new int[r][c];
+        for (int i = 0; i < m * n; i++) {
+            mat[i / c][i % c] = nums[i / n][i % n];
         }
-        return newMat;
+        return mat;
     }
 }
