@@ -11,16 +11,10 @@ import java.util.List;
  * @description :
  */
 public class Test1 {
-    public int[][] matrixReshape(int[][] nums, int r, int c) {
-        int m = nums.length;
-        int n = nums[0].length;
-        if (m * n != r * c) {
-            return nums;
+    public int dominantIndex(int[] nums) {
+        Arrays.sort(nums);
+        if (nums[nums.length - 1] > nums[nums.length - 2] * 2) {
+            return nums.length - 1;
         }
-        int[][] mat = new int[r][c];
-        for (int i = 0; i < m * n; i++) {
-            mat[i / c][i % c] = nums[i / n][i % n];
-        }
-        return mat;
     }
 }
