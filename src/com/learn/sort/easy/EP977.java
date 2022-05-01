@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * @author : Kristen
  * @date : 2021/7/18
- * @description : 一个按非递减顺序排序的整数数组 nums，返回每个数字的平
- * 方组成的新数组，要求也按非递减顺序排序
+ * @description : 一个按非递减顺序排序的整数数组 nums，
+ * 返回每个数字的平方组成的新数组，要求也按非递减顺序排序
  */
 public class EP977 {
     public int[] sortedSquares(int[] nums) {
