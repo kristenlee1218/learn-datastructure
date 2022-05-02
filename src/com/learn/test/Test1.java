@@ -11,10 +11,5 @@ import java.util.List;
  * @description :
  */
 public class Test1 {
-    public int dominantIndex(int[] nums) {
-        Arrays.sort(nums);
-        if (nums[nums.length - 1] > nums[nums.length - 2] * 2) {
-            return nums.length - 1;
-        }
-    }
+
 }
