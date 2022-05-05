@@ -1,5 +1,8 @@
 package com.learn.greedy.easy;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @author : Kristen
  * @date : 2021/12/5
@@ -9,19 +12,13 @@ package com.learn.greedy.easy;
  */
 public class EP409 {
     public int longestPalindrome(String s) {
-        int[] nums = new int[128];
+        Set<Character> set = new HashSet<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            nums[c]++;
-        }
-
-        int result = 0;
-        for (int num : nums) {
-            result += num / 2 * 2;
-            if (num % 2 == 1 && result % 2 == 0) {
-                result++;
+            if (!set.remove(c)) {
+                set.add(c);
             }
         }
-        return result;
+        return set.size() == 0 ? s.length() : s.length() - set.size() + 1;
     }
 }
