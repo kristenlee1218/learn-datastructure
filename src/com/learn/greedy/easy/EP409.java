@@ -13,9 +13,8 @@ public class EP409 {
     public int longestPalindrome(String s) {
         Set<Character> set = new HashSet<>();
         for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (!set.remove(c)) {
-                set.add(c);
+            if (!set.remove(s.charAt(i))) {
+                set.add(s.charAt(i));
             }
         }
         return set.size() == 0 ? s.length() : s.length() - set.size() + 1;
