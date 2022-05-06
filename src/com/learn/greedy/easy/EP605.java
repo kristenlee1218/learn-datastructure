@@ -3,22 +3,35 @@ package com.learn.greedy.easy;
 /**
  * @author : Kristen
  * @date : 2021/7/25
- * @description : 一个花坛一部分地块种植了花，另一部分却没有。可是，花不能种植在
- * 相邻的地块上，它们会争夺水源，两者都会死去。一个整数数组 flowerbed 表示花坛，
- * 由若干 0 和 1 组成，其中 0 表示没种植花，1 表示种植了花。另有一个数 n，能否
- * 在不打破种植规则的情况下种入 n 朵花？能则返回 true，不能则返回 false
+ * @description : 一个花坛一部分地块种植了花，另一部分却没有。花不能种植在相邻的
+ * 地块上，它们会争夺水源，两者都会死去。一个整数数组 flowerbed 表示花坛，由若干
+ * 0 和 1 组成，其中 0 表示没种植花，1 表示种植了花。另有一个数 n，能否在不打破
+ * 种植规则的情况下种入 n 朵花？能则返回 true，不能则返回 false
+ *
+ * 解析：
+ * 【1】、当遍历到 i 遇到 1 时，说明这个位置有花，那必然从 i+2 的位置才有可能种
+ * 花，因此当碰到 1 时直接跳过下一格
+ *
+ * 【2】、当遍历到 i 遇到 0 时，由于每次碰到 1 都是跳两格，因此前一格必定是 0，
+ * 此时只需要判断下一格是不是 1 即可得出 i 这一格能不能种花，如果能种则令 n 减
+ * 1，然后这个位置就按照遇到 1 时处理，即跳两格；如果 i 的后一格是 1，说明这个
+ * 位置不能种花且之后两格也不可能种花，直接跳过 3 格
+ *
+ * 【3】、当 n 减为 0 时，说明可以种入 n 朵花，则可以直接退出遍历返回 true；
+ * 如果遍历结束 n 没有减到 0，说明最多种入的花的数量小于 n，则返回 false
  */
 public class EP605 {
-    public boolean canPlaceFlowers(int[] flowerbed, int n) {
-        int count = 0;
-        for (int i = 0; i < flowerbed.length; i++) {
-            if (flowerbed[i] == 0 &&
-                    (i + 1 == flowerbed.length || flowerbed[i + 1] == 0)
-                    && (i == 0 || flowerbed[i - 1] == 0)) {
-                flowerbed[i] = 1;
-                count++;
+    public boolean canPlaceFlowers(int[] arr, int n) {
+        for (int i = 0; i < arr.length && n > 0; ) {
+            if (arr[i] == 1) {
+                i += 2;
+            } else if (i == arr.length - 1 || arr[i + 1] == 0) {
+                n--;
+                i += 2;
+            } else {
+                i += 3;
             }
         }
-        return count >= n;
+        return n <= 0;
     }
 }

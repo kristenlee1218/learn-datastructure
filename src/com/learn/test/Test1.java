@@ -1,22 +1,33 @@
 package com.learn.test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-
 /**
  * @author : Kristen
  * @date : 2021/11/5
  * @description :
  */
 public class Test1 {
-    public int arrayPairSum(int[] nums) {
-        Arrays.sort(nums);
-        int sum = 0;
-        for (int i = 0; i < nums.length; i += 2) {
-            sum += nums[i];
+    public boolean validPalindrome(String s) {
+        int left = 0;
+        int right = s.length() - 1;
+        char[] ch = s.toCharArray();
+        while (left < right) {
+            if (ch[left] != ch[right]) {
+                return validPalindrome(ch, left + 1, right) || validPalindrome(ch, left, right - 1);
+            }
+            left++;
+            right--;
         }
-        return sum;
+        return true;
+    }
+
+    public boolean validPalindrome(char[] ch, int left, int right) {
+        while (left < right) {
+            if (ch[left] != ch[right]) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
     }
 }
