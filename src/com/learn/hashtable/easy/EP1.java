@@ -6,7 +6,6 @@ package com.learn.hashtable.easy;
  * @description : 给定一个整数数组 nums 和一个目标值 target，
  * 请在该数组中找出和为目标值的那两个整数，并返回他们的数组下标
  */
-
 public class EP1 {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {

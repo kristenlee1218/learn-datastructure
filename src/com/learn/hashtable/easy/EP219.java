@@ -10,7 +10,6 @@ import java.util.Map;
  * 两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j
  * 的差的绝对值至多为 k
  */
-
 public class EP219 {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();

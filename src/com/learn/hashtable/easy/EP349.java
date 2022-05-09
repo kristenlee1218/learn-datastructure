@@ -6,9 +6,9 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2021/7/17
- * @description : 给定两个数组，编写一个函数来计算它们的交集（没有重复元素）
+ * @description : 给定两个数组，编写一个函数来计算
+ * 它们的交集（没有重复元素）
  */
-
 public class EP349 {
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> set1 = new HashSet<>();

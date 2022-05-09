@@ -6,7 +6,8 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2021/10/31
- * @description : 给定两个数组，编写一个函数来计算它们的交集（可以有重复的值）
+ * @description : 给定两个数组，编写一个函数来计算
+ * 它们的交集（可以有重复的值）
  */
 public class EP350 {
     public int[] intersect(int[] nums1, int[] nums2) {
