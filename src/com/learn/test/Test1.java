@@ -1,35 +1,20 @@
 package com.learn.test;
 
-import java.util.Arrays;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-
 /**
  * @author : Kristen
  * @date : 2021/11/5
  * @description :
  */
 public class Test1 {
-    public boolean canThreePartsEqualSum(int[] nums) {
-        int sum = 0;
-        for (int num : nums) {
-            sum += num;
-        }
-        if (sum % 3 != 0) {
-            return false;
-        }
-        sum /= 3;
-        int temp = 0, count = 0;
-        for (int num : nums) {
-            temp += num;
-            if (temp == sum) {
-                count++;
-                temp = 0;
+    public int minCostToMoveChips(int[] chips) {
+        int odd = 0, even = 0;
+        for (int num : chips) {
+            if (num % 2 == 0) {
+                even++;
+            } else {
+                odd++;
             }
         }
-        return count >= 3;
+        return Math.min(even, odd);
     }
 }
