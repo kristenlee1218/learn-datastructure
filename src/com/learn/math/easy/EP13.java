@@ -1,4 +1,4 @@
-package com.learn.hashtable.easy;
+package com.learn.math.easy;
 
 /**
  * @author : Kristen
