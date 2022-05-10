@@ -12,10 +12,10 @@ public class EP242 {
         if (s.length() != t.length()) {
             return false;
         }
-        char[] str1 = s.toCharArray();
-        char[] str2 = t.toCharArray();
-        Arrays.sort(str1);
-        Arrays.sort(str2);
-        return Arrays.equals(str1, str2);
+        char[] ch1 = s.toCharArray();
+        char[] ch2 = t.toCharArray();
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+        return Arrays.equals(ch1, ch2);
     }
 }

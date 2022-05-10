@@ -15,8 +15,8 @@ public class EP242_1 {
             result[s.charAt(i) - 'a']++;
             result[t.charAt(i) - 'a']--;
         }
-        for (int i = 0; i < 26; i++) {
-            if (result[i] != 0) {
+        for (int value : result) {
+            if (value != 0) {
                 return false;
             }
         }

@@ -1,49 +1,26 @@
 package com.learn.test;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @author : Kristen
  * @date : 2021/11/5
- * @description :
+ * @description :给你一个整数数组 nums 和一个整数 k ，
+ * 判断数组中是否存在两个 不同的索引 i 和 j ，
+ * 满足 nums[i] == nums[j] 且 abs(i - j) <= k 。
+ * 如果存在，返回 true ；否则，返回 false 。
  */
 public class Test1 {
-    public int romanToInt(String s) {
-        int sum = 0, i = 1;
-        int pre = getVal(s.charAt(0));
-        while (i < s.length()) {
-            int cur = getVal(s.charAt(i));
-            if (cur > pre) {
-                sum -= pre;
-            } else {
-                sum += pre;
-            }
-            pre = cur;
-            i++;
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
         }
-        sum += pre;
-        return sum;
-    }
-
-    static int getVal(char c) {
-        switch (c) {
-            case 'I':
-                return 1;
-            case 'V':
-                return 5;
-            case 'X':
-                return 10;
-            case 'L':
-                return 50;
-            case 'C':
-                return 100;
-            case 'D':
-                return 500;
-            case 'M':
-                return 1000;
-            default:
-                return 0;
-        }
+        char[] ch1 = s.toCharArray();
+        char[] ch2 = t.toCharArray();
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+        return Arrays.equals(ch1, ch2);
     }
 }
