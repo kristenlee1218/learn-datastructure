@@ -5,10 +5,9 @@ import java.util.Arrays;
 /**
  * @author : Kristen
  * @date : 2021/7/17
- * @description : 给定一个整数数组，判断是否存在重复元素。
- * 如果任意一值在数组中出现至少两次，如果任意一值在数组中出
- * 现至少两次，函数返回 true。如果数组中每个元素都不相同，
- * 则返回 false
+ * @description : 给定一个整数数组，判断是否存在重复元素。如果任意
+ * 一值在数组中出现至少两次，如果任意一值在数组中出现至少两次，返回
+ * true。如果数组中每个元素都不相同，则返回 false
  */
 public class EP217_1 {
     public boolean containsDuplicate(int[] nums) {

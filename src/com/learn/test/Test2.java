@@ -6,14 +6,42 @@ package com.learn.test;
  * @description :
  */
 public class Test2 {
-    public boolean isArmstrong(int n) {
-        int count = n, sum = 0;
-        int k = String.valueOf(n).length();
-        for (int i = 0; i < k; i++) {
-            sum += Math.pow(count % 10, k);
-            count /= 10;
+    public int romanToInt(String s) {
+        int sum = 0, i = 1;
+        int pre = getVal(s.charAt(0));
+        while (i < s.length()) {
+            int cur = getVal(s.charAt(i));
+            if (cur > pre) {
+                sum -= pre;
+            } else {
+                sum += pre;
+            }
+            pre = cur;
+            i++;
         }
-        return sum == n;
+        sum += pre;
+        return sum;
+    }
+
+    static int getVal(char c) {
+        switch (c) {
+            case 'I':
+                return 1;
+            case 'V':
+                return 5;
+            case 'X':
+                return 10;
+            case 'L':
+                return 50;
+            case 'C':
+                return 100;
+            case 'D':
+                return 500;
+            case 'M':
+                return 1000;
+            default:
+                return 0;
+        }
     }
 }
 
