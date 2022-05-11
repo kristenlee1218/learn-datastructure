@@ -11,7 +11,7 @@ import java.util.List;
 
 public class EP145 {
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         postorder(root, list);
         return list;
     }
