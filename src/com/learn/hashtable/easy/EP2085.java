@@ -8,8 +8,8 @@ import java.util.Set;
 /**
  * @author : Kristen
  * @date : 2021/12/2
- * @description : 两个字符串数组 words1 和 words2，请返回在两个
- * 字符串数组中都恰好出现一次的字符串的数目
+ * @description : 两个字符串数组 words1 和 words2，请返回
+ * 在两个字符串数组中都恰好出现一次的字符串的数目
  */
 public class EP2085 {
     public int countWords(String[] words1, String[] words2) {
