@@ -16,13 +16,13 @@ public class EP645 {
         int[] result = new int[2];
         Arrays.sort(nums);
         int pre = 0;
-        for (int value : nums) {
-            if (value == pre) {
+        for (int num : nums) {
+            if (num == pre) {
                 result[0] = pre;
-            } else if (value - pre > 1) {
+            } else if (num - pre > 1) {
                 result[1] = pre + 1;
             }
-            pre = value;
+            pre = num;
         }
         if (nums[nums.length - 1] != nums.length) {
             result[1] = nums.length;

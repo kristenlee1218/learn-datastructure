@@ -10,12 +10,12 @@ package com.learn.hashtable.easy;
  */
 public class EP771 {
     public int numJewelsInStones(String jewels, String stones) {
-        char[] ch = jewels.toCharArray();
         int count = 0;
-        char[] charStone = stones.toCharArray();
-        for (char c : ch) {
-            for (char value : charStone) {
-                if (c == value) {
+        char[] jewel = jewels.toCharArray();
+        char[] stone = stones.toCharArray();
+        for (char c1 : jewel) {
+            for (char c2 : stone) {
+                if (c1 == c2) {
                     count++;
                 }
             }
