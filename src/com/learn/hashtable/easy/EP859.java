@@ -24,7 +24,7 @@ public class EP859 {
             }
         }
         boolean flag = false;
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < nums1.length; i++) {
             if (nums1[i] != nums2[i]) {
                 return false;
             }

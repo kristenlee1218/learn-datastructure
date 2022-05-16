@@ -12,7 +12,7 @@ public class EP1133_1 {
         for (int value : nums) {
             result[value]++;
         }
-        for (int i = 1000; i >= 0; i--) {
+        for (int i = result.length - 1; i >= 0; i--) {
             if (result[i] == 1) {
                 return i;
             }

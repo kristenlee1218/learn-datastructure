@@ -12,7 +12,7 @@ import java.util.Arrays;
  * 其余元素的顺序而得到
  */
 public class EP594 {
-    public int findLHS(int[] nums) {
+    public int findlhs(int[] nums) {
         Arrays.sort(nums);
         int i = 0, result = 0;
         for (int j = 0; j < nums.length; j++) {

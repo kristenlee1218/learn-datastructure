@@ -1,4 +1,4 @@
-package com.learn.hashtable.easy;
+package com.learn.string.easy;
 
 /**
  * @author : Kristen

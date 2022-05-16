@@ -19,15 +19,15 @@ public class EP1002 {
             int length = word.length();
             for (int i = 0; i < length; ++i) {
                 char ch = word.charAt(i);
-                ++freq[ch - 'a'];
+                freq[ch - 'a']++;
             }
-            for (int i = 0; i < 26; ++i) {
+            for (int i = 0; i < nums.length; i++) {
                 nums[i] = Math.min(nums[i], freq[i]);
             }
         }
         List<String> list = new ArrayList<>();
-        for (int i = 0; i < 26; ++i) {
-            for (int j = 0; j < nums[i]; ++j) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums[i]; j++) {
                 list.add(String.valueOf((char) (i + 'a')));
             }
         }
