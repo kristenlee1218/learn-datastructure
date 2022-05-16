@@ -8,29 +8,35 @@ import java.util.List;
  * @author : Kristen
  * @date : 2022/1/5
  * @description : 给定仅有小写字母组成的字符串数组 A，返回列表中
- * 的每个字符串中都显示的全部字符（包括重复字符）组成的列表。
+ * 的每个字符串中都显示的全部字符（包括重复字符）组成的列表
  */
 public class EP1002 {
-    public List<String> commonChars(String[] words) {
-        int[] nums = new int[26];
-        Arrays.fill(nums, Integer.MAX_VALUE);
-        for (String word : words) {
-            int[] freq = new int[26];
-            int length = word.length();
-            for (int i = 0; i < length; ++i) {
-                char ch = word.charAt(i);
-                ++freq[ch - 'a'];
+    public List<String> commonChars(String[] str) {
+        // 先得到第一个字符串里面每个字符的情况
+        int[] charCount = new int[26];
+        for (int i = 0; i < str[0].length(); i++) {
+            charCount[str[0].charAt(i) - 'a']++;
+        }
+        // 从第 1 个开始逐个进行比较
+        for (int i = 1; i < str.length; i++) {
+            int[] curCount = new int[26];
+            // 遍历第 i 个字符串
+            for (int j = 0; j < str[i].length(); j++) {
+                curCount[str[i].charAt(j) - 'a']++;
             }
-            for (int i = 0; i < 26; ++i) {
-                nums[i] = Math.min(nums[i], freq[i]);
+            // 将此时关于第 i 个字符串的情况与 charCount 对比，取小的即可
+            for (int k = 0; k < 26; k++) {
+                charCount[k] = Math.min(charCount[k], curCount[k]);
             }
         }
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < 26; ++i) {
-            for (int j = 0; j < nums[i]; ++j) {
-                list.add(String.valueOf((char) (i + 'a')));
+        //此时的 charCount 即为所有的字符串出现的共有的最小元素的个数
+        List<String> result = new ArrayList<>();
+        for (int i = 0; i < 26; i++) {
+            while (charCount[i] != 0) {
+                result.add(String.valueOf((char) (i + 'a')));
+                charCount[i]--;
             }
         }
-        return list;
+        return result;
     }
 }

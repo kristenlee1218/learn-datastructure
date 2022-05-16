@@ -12,8 +12,8 @@ import java.util.Arrays;
 public class EP914 {
     public boolean hasGroupsSizeX(int[] nums) {
         int[] result = new int[10000];
-        for (int index : nums) {
-            result[index]++;
+        for (int num : nums) {
+            result[num]++;
         }
         return Arrays.stream(result).reduce(this::gcd).getAsInt() > 1;
     }
