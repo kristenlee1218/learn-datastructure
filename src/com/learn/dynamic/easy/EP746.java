@@ -22,5 +22,6 @@ public class EP746 {
                     result[i - 2] + cost[i - 2]);
         }
         return result[cost.length];
+
     }
 }
