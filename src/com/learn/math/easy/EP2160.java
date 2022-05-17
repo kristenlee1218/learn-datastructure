@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class EP2160 {
     public int minimumSum(int num) {
         int[] a = new int[4];
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < a.length; i++) {
             a[i] = num % 10;
             num /= 10;
         }
