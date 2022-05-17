@@ -16,6 +16,6 @@ public class EP1207 {
         for (int num : nums) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
-        return nums.length == new HashSet<>(map.values()).size();
+        return map.size() == new HashSet<>(map.values()).size();
     }
 }
