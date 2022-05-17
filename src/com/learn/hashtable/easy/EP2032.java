@@ -25,7 +25,7 @@ public class EP2032 {
         for (int num : nums3) {
             c[num] = 1;
         }
-        for (int i = 1; i < 101; i++) {
+        for (int i = 1; i < a.length; i++) {
             if (a[i] + b[i] + c[i] > 1) {
                 list.add(i);
             }

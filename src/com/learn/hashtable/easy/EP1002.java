@@ -25,13 +25,13 @@ public class EP1002 {
                 curCount[str[i].charAt(j) - 'a']++;
             }
             // 将此时关于第 i 个字符串的情况与 charCount 对比，取小的即可
-            for (int k = 0; k < 26; k++) {
+            for (int k = 0; k < charCount.length; k++) {
                 charCount[k] = Math.min(charCount[k], curCount[k]);
             }
         }
         //此时的 charCount 即为所有的字符串出现的共有的最小元素的个数
         List<String> result = new ArrayList<>();
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < charCount.length; i++) {
             while (charCount[i] != 0) {
                 result.add(String.valueOf((char) (i + 'a')));
                 charCount[i]--;

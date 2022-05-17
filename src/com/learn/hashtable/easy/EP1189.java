@@ -11,26 +11,26 @@ import java.util.Arrays;
  */
 public class EP1189 {
     public int maxNumberOfBalloons(String text) {
-        int[] arr = new int[5];
+        int[] result = new int[5];
         for (char c : text.toCharArray()) {
             if (c == 'b') {
-                arr[0]++;
+                result[0]++;
             }
             if (c == 'a') {
-                arr[1]++;
+                result[1]++;
             }
             if (c == 'l') {
-                arr[2]++;
+                result[2]++;
             }
             if (c == 'o') {
-                arr[3]++;
+                result[3]++;
             }
             if (c == 'n') {
-                arr[4]++;
+                result[4]++;
             }
         }
-        arr[2] >>= 1;
-        arr[3] >>= 1;
-        return Arrays.stream(arr).min().getAsInt();
+        result[2] >>= 1;
+        result[3] >>= 1;
+        return Arrays.stream(result).min().getAsInt();
     }
 }
