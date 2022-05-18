@@ -12,8 +12,8 @@ public class EP1365 {
         int[] result = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
             int count = 0;
-            for (int num : nums) {
-                if (num < nums[i]) {
+            for (int j = 0; j < nums.length; j++) {
+                if (nums[j] < nums[i]) {
                     count++;
                     result[i] = count;
                 }

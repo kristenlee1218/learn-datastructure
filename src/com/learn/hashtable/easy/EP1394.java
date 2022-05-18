@@ -12,15 +12,14 @@ import java.util.Map;
  */
 public class EP1394 {
     public int findLucky(int[] nums) {
-        Map<Integer, Integer> m = new HashMap<>();
-        for (int x : nums) {
-            m.put(x, m.getOrDefault(x, 0) + 1);
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
         int result = -1;
-        for (Map.Entry<Integer, Integer> entry : m.entrySet()) {
-            int key = entry.getKey(), value = entry.getValue();
-            if (key == value) {
-                result = Math.max(result, key);
+        for (int i : map.keySet()) {
+            if (i == map.get(i)) {
+                result = Math.max(i, result);
             }
         }
         return result;
