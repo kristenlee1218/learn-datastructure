@@ -7,7 +7,7 @@ package com.learn.offer.easy;
  * 是唯一的，并且每个数字都在范围 0～n-1 之内。在范围 0～n-1 内
  * 的 n 个数字中有且只有一个数字不在该数组中，请找出这个数字
  */
-public class Offer53_2 {
+public class Offer53 {
     public int missingNumber(int[] nums) {
         if (nums.length == 0) {
             if (nums[0] == 0) {

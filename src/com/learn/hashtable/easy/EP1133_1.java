@@ -9,8 +9,8 @@ package com.learn.hashtable.easy;
 public class EP1133_1 {
     public int largestUniqueNumber(int[] nums) {
         int[] result = new int[1001];
-        for (int value : nums) {
-            result[value]++;
+        for (int num : nums) {
+            result[num]++;
         }
         for (int i = result.length - 1; i >= 0; i--) {
             if (result[i] == 1) {
