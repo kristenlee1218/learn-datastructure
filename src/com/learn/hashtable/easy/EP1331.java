@@ -17,9 +17,9 @@ public class EP1331 {
         Arrays.sort(temp);
         HashMap<Integer, Integer> map = new HashMap<>();
         int count = 1;
-        for (int num : temp) {
-            if (map.get(num) == null) {
-                map.put(num, count);
+        for (int i : temp) {
+            if (map.get(i) == null) {
+                map.put(i, count);
                 count++;
             }
         }
