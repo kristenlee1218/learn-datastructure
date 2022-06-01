@@ -16,12 +16,12 @@ public class EP1394 {
         for (int num : nums) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
-        int result = -1;
-        for (int i : map.keySet()) {
-            if (i == map.get(i)) {
-                result = Math.max(i, result);
+        int count = -1;
+        for (int num : nums) {
+            if (map.get(num) == num) {
+                count = Math.max(num, count);
             }
         }
-        return result;
+        return count;
     }
 }
