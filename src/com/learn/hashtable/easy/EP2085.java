@@ -11,10 +11,8 @@ import java.util.Map;
  */
 public class EP2085 {
     public int countWords(String[] words1, String[] words2) {
-        int length1 = words1.length;
-        int length2 = words2.length;
         int count = 0;
-        if (length1 == 0 || length2 == 0) {
+        if (words1.length == 0 || words2.length == 0) {
             return 0;
         }
         Map<String, Integer> map1 = new HashMap<>();
@@ -22,13 +20,13 @@ public class EP2085 {
         for (String s1 : words1) {
             map1.put(s1, map1.getOrDefault(s1, 0) + 1);
         }
+        for (String s2 : words2) {
+            map2.put(s2, map2.getOrDefault(s2, 0) + 1);
+        }
         for (String s1 : words1) {
             if (map1.get(s1) != 1) {
                 map1.replace(s1, 0);
             }
-        }
-        for (String s2 : words2) {
-            map2.put(s2, map2.getOrDefault(s2, 0) + 1);
         }
         for (String s2 : words2) {
             if (map2.get(s2) != 1) {
