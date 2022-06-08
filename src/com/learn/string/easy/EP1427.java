@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :给定一个包含小写英文字母的字符串 s 以及一个矩阵 shift，其中
+ * @description : 给定一个包含小写英文字母的字符串 s 以及一个矩阵 shift，其中
  * shift[i] = [direction, amount]：direction 可以为 0 （表示左移）或 1
  * （表示右移）。amount 表示 s 左右移的位数。左移 1 位表示移除 s 的第一个字符，
  * 并将该字符插入到 s 的结尾。右移 1 位表示移除 s 的最后一个字符，并将该字符插

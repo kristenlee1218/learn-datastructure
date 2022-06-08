@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :一个字符串 s，它仅由字母 'a' 和 'b' 组成。
+ * @description : 一个字符串 s，它仅由字母 'a' 和 'b' 组成。
  * 每一次删除操作都可以从 s 中删除一个回文子序列。返回删除给
  * 定字符串中所有字符（字符串为空）的最小删除次数
  *

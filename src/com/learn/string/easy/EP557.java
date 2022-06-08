@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2021/11/8
- * @description :给定一个字符串，需要反转字符串中每个单词的字符顺序，
+ * @description : 给定一个字符串，需要反转字符串中每个单词的字符顺序，
  * 同时仍保留空格和单词的初始顺序
  */
 public class EP557 {

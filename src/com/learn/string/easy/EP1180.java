@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :一个字符串 S，返回只含单一字母的子串个数
+ * @description : 一个字符串 S，返回只含单一字母的子串个数
  */
 public class EP1180 {
     public int countLetters(String s) {

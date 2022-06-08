@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author ：Kristen
  * @date ：2022/3/29
- * @description :字母的字母值取决于字母在字母表中的位置，从 0 开始计数。即，
+ * @description : 字母的字母值取决于字母在字母表中的位置，从 0 开始计数。即，
  * 'a' -> 0、'b' -> 1、'c' -> 2，以此类推。对某个由小写字母组成的字符串 s
  * 而言，其数值就等于将 s 中每个字母的字母值按顺序连接并转换成对应整数。如果
  * firstWord 和 secondWord 的数值之和等于 targetWord 的数值，返回 true；

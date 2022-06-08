@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/12
- * @description :一个由大小写英文字母组成的字符串 s。一个整理好的字符串中，两
+ * @description : 一个由大小写英文字母组成的字符串 s。一个整理好的字符串中，两
  * 个相邻字符 s[i] 和 s[i+1]，其中 0<= i <= s.length-2，要满足如下条件:
  *
  * 若 s[i] 是小写字符，则 s[i+1] 不可以是相同的大写字符。

@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :两个字符串数组 word1 和 word2。如果两个数组表示的
+ * @description : 两个字符串数组 word1 和 word2。如果两个数组表示的
  * 字符串相同返回 true；否则返回 false
  */
 public class EP1662 {

@@ -3,9 +3,9 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2021/10/29
- * @description :给定一个数字 N，当它满足以下条件的时候返回 true：原数字旋
- * 转 180° 以后可以得到新的数字。如 0, 1, 6, 8, 9 旋转 180° 以后，得到了
- * 新的数字 0, 1, 9, 8, 6。2, 3, 4, 5, 7 旋转 180° 后，得到的不是数字
+ * @description : 给定一个数字 N，当它满足以下条件的时候返回 true：原数字旋
+ * 转 180° 以后可以得到新的数字。如 0, 1, 6, 8, 9 旋转 180° 以后，得到了新
+ * 的数字 0, 1, 9, 8, 6。2, 3, 4, 5, 7 旋转 180° 后，得到的不是数字
  */
 public class EP1056 {
     public boolean confusingNumber(int n) {

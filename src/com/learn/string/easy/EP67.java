@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/13
- * @description :两个二进制字符串，返回它们的和（用二进制表示）。
+ * @description : 两个二进制字符串，返回它们的和（用二进制表示）。
  * 输入为非空字符串且只包含数字 1 和 0
  */
 public class EP67 {

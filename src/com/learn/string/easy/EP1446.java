@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/6
- * @description :一个字符串 s，字符串的「能量」定义为：只包含一种字符的最
+ * @description : 一个字符串 s，字符串的「能量」定义为：只包含一种字符的最
  * 长非空子字符串的长度。请返回字符串的能量
  */
 public class EP1446 {

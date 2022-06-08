@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author ：Kristen
  * @date ：2022/3/25
- * @description :句子仅由小写字母（'a' 到 'z'）、数字（'0' 到 '9'）、
+ * @description : 句子仅由小写字母（'a' 到 'z'）、数字（'0' 到 '9'）、
  * 连字符（'-'）、标点符号（'!'、'.' 和 ','）以及空格（' '）组成。每个
  * 句子可以根据空格分解成一个或者多个 token，这些 token 之间由一个或者
  * 多个空格 ' ' 分隔。如果一个 token 同时满足下述条件，则认为这个 token

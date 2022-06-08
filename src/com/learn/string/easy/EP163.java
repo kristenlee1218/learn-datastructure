@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author : Kristen
  * @date : 2022/1/5
- * @description :给定一个排序的整数数组 nums，其中元素的范围在闭
+ * @description : 给定一个排序的整数数组 nums，其中元素的范围在闭
  * 区间 [lower, upper] 当中，返回不包含在数组中的缺失区间
  */
 public class EP163 {

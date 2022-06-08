@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author ：Kristen
  * @date ：2022/3/30
- * @description :一个字符串 s 表示一个学生的出勤记录，其中的每个字符用来
+ * @description : 一个字符串 s 表示一个学生的出勤记录，其中的每个字符用来
  * 标记当天的出勤情况（缺勤、迟到、到场）。记录中只含下面三种字符：
  * 'A'：Absent，缺勤
  * 'L'：Late，迟到

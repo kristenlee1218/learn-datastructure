@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/3
- * @description :给定一个字符串 S，返回 “反转后的” 字符串，其中不是字母
+ * @description : 给定一个字符串 S，返回 “反转后的” 字符串，其中不是字母
  * 的字符都保留在原地，而所有字母的位置发生反转
  */
 public class EP917 {

@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/13
- * @description :给定两个字符串形式的非负整数 num1 和 num2，计算它们的和
+ * @description : 给定两个字符串形式的非负整数 num1 和 num2，计算它们的和
  * 提示：
  * num1 和 num2 的长度都小于 5100
  * num1 和 num2 都只包含数字 0-9

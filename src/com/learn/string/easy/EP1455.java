@@ -3,7 +3,7 @@ package com.learn.string.easy;
 /**
  * @author : Kristen
  * @date : 2022/1/6
- * @description :一个字符串 sentence 作为句子并指定检索词为 searchWord，
+ * @description : 一个字符串 sentence 作为句子并指定检索词为 searchWord，
  * 其中、句子由若干用单个空格分隔的单词组成。请检查检索词 searchWord是否为
  * 句子 sentence 中任意单词的前缀。如果 searchWord 是某一个单词的前缀，则返
  * 回句子 sentence 中该单词所对应的下标（下标从 1 开始）。如果 searchWord
