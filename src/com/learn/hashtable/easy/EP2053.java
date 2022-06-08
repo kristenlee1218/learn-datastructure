@@ -15,8 +15,7 @@ public class EP2053 {
     public String kthDistinct(String[] str, int k) {
         Map<String, Integer> map = new HashMap<>();
         for (String s : str) {
-            int count = map.getOrDefault(s, 0) + 1;
-            map.put(s, count);
+            map.put(s, map.getOrDefault(s, 0) + 1);
         }
         for (String s : str) {
             if (map.get(s) == 1) {

@@ -19,24 +19,24 @@ public class EP2085 {
         }
         Map<String, Integer> map1 = new HashMap<>();
         Map<String, Integer> map2 = new HashMap<>();
-        for (String s : words1) {
-            map1.put(s, map1.getOrDefault(s, 0) + 1);
+        for (String s1 : words1) {
+            map1.put(s1, map1.getOrDefault(s1, 0) + 1);
         }
-        for (String s : words1) {
-            if (map1.get(s) != 1) {
-                map1.replace(s, 0);
+        for (String s1 : words1) {
+            if (map1.get(s1) != 1) {
+                map1.replace(s1, 0);
             }
         }
-        for (String s : words2) {
-            map2.put(s, map2.getOrDefault(s, 0) + 1);
+        for (String s2 : words2) {
+            map2.put(s2, map2.getOrDefault(s2, 0) + 1);
         }
-        for (String s : words2) {
-            if (map2.get(s) != 1) {
-                map2.replace(s, 0);
+        for (String s2 : words2) {
+            if (map2.get(s2) != 1) {
+                map2.replace(s2, 0);
             }
         }
-        for (String s : map1.keySet()) {
-            if (map1.containsKey(s) && map2.containsKey(s) && map1.get(s) == 1 && map2.get(s) == 1) {
+        for (String str : map1.keySet()) {
+            if (map1.containsKey(str) && map2.containsKey(str) && map1.get(str) == 1 && map2.get(str) == 1) {
                 count++;
             }
         }

@@ -399,6 +399,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1893]检查是否区域内所有整数都被覆盖.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1893]检查是否区域内所有整数都被覆盖.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1893" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1893]检查是否区域内所有整数都被覆盖.java" />
+              <option name="titleSlug" value="check-if-all-the-integers-in-a-range-are-covered" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[191]位1的个数.java">
           <value>
             <LeetcodeEditor>
@@ -429,6 +440,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[202]快乐数.java" />
               <option name="titleSlug" value="happy-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2032]至少在两个数组中出现的值.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[2032]至少在两个数组中出现的值.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2032" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2032]至少在两个数组中出现的值.java" />
+              <option name="titleSlug" value="two-out-of-three" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2053]数组中第 K 个独一无二的字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[2053]数组中第 K 个独一无二的字符串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2053" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2053]数组中第 K 个独一无二的字符串.java" />
+              <option name="titleSlug" value="kth-distinct-string-in-an-array" />
             </LeetcodeEditor>
           </value>
         </entry>

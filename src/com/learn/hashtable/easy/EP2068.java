@@ -11,14 +11,14 @@ package com.learn.hashtable.easy;
 public class EP2068 {
     public boolean checkAlmostEquivalent(String word1, String word2) {
         int[] result = new int[26];
-        for (char c : word1.toCharArray()) {
-            result[c - 'a']++;
+        for (char c1 : word1.toCharArray()) {
+            result[c1 - 'a']++;
         }
-        for (char s : word2.toCharArray()) {
-            result[s - 'a']--;
+        for (char c2 : word2.toCharArray()) {
+            result[c2 - 'a']--;
         }
-        for (int index : result) {
-            if (Math.abs(index) > 3) {
+        for (int value : result) {
+            if (Math.abs(value) > 3) {
                 return false;
             }
         }
