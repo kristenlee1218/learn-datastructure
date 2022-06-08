@@ -11,10 +11,10 @@ package com.learn.array.easy;
 public class EP1228 {
     public int missingNumber(int[] nums) {
         int min = 100005, max = -1, result = 0;
-        for (int x : nums) {
-            min = Math.min(min, x);
-            max = Math.max(max, x);
-            result ^= x;
+        for (int num : nums) {
+            min = Math.min(min, num);
+            max = Math.max(max, num);
+            result ^= num;
         }
         if (min == max) {
             return min;
