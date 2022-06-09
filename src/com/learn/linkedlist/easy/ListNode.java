@@ -3,7 +3,7 @@ package com.learn.linkedlist.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/6
- * @description :
+ * @description : ListNode 的节点定义
  */
 public class ListNode {
     int val;
