@@ -6,17 +6,12 @@ package com.learn.test;
  * @description :
  */
 public class Test1 {
-    public void moveZeroes(int[] nums) {
-        int index = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-                if (i > index) {
-                    nums[index] = nums[i];
-                    nums[i] = 0;
-                }
-                index++;
-            }
+    public int maxCount(int m, int n, int[][] ops) {
+        for (int[] op : ops) {
+            m = Math.min(m, op[0]);
+            n = Math.min(n, op[1]);
         }
+        return m * n;
     }
 }
 
