@@ -6,12 +6,17 @@ package com.learn.test;
  * @description :
  */
 public class Test1 {
-    public int maxCount(int m, int n, int[][] ops) {
-        for (int[] op : ops) {
-            m = Math.min(m, op[0]);
-            n = Math.min(n, op[1]);
+    public boolean isMonotonic(int[] nums) {
+        boolean increase = true, decrease = true;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] < nums[i] + 1) {
+                decrease = false;
+            }
+            if (nums[i] > nums[i] + 1) {
+                increase = false;
+            }
         }
-        return m * n;
+        return decrease || increase;
     }
 }
 
