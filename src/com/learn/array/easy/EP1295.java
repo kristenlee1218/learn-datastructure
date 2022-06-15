@@ -9,12 +9,9 @@ public class EP1295 {
     public int findNumbers(int[] nums) {
         int count = 0;
         for (int num : nums) {
-            int n = 0;
-            while (num > 0) {
-                num /= 10;
-                n++;
+            if ((num >= 10 && num < 100) || (num >= 1000 && num < 10000) || num == 100000) {
+                count++;
             }
-            count += n % 2 == 0 ? 1 : 0;
         }
         return count;
     }

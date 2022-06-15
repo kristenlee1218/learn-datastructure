@@ -6,12 +6,16 @@ package com.learn.test;
  * @description :
  */
 public class Test2 {
-    public static void main(String[] args) {
-        String a = new String("abc").intern();
-        String b = new String("abc").intern();
-        if (a == b) {
-            System.out.print("a==b");
+    public int[] replaceElements(int[] nums) {
+        int max = -1;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            int temp = nums[i];
+            nums[i] = max;
+            if (temp > max) {
+                max = temp;
+            }
         }
+        return nums;
     }
 }
 

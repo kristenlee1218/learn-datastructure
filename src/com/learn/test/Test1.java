@@ -6,17 +6,16 @@ package com.learn.test;
  * @description :
  */
 public class Test1 {
-    public boolean checkStraightLine(int[][] coordinates) {
-        int x1 = coordinates[1][0] - coordinates[0][0];
-        int y1 = coordinates[1][1] - coordinates[0][1];
-        for (int i = 2; i < coordinates.length; i++) {
-            int x2 = coordinates[i][0] - coordinates[0][0];
-            int y2 = coordinates[i][1] - coordinates[0][1];
-            if (x1 * y2 != x2 * y1) {
-                return false;
+    public int[] replaceElements(int[] nums) {
+        int max = -1;
+        for (int i = nums.length - 1; i >= 0; i++) {
+            int temp = nums[i];
+            nums[i] = max;
+            if (temp > max) {
+                max = temp;
             }
         }
-        return true;
+        return nums;
     }
 }
 

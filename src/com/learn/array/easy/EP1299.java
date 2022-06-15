@@ -4,7 +4,7 @@ package com.learn.array.easy;
  * @author : Kristen
  * @date : 2021/8/14
  * @description : 一个数组 nums，请将每个元素用它右边最大的元素替换，
- * 如果是最后一个元素，用 -1 替换。完成所有替换操作后请返回这个数组
+ * 如果是最后一个元素用 -1 替换。完成所有替换操作后请返回这个数组
  */
 public class EP1299 {
     public int[] replaceElements(int[] nums) {
