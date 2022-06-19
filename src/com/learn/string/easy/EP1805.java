@@ -20,7 +20,7 @@ public class EP1805 {
         String[] s = newStr.split(" ");
         HashMap<String, Integer> map = new HashMap<>();
         for (String s1 : s) {
-            if (s1.equals("")) {
+            if ("".equals(s1)) {
                 continue;
             }
             String s2 = s1.replaceAll("^(0+)", "");
