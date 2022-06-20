@@ -9,8 +9,7 @@ package com.learn.string.easy;
  */
 public class EP58 {
     public int lengthOfLastWord(String s) {
-        s = s.trim();
-        String[] str = s.split(" ");
+        String[] str = s.trim().split(" ");
         return str[str.length - 1].length();
     }
 }

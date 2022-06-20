@@ -13,7 +13,8 @@ package com.learn.string.easy;
  */
 public class EP800 {
     public String similarRGB(String color) {
-        return "#" + fun(color.substring(1, 3)) + fun(color.substring(3, 5)) + fun(color.substring(5));
+        return "#" + fun(color.substring(1, 3)) +
+                fun(color.substring(3, 5)) + fun(color.substring(5));
     }
 
     public String fun(String s) {
