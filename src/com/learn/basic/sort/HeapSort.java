@@ -20,13 +20,13 @@ public class HeapSort {
         }
     }
 
-    private void swap(int[] data, int i, int j) {
+    public void swap(int[] data, int i, int j) {
         int tmp = data[i];
         data[i] = data[j];
         data[j] = tmp;
     }
 
-    private void buildMaxHeap(int[] data, int lastIndex) {
+    public void buildMaxHeap(int[] data, int lastIndex) {
         for (int i = (lastIndex - 1) / 2; i >= 0; i--) {
             int k = i;
             while (k * 2 + 1 <= lastIndex) {

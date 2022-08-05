@@ -6,7 +6,7 @@ package com.learn.basic.sort;
  * @description : 归并排序
  * 归并排序（Merge Sort）是利用归并的思想实现的排序方法，该算法采用经典的分治
  * （divide-and-conquer）策略
- *
+ * <p>
  * 分治法将问题分（divide）成一些小的问题后递归求解，而治（conquer）的阶段则
  * 将分的阶段得到的各答案修补在一起，然即分而治之
  */
@@ -28,28 +28,28 @@ public class MergeSort {
         }
     }
 
-    private void merge(int[] data, int p, int q, int r) {
-        int[] B = new int[data.length];
+    public void merge(int[] data, int p, int q, int r) {
+        int[] b = new int[data.length];
         int s = p;
         int t = q + 1;
         int k = p;
         while (s <= q && t <= r) {
             if (data[s] <= data[t]) {
-                B[k] = data[s];
+                b[k] = data[s];
                 s++;
             } else {
-                B[k] = data[t];
+                b[k] = data[t];
                 t++;
             }
             k++;
         }
         if (s == q + 1) {
-            B[k++] = data[t++];
+            b[k++] = data[t++];
         } else {
-            B[k++] = data[s++];
+            b[k++] = data[s++];
         }
-        for (int i = p; i <= r; i++) {
-            data[i] = B[i];
+        if (r + 1 - p >= 0) {
+            System.arraycopy(b, p, data, p, r + 1 - p);
         }
     }
 }
