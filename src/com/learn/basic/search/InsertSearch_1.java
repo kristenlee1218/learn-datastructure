@@ -9,7 +9,7 @@ package com.learn.basic.search;
  * 找基于二分查找，将查找点的选择改进为自适应选择，提高查找效率
  */
 public class InsertSearch_1 {
-    private static int insertSearch(int[] array, int key, int left, int right) {
+    public int insertSearch(int[] array, int key, int left, int right) {
         if (left > right) {
             return -1;
         }

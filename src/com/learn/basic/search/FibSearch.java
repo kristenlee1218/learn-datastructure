@@ -15,7 +15,7 @@ public class FibSearch {
     public static int maxSize = 20;
 
     // 斐波那契数列
-    public static int[] fib() {
+    public int[] fib() {
         int[] fib = new int[maxSize];
         fib[0] = 1;
         fib[1] = 1;
@@ -25,12 +25,12 @@ public class FibSearch {
         return fib;
     }
 
-    public static int fibSearch(int[] a, int key) {
+    public int fibSearch(int[] a, int key) {
         int low = 0;
         int high = a.length - 1;
         int k = 0;
-        int mid = 0;
-        int f[] = fib();
+        int mid;
+        int[] f = fib();
         while (high > f[k] - 1) {
             k++;
         }
@@ -47,11 +47,7 @@ public class FibSearch {
                 low = mid + 1;
                 k -= 2;
             } else {
-                if (mid <= high) {
-                    return mid;
-                } else {
-                    return high;
-                }
+                return Math.min(mid, high);
             }
         }
         return -1;

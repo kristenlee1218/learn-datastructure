@@ -9,7 +9,7 @@ package com.learn.basic.search;
  * 二分法进行查找，如果大于则在后半部分继续使用二分法进行查找
  */
 public class BinarySearch_1 {
-    public static int binarySearch(int[] a, int value, int low, int high) {
+    public int binarySearch(int[] a, int value, int low, int high) {
         int mid = (low + high) / 2;
 
         if (value == a[mid]) {

@@ -28,7 +28,7 @@ package com.learn.basic.search;
  * ③、在哈希表的基础上执行哈希查找
  */
 public class HashSearch {
-    public static int searchHash(int[] hash, int hashLength, int key) {
+    public int searchHash(int[] hash, int hashLength, int key) {
         // 哈希函数
         int hashAddress = key % hashLength;
 
@@ -44,7 +44,7 @@ public class HashSearch {
         return hashAddress;
     }
 
-    public static void insertHash(int[] hash, int hashLength, int data) {
+    public void insertHash(int[] hash, int hashLength, int data) {
         // 哈希函数
         int hashAddress = data % hashLength;
 

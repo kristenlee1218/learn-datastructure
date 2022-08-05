@@ -122,7 +122,7 @@ public class BinaryTree<Key extends Comparable<Key>, Value> {
         return x;
     }
 
-    private class Node {
+    public class Node {
         // 存储键
         public Key key;
         // 存储值
