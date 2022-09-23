@@ -10,10 +10,8 @@ package com.learn.offer.easy;
  */
 public class Offer58_2 {
     public String reverseLeftWords(String s, int n) {
-        String result = "";
         String s1 = s.substring(0, n);
-        String s2 = s.substring(n, s.length());
-        result = s2 + s1;
-        return result;
+        String s2 = s.substring(n);
+        return s2 + s1;
     }
 }
