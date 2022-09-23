@@ -3,7 +3,7 @@ package com.learn.offer.easy;
 /**
  * @author : Kristen
  * @date : 2021/8/5
- * @description :给定单向链表的头指针和一个要删除的节点的值，定义一个函数
+ * @description : 给定单向链表的头指针和一个要删除的节点的值，定义一个函数
  * 删除该节点。返回删除后的链表的头节点
  */
 public class Offer18 {

@@ -9,18 +9,16 @@ package com.learn.offer.easy;
  */
 public class Offer4 {
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
-        boolean flag = false;
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
         }
         for (int[] ints : matrix) {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (ints[j] == target) {
-                    flag = true;
-                    break;
+                    return true;
                 }
             }
         }
-        return flag;
+        return false;
     }
 }

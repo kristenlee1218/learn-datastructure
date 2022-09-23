@@ -13,15 +13,15 @@ public class Offer4_1 {
             return false;
         }
         int rows = matrix.length, columns = matrix[0].length;
-        int row = 0, column = columns - 1;
-        while (row < rows && column >= 0) {
-            int num = matrix[row][column];
+        int x = 0, y = columns - 1;
+        while (x < rows && y >= 0) {
+            int num = matrix[x][y];
             if (num == target) {
                 return true;
             } else if (num > target) {
-                column--;
+                y--;
             } else {
-                row++;
+                x++;
             }
         }
         return false;

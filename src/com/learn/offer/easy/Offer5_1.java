@@ -9,11 +9,11 @@ public class Offer5_1 {
     public String replaceSpace(String s) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (ch == ' ') {
+            char c = s.charAt(i);
+            if (c == ' ') {
                 sb.append("%20");
             } else {
-                sb.append(ch);
+                sb.append(c);
             }
         }
         return sb.toString();
