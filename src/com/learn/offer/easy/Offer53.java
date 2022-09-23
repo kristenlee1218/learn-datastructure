@@ -1,25 +1,24 @@
 package com.learn.offer.easy;
 
 /**
- * @author : Kristen
- * @date : 2022/4/23
- * @description : 一个长度为 n-1 的递增排序数组中的所有数字都
- * 是唯一的，并且每个数字都在范围 0～n-1 之内。在范围 0～n-1 内
- * 的 n 个数字中有且只有一个数字不在该数组中，请找出这个数字
+ * @author ：Kristen
+ * @date ：2022/9/23
+ * @description : 统计一个数字在排序数组中出现的次数
  */
 public class Offer53 {
-    public int missingNumber(int[] nums) {
-        if (nums.length == 0) {
-            if (nums[0] == 0) {
-                return 1;
-            }
-            return 0;
-        }
+    public int search(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
         int count = 0;
-        for (int num : nums) {
-            if (num != count) {
-                return count;
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] >= target) {
+                right = mid;
             }
+            if (nums[mid] < target) {
+                left = mid + 1;
+            }
+        }
+        while (left < nums.length && nums[left++] == target) {
             count++;
         }
         return count;
