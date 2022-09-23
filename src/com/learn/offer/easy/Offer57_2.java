@@ -26,7 +26,7 @@ public class Offer57_2 {
         while (left < right) {
             int sum = (right - left + 1) * (left + right) / 2;
             if (sum == target) {
-                //创建数组存储左右指针之间的数组组合
+                // 创建数组存储左右指针之间的数组组合
                 int[] tmp = new int[right - left + 1];
                 for (int i = 0; i < right - left + 1; i++) {
                     tmp[i] = left + i;
