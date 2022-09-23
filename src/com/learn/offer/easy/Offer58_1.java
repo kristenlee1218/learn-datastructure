@@ -9,11 +9,11 @@ package com.learn.offer.easy;
  */
 public class Offer58_1 {
     public String reverseWords(String s) {
-        String[] strs = s.split(" ");
-        StringBuilder sb = new StringBuilder(strs.length);
-        for (int i = strs.length - 1; i >= 0; i--) {
-            if (!strs[i].equals("")) {
-                sb.append(strs[i]).append(" ");
+        String[] str = s.split(" ");
+        StringBuilder sb = new StringBuilder(str.length);
+        for (int i = str.length - 1; i >= 0; i--) {
+            if (!"".equals(str[i])) {
+                sb.append(str[i]).append(" ");
             }
         }
         return sb.toString().trim();
