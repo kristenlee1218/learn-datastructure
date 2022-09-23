@@ -1,4 +1,4 @@
-package com.learn.offer.easy;
+package com.learn.offer.middle;
 
 /**
  * @author ：Kristen
