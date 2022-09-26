@@ -8,7 +8,7 @@ package com.learn.dynamic.easy;
  */
 public class EP70 {
     public int climbStairs(int n) {
-        int p = 0;
+        int p;
         int q = 0;
         int r = 1;
         for (int i = 1; i <= n; i++) {
