@@ -10,7 +10,7 @@ package com.learn.string.easy;
  * 制魔术数字转换是有效的，请返回转换后的结果，否则返回 "ERROR"
  */
 public class EP1271 {
-    public String toHexspeak(String s) {
+    public String toHexSpeak(String s) {
         double temp = Double.parseDouble(s);
         StringBuilder sb = new StringBuilder();
         while (temp > 0) {
