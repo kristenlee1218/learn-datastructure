@@ -12,7 +12,8 @@ import java.util.Arrays;
 public class EP2475 {
     public int unequalTriplets(int[] nums) {
         Arrays.sort(nums);
-        int result = 0, start = 0, n = nums.length;
+        int result = 0, start =
+                0, n = nums.length;
         for (int i = 0; i < n - 1; i++) {
             if (nums[i + 1] != nums[i]) {
                 result += start * (i - start + 1) * (n - 1 - i);
