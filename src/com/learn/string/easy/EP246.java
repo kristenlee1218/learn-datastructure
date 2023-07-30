@@ -6,9 +6,9 @@ import java.util.Map;
 /**
  * @author ：Kristen
  * @date ：2022/3/17
- * @description : 中心对称数是指一个数字在旋转了 180 度之后看起来依旧
- * 相同的数字（或者上下颠倒地看）。请写一个函数来判断该数字是否是中心对
- * 称数，其输入将会以一个字符串的形式来表达数字
+ * @description : 中心对称数是指一个数字在旋转了 180 度之后看起来依旧相同的
+ * 数字（或者上下颠倒地看）。请写一个函数来判断该数字是否是中心对称数，其输入将
+ * 会以一个字符串的形式来表达数字
  */
 public class EP246 {
     public boolean isStrobogrammatic(String s) {

@@ -8,10 +8,10 @@ package com.learn.array.easy;
  */
 public class EP136_1 {
     public int singleNumber(int[] nums) {
-        int single = 0;
+        int result = 0;
         for (int num : nums) {
-            single ^= num;
+            result ^= num;
         }
-        return single;
+        return result;
     }
 }

@@ -3,7 +3,7 @@ package com.learn.offer2.easy;
 /**
  * @author : Kristen
  * @date : 2022/2/10
- * @description :符合下列属性的数组 arr 称为山脉数组
+ * @description : 符合下列属性的数组 arr 称为山脉数组
  * arr.length >= 3
  * 存在 i（0 < i < arr.length - 1）使得：
  * arr[0] < arr[1] < ... arr[i-1] < arr[i]

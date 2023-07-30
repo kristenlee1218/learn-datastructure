@@ -11,7 +11,8 @@ import java.util.Calendar;
  */
 public class EP1185 {
     public String dayOfTheWeek(int day, int month, int year) {
-        String[] week = new String[]{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+        String[] week = new String[]{"Sunday", "Monday", "Tuesday",
+                "Wednesday", "Thursday", "Friday", "Saturday"};
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month - 1);

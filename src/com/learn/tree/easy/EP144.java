@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author ：Kristen
  * @date ：2022/3/11
- * @description :一棵二叉树的根节点 root，返回其节点值的先序遍历
+ * @description : 一棵二叉树的根节点 root，返回其节点值的先序遍历
  */
 public class EP144 {
     public List<Integer> preorderTraversal(TreeNode root) {

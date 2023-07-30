@@ -3,7 +3,7 @@ package com.learn.math.middle;
 /**
  * @author : Kristen
  * @date : 2021/11/4
- * @description :实现 pow(x, n)，即计算 x 的 n 次幂函数（即，x^n）
+ * @description : 实现 pow(x, n)，即计算 x 的 n 次幂函数（即，x^n）
  */
 public class EP50 {
     public double myPow(double x, int n) {

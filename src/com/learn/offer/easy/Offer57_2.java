@@ -6,13 +6,14 @@ import java.util.List;
 /**
  * @author ：Kristen
  * @date ：2022/9/23
- * @description : 输入一个正整数 target，输出所有和为 target 的连续正整数序列（至少含有两个数）。
- * 序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。
+ * @description : 输入一个正整数 target，输出所有和为 target 的连续
+ * 正整数序列（至少含有两个数）。序列内的数字由小到大排列，不同序列按照首
+ * 个数字从小到大排列
  */
 public class Offer57_2 {
     public int[][] findContinuousSequence(int target) {
         // 思路，双指针
-        // 刚开始 left 在位置 1， right 在位置 2， 定义左右指针之间的数字和为 sum = n*(a1+an)/2
+        // 刚开始 left 在位置 1，right 在位置 2，定义左右指针之间的数字和为 sum = n*(a1+an)/2
         // 1. 类似二分查找的逻辑，当 sum 等于 target 时，将左右指针之间的这种数组加入结果，然后左指针右移
         // 2. 当 sum 小于 target 时，右指针右移增大 sum
         // 3. 当 sum 大于 target 时，说明以 left 为起点组成的数组不符要求，左指针右移
