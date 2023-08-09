@@ -9,7 +9,6 @@ package com.learn.math.easy;
  * 个最接近的 10 的倍数，较大的倍数是实际支出金额。请返回一个整数，表示在愿意支出金额为 purchaseAmount 块
  * 钱的前提下，购买之后剩下的余额
  */
-
 public class EP2806 {
     public int accountBalanceAfterPurchase(int purchaseAmount) {
         int n = purchaseAmount % 10;
