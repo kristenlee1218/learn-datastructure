@@ -1,7 +1,6 @@
 package com.learn.array.easy;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
