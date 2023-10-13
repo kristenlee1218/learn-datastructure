@@ -14,10 +14,10 @@ public class EP2828 {
         if (words.size() != s.length()) {
             return false;
         }
-        StringBuilder result = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         for (String word : words) {
-            result.append(word.charAt(0));
+            sb.append(word.charAt(0));
         }
-        return result.toString().equals(s);
+        return sb.toString().equals(s);
     }
 }
